@@ -4,9 +4,9 @@ Install the operator and the reviewer as separate skills. Do this only on a Code
 
 ## Before you begin
 
-You need the release kit, permission to add user skills on the target machine, and a way to start a fresh Codex task after copying the skills. Installation is local setup; it does not connect accounts, modify an existing office file, or send anything externally.
+You need this repository or the matching GitHub release, permission to add user skills on the target machine, and a way to start a fresh Codex task after copying the skills. Installation is local setup; it does not connect accounts, modify an existing office file, or send anything externally.
 
-The release kit is expected to contain these two direct skill folders:
+The repository and complete release archive contain these two direct skill folders:
 
 ```text
 codex/
