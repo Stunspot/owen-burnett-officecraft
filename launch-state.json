@@ -1,0 +1,32 @@
+{
+  "format": "cd-augment-launch-state/v1",
+  "product": "Owen Burnett Officecraft",
+  "version": "0.1.0",
+  "phase": "prepared",
+  "requested_terminal_state": "published-verified",
+  "offer": {
+    "price": "free",
+    "license": "MIT"
+  },
+  "destinations": [
+    {
+      "channel": "github-repository-and-release",
+      "owner": "Stunspot",
+      "repository": "owen-burnett-officecraft",
+      "visibility": "public",
+      "state": "prepared"
+    }
+  ],
+  "plugin_disposition": {
+    "state": "deliberately-deferred",
+    "reason": "v0.1.0 publishes matched standalone Codex and Claude skills; no Codex plugin or Directory submission is claimed"
+  },
+  "public_exclusions": [
+    "private development history",
+    "canonical persona source copies",
+    "workstation paths",
+    "host-private evaluation traces",
+    "credentials and customer data"
+  ],
+  "evidence_boundary": "Publication can be verified independently of fresh-host activation and first-value evidence."
+}
