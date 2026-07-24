@@ -1,0 +1,5 @@
+64dcafa31d18715ff417c4de6ace03ed7ebc2c50b943a2ca4e41379c1a4a02e2  Owen-Burnett-Officecraft-v0.1.0.zip
+930a2a8e9dac9015fc22488eda8e2becc427634e06c39895488234a99cbc4aa4  Codex-Owen-Burnett-Officecraft-v0.1.0.zip
+c9a30c375134fb73607ec7da6c62afdd04753500cb4fac712bcc48631a7c0442  Codex-Officecraft-Reviewer-v0.1.0.zip
+930a2a8e9dac9015fc22488eda8e2becc427634e06c39895488234a99cbc4aa4  Claude-Owen-Burnett-Officecraft-v0.1.0.zip
+c9a30c375134fb73607ec7da6c62afdd04753500cb4fac712bcc48631a7c0442  Claude-Officecraft-Reviewer-v0.1.0.zip
