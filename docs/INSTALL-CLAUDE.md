@@ -4,7 +4,7 @@ Install the operator and reviewer as two separate skill archives. Each archive m
 
 ## Before you begin
 
-You need a Claude environment that supports installing skills, access to the release kit, and permission to add skills to that environment. The expected archives are:
+You need a Claude environment that supports installing skills, this repository or the matching GitHub release, and permission to add skills to that environment. The expected archives are:
 
 ```text
 claude/
