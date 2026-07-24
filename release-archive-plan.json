@@ -1,0 +1,44 @@
+{
+  "schema_version": "cd-augment-archive-plan/v1",
+  "product": {
+    "name": "Owen Burnett Officecraft",
+    "version": "0.1.0"
+  },
+  "artifacts": [
+    {
+      "id": "complete-augment",
+      "kind": "complete-augment",
+      "source": ".",
+      "archive_name": "Owen-Burnett-Officecraft-v0.1.0.zip",
+      "top_level": "Owen-Burnett-Officecraft-v0.1.0"
+    },
+    {
+      "id": "codex-operator",
+      "kind": "codex-standalone-skill",
+      "source": "codex/owen-burnett-officecraft",
+      "archive_name": "Codex-Owen-Burnett-Officecraft-v0.1.0.zip",
+      "top_level": "owen-burnett-officecraft"
+    },
+    {
+      "id": "codex-reviewer",
+      "kind": "codex-standalone-skill",
+      "source": "codex/officecraft-reviewer",
+      "archive_name": "Codex-Officecraft-Reviewer-v0.1.0.zip",
+      "top_level": "officecraft-reviewer"
+    },
+    {
+      "id": "claude-operator",
+      "kind": "claude-standalone-skill",
+      "source": "codex/owen-burnett-officecraft",
+      "archive_name": "Claude-Owen-Burnett-Officecraft-v0.1.0.zip",
+      "top_level": "owen-burnett-officecraft"
+    },
+    {
+      "id": "claude-reviewer",
+      "kind": "claude-standalone-skill",
+      "source": "codex/officecraft-reviewer",
+      "archive_name": "Claude-Officecraft-Reviewer-v0.1.0.zip",
+      "top_level": "officecraft-reviewer"
+    }
+  ]
+}
