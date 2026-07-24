@@ -1,0 +1,12 @@
+# Preserve canonical custody bytes across platforms.
+source-custody/canonical-personas/** -text
+
+# Archives and office containers are binary.
+*.zip -text
+*.docx -text
+*.pptx -text
+*.xlsx -text
+*.pdf -text
+*.png -text
+*.jpg -text
+*.jpeg -text

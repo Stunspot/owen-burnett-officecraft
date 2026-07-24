@@ -1,0 +1,47 @@
+# Operating-system and editor debris
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Python and test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Secrets and local authentication
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+token*.json
+
+# Local Officecraft jobs, staging, and transaction debris
+officefile/
+officefiles/
+*.officefile/
+.officecraft-staging/
+.officecraft-transaction-*/
+*.partial
+*.tmp
+
+# Unversioned local output and host-private captures
+local-output/
+verification/local/
+verification/host-private/
+verification/*-local.json
+verification/*-local.md
+
+# Keep intentionally versioned, manifest-bound archives under customer-release/.
