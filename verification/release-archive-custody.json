@@ -1,0 +1,65 @@
+{
+  "schema_version": "cd-augment-archive-custody/v1",
+  "product": {
+    "name": "Owen Burnett Officecraft",
+    "version": "0.1.0"
+  },
+  "created_at": "2026-07-24T16:10:22.919827+00:00",
+  "artifacts": [
+    {
+      "top_level": "Owen-Burnett-Officecraft-v0.1.0",
+      "source_tree_sha256": "939c0083128135897fba663ffd1b20cd0bafa1738452eb0902e7bd40c909add2",
+      "archive_sha256": "64dcafa31d18715ff417c4de6ace03ed7ebc2c50b943a2ca4e41379c1a4a02e2",
+      "bytes": 183451,
+      "member_count": 84,
+      "id": "complete-augment",
+      "kind": "complete-augment",
+      "source": ".",
+      "archive_name": "Owen-Burnett-Officecraft-v0.1.0.zip"
+    },
+    {
+      "top_level": "owen-burnett-officecraft",
+      "source_tree_sha256": "18373687496a4018160db4b5eac7fefd27efcab859ac4aa7d6ba7e1a7d2f548b",
+      "archive_sha256": "930a2a8e9dac9015fc22488eda8e2becc427634e06c39895488234a99cbc4aa4",
+      "bytes": 66105,
+      "member_count": 48,
+      "id": "codex-operator",
+      "kind": "codex-standalone-skill",
+      "source": "codex/owen-burnett-officecraft",
+      "archive_name": "Codex-Owen-Burnett-Officecraft-v0.1.0.zip"
+    },
+    {
+      "top_level": "officecraft-reviewer",
+      "source_tree_sha256": "38f0ef79af3c4320619c734a31520f21fd4c586d9239231e5f77f49bbdd193c4",
+      "archive_sha256": "c9a30c375134fb73607ec7da6c62afdd04753500cb4fac712bcc48631a7c0442",
+      "bytes": 9995,
+      "member_count": 9,
+      "id": "codex-reviewer",
+      "kind": "codex-standalone-skill",
+      "source": "codex/officecraft-reviewer",
+      "archive_name": "Codex-Officecraft-Reviewer-v0.1.0.zip"
+    },
+    {
+      "top_level": "owen-burnett-officecraft",
+      "source_tree_sha256": "18373687496a4018160db4b5eac7fefd27efcab859ac4aa7d6ba7e1a7d2f548b",
+      "archive_sha256": "930a2a8e9dac9015fc22488eda8e2becc427634e06c39895488234a99cbc4aa4",
+      "bytes": 66105,
+      "member_count": 48,
+      "id": "claude-operator",
+      "kind": "claude-standalone-skill",
+      "source": "codex/owen-burnett-officecraft",
+      "archive_name": "Claude-Owen-Burnett-Officecraft-v0.1.0.zip"
+    },
+    {
+      "top_level": "officecraft-reviewer",
+      "source_tree_sha256": "38f0ef79af3c4320619c734a31520f21fd4c586d9239231e5f77f49bbdd193c4",
+      "archive_sha256": "c9a30c375134fb73607ec7da6c62afdd04753500cb4fac712bcc48631a7c0442",
+      "bytes": 9995,
+      "member_count": 9,
+      "id": "claude-reviewer",
+      "kind": "claude-standalone-skill",
+      "source": "codex/officecraft-reviewer",
+      "archive_name": "Claude-Officecraft-Reviewer-v0.1.0.zip"
+    }
+  ]
+}
