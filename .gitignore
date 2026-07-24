@@ -44,4 +44,4 @@ verification/host-private/
 verification/*-local.json
 verification/*-local.md
 
-# Keep intentionally versioned, manifest-bound archives under customer-release/.
+# Keep intentionally versioned release archives under release-assets/.
