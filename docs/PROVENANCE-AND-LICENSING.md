@@ -2,7 +2,7 @@
 
 ## Product lineage
 
-Owen Burnett Officecraft v0.1.0 grows a clerical and executive-assistant baseline into a file-centered office-production steward. Presentation craft and spreadsheet craft inform the integrated practitioner judgment. The product preserves canonical source copies and their hashes in maintainers' source custody; the customer runtime uses a derived practitioner and original operating references rather than persona switching.
+Owen Burnett Officecraft v0.1.0 grows a clerical and executive-assistant baseline into a file-centered office-production steward. Presentation craft and spreadsheet craft inform the integrated practitioner judgment. The product preserves canonical source copies and their hashes in maintainers' source custody; the public runtime uses a derived practitioner and original operating references rather than persona switching.
 
 The product's maintained source record identifies these canonical inputs:
 
@@ -12,7 +12,7 @@ The product's maintained source record identifies these canonical inputs:
 | SlideSmith PowerPoint Engine(er) T4 v1 | Presentation craft source | `56ABFE454716041DAEFD62674D79C9B869F8E4C556B67EFDD38840E080F56FBB` |
 | Excel Expert - Gridley Celleck T3 v1 | Spreadsheet craft source | `C0ED5F522D0136AB75A952B135F87005D885839F69F1EA67E49F142D0CF1ADC7` |
 
-Canonical source custody is not included as an assertion of publication or commercial redistribution rights. The rights status for those inputs requires accountable review before any publication or commercial release.
+Canonical source copies and private development history remain in separate maintainer custody. The public runtime, documentation, examples, schemas, and scripts are released under the repository's [MIT License](../LICENSE.md).
 
 ## Bundled host capabilities
 
