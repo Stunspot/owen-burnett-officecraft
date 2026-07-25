@@ -2,7 +2,7 @@
   "format": "cd-augment-launch-state/v1",
   "product": "Owen Burnett Officecraft",
   "version": "0.1.0",
-  "phase": "prepared",
+  "phase": "published-verified",
   "requested_terminal_state": "published-verified",
   "offer": {
     "price": "free",
@@ -14,7 +14,9 @@
       "owner": "Stunspot",
       "repository": "owen-burnett-officecraft",
       "visibility": "public",
-      "state": "prepared"
+      "state": "published-verified",
+      "release_tag": "v0.1.0",
+      "release_url": "https://github.com/Stunspot/owen-burnett-officecraft/releases/tag/v0.1.0"
     }
   ],
   "plugin_disposition": {
@@ -28,5 +30,5 @@
     "host-private evaluation traces",
     "credentials and customer data"
   ],
-  "evidence_boundary": "Publication can be verified independently of fresh-host activation and first-value evidence."
+  "evidence_boundary": "GitHub repository visibility and release assets were read back after publication. Fresh-host activation and first-value evidence remain separate."
 }
