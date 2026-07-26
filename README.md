@@ -1,8 +1,12 @@
 # Owen Burnett Officecraft
 
-**Bring the rough notes. Leave with an office packet that still agrees with itself.**
+![A coordinated office packet of document, presentation, spreadsheet, and PDF artifacts shares one visible source spine and review trail.](docs/assets/officecraft-hero.png)
+
+> **Bring the rough notes. Leave with an office packet that still agrees with itself.**
 
 Owen Burnett Officecraft is a free, dual-host occupational Augment for turning workplace material into coherent documents, presentations, spreadsheets, PDFs, and coordinated deliverable families. It combines an office-production operator with an independent reviewer and a resumable **Officefile** project record.
+
+**[Open the project site →](https://stunspot.github.io/owen-burnett-officecraft/)**
 
 ## Start with one useful job
 
@@ -25,7 +29,7 @@ Continue with [Start here](START-HERE.md) for installation, a first job, verific
 - `codex/owen-burnett-officecraft/` — the office-production operator;
 - `codex/officecraft-reviewer/` — the independent evidence reviewer;
 - `claude/` — one installable Claude skill archive for each capability;
-- `docs/` — installation, first-job, Officefile, troubleshooting, provenance, and readiness guidance;
+- `docs/` — the tailored project site plus installation, first-job, Officefile, troubleshooting, provenance, and readiness guidance;
 - the [`v0.1.0` release](https://github.com/Stunspot/owen-burnett-officecraft/releases/tag/v0.1.0) — complete and per-skill archives with SHA-256 custody.
 
 Install the operator and reviewer as a matched version. The reviewer examines the supplied job record and evidence; it does not silently approve publication, delivery, or unsupported quality claims.
@@ -41,6 +45,8 @@ Install the operator and reviewer as a matched version. The reviewer examines th
 
 ## Installation
 
+- [Open the tailored project site](https://stunspot.github.io/owen-burnett-officecraft/)
+- [Read the site source and evidence boundary](docs/SITE-SOURCE.md)
 - [Install in Codex](docs/INSTALL-CODEX.md)
 - [Install in Claude](docs/INSTALL-CLAUDE.md)
 - [Run the first Officecraft job](docs/FIRST-JOB.md)
