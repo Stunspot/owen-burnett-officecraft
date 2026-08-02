@@ -1,3 +1,6 @@
+# CD line-ending policy: LF for authored text; explicit exceptions below.
+* text=auto eol=lf
+
 # Archives and office containers are binary.
 *.zip -text
 *.docx -text
@@ -7,3 +10,19 @@
 *.png -text
 *.jpg -text
 *.jpeg -text
+
+# Windows-native text exceptions.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binary containers and media.
+*.gif binary
+*.ico binary
+
+# Binary containers and media.
+*.webp binary
+*.mp4 binary
+
+# Release-custody evidence retains its exact captured bytes.
+RELEASE-MANIFEST.json -text
+verification/release-archive-custody.json -text
