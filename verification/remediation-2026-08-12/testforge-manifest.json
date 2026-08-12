@@ -24,7 +24,7 @@
                                    "live Pages bytes until publication"
                                ],
                   "constraints":  [
-                                      "GitHub-hosted Actions minutes unavailable; no automatic workflow may run",
+                                      "Public standard GitHub runners are free; invoke only the single required manual line-ending job and retain legacy branch Pages deployment",
                                       "local Windows host",
                                       "publication occurs only after independent TestForge review"
                                   ],
@@ -87,7 +87,7 @@
                        "README and Pages entry points -\u003e installation and first-job routes -\u003e truthful customer action",
                        "source Markdown -\u003e deterministic committed HTML -\u003e legacy main/docs deployment -\u003e live visitor experience",
                        "three visual roles -\u003e GitHub README, Pages hero, and Open Graph preview",
-                       "workflow configuration -\u003e push event -\u003e Actions minute consumption"
+                       "workflow configuration -\u003e explicit public line-ending dispatch -\u003e required status without duplicate automatic runs"
                    ],
     "invariants":  [
                        {
@@ -104,7 +104,7 @@
                        },
                        {
                            "id":  "INV-004",
-                           "statement":  "Publishing this candidate cannot automatically consume GitHub-hosted Actions minutes."
+                           "statement":  "Publishing this candidate triggers no automatic workflow; the required line-ending status is obtained by one deliberate public standard-runner dispatch."
                        },
                        {
                            "id":  "INV-005",
@@ -166,9 +166,9 @@
                   },
                   {
                       "id":  "R-005",
-                      "statement":  "Push triggers an automatic workflow while Actions minutes are exhausted -\u003e deployment/test refusal and noisy false-red evidence.",
+                      "statement":  "Automatic push/PR triggers could duplicate checks, while omitting the deliberate manual dispatch would leave protected main without its required status.",
                       "severity":  "high",
-                      "likelihood":  "high",
+                      "likelihood":  "medium",
                       "confidence":  "high",
                       "disposition":  "covered",
                       "verification":  [
@@ -322,19 +322,22 @@
                           "risk_ids":  [
                                            "R-005"
                                        ],
-                          "title":  "push cannot trigger hosted Actions",
+                          "title":  "manual public line-ending dispatch without duplicate triggers",
                           "layer":  "static",
                           "preconditions":  [
                                                 "final workflow files"
                                             ],
                           "action":  [
-                                         "scan workflow triggers"
+                                         "confirm workflow_dispatch is the only trigger",
+                                         "dispatch once on the exact feature-branch head before merge"
                                      ],
                           "expected":  [
-                                           "workflow_dispatch only"
+                                           "one public standard-runner job supplies line-ending-policy status"
                                        ],
                           "forbidden":  [
-                                            "push, pull_request, or schedule triggers"
+                                            "automatic duplicate run",
+                                            "paid runner",
+                                            "ruleset weakening"
                                         ],
                           "evidence":  [
                                            "T-ACTIONS",

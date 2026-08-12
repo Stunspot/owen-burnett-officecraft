@@ -1,60 +1,99 @@
 {
-  "format": "cd-hesperos-documentation-review/v1",
-  "product": "Owen Burnett Officecraft",
-  "version": "0.1.0",
-  "review_date": "2026-08-12",
-  "starting_state": "UNKNOWN",
-  "disposition": "REVIEW_PASS_WITH_BOUNDED_EVIDENCE",
-  "candidate": {
-    "algorithm": "sha256 over ordinal-sorted UTF-8 path + NUL + raw file SHA-256 + LF",
-    "excluded_prefix": "verification/remediation-2026-08-12/",
-    "file_count": 125,
-    "fingerprint": "637eb2a5928cd5b1858775f4cae480de91424ec5cdb3d5b9c50bc85ffed74c85"
-  },
-  "reader": "People who need coherent office deliverables without becoming file-tool specialists",
-  "top_task": "Install the matched operator and reviewer, produce a bounded first artifact or packet, verify what happened, and recover safely",
-  "surfaces_read_completely": {
-    "root_markdown": ["README.md", "START-HERE.md", "HOST-MATRIX.md", "RELEASE-NOTES.md", "CHANGELOG.md", "CONTRIBUTING.md", "LICENSE.md", "SECURITY.md", "SUPPORT.md"],
-    "customer_docs": ["docs/README.md", "docs/START-HERE.md", "docs/FIRST-JOB.md", "docs/INSTALL-CODEX.md", "docs/INSTALL-CLAUDE.md", "docs/HOST-CAPABILITIES-AND-EVIDENCE.md", "docs/OFFICEFILE-AND-RESUME.md", "docs/TROUBLESHOOTING.md", "docs/LIFECYCLE.md", "docs/TRUST-PRIVACY-AND-LIMITS.md", "docs/ACCESSIBILITY.md", "docs/VERIFICATION-AND-READINESS.md", "docs/PROVENANCE-AND-LICENSING.md", "docs/CHANGELOG.md", "docs/SUPPORT.md", "docs/SECURITY.md", "docs/CONTRIBUTING.md", "docs/SITE-SOURCE.md"],
-    "pages_source": ["docs/index.html", "docs/404.html", "docs/style.css", "scripts/build_pages.py"],
-    "claim_sources": ["operator and reviewer SKILL.md files", "operating/routing/host/cross-artifact/accessibility/privacy/format-production references", "Officefile initialization/validation/inspection/packaging scripts", "retained v0.1.0 release evidence"]
-  },
-  "journey_results": {
-    "orientation_and_audience": "PASS",
-    "capabilities_and_limits": "PASS",
-    "codex_install_and_verification": "PASS",
-    "claude_install_and_verification": "PASS",
-    "first_value_and_examples": "PASS",
-    "inputs_outputs_and_configuration": "PASS",
-    "troubleshooting_and_recovery": "PASS",
-    "update_removal_rollback_cleanup": "PASS",
-    "privacy_storage_network_security": "PASS",
-    "provenance_validation_and_evidence": "PASS",
-    "support_contribution_license": "PASS",
-    "pages_information_architecture": "PASS"
-  },
-  "executed_evidence": {
-    "pages_build": "19 routes; two consecutive builds byte-identical",
-    "markdown_lint": "26 of 27 clean; MIT License line 12 produced one accepted directional-language heuristic false positive",
-    "customer_journey_validator": "27 Markdown documents, 19 HTML routes, all internal links, headings, landmarks, navigation, image alternatives, OG wiring, asset dimensions, distinct hashes, and social visible text passed",
-    "officefile_tests": "16 of 16 passed locally",
-    "actions_capacity_safety": "No push, pull_request, or schedule trigger remains; the sole workflow is workflow_dispatch only",
-    "runtime_scope": "No Codex runtime, Claude archive, release manifest, release custody, or frozen release evidence changed"
-  },
-  "material_defects_repaired": [
-    "Replaced a thin repository journey with product-led orientation, explicit limits, matched-host installation, verification, first value, workflows, lifecycle, trust, support, and contribution routes",
-    "Expanded a one-page site into a polished 19-route static customer experience with complete navigation and custom recovery",
-    "Corrected source-builder mojibake that would have reintroduced corrupted punctuation",
-    "Corrected four Markdown-to-generated-HTML source links",
-    "Completed the custom 404 metadata and footer shell",
-    "Replaced mobile CSS that hid all navigation except GitHub with a horizontally scrollable complete navigation route",
-    "Removed automatic Actions-based Pages deployment and preserved manual-only workflow behavior because hosted minutes are unavailable"
-  ],
-  "residual_boundaries": [
-    "Local structural and semantic review is not live rendered Pages verification; live verification follows publication",
-    "No fresh-host Codex or Claude installation, discovery, or invocation was performed",
-    "No native Office rendering, spreadsheet recalculation, external delivery, representative-user test, or formal accessibility assessment was performed",
-    "The MIT License heuristic finding is retained as a false positive rather than changing license text"
-  ],
-  "rerun_trigger": "Any byte change in the 125 governed candidate files invalidates this receipt and requires a new fingerprint and complete review"
+    "format":  "cd-hesperos-documentation-review/v1",
+    "product":  "Owen Burnett Officecraft",
+    "version":  "0.1.0",
+    "review_date":  "2026-08-12",
+    "starting_state":  "UNKNOWN",
+    "disposition":  "REVIEW_PASS_WITH_BOUNDED_EVIDENCE",
+    "candidate":  {
+                      "algorithm":  "sha256 over ordinal-sorted UTF-8 path + NUL + raw file SHA-256 + LF",
+                      "excluded_prefix":  "verification/remediation-2026-08-12/",
+                      "file_count":  125,
+                      "fingerprint":  "637eb2a5928cd5b1858775f4cae480de91424ec5cdb3d5b9c50bc85ffed74c85"
+                  },
+    "reader":  "People who need coherent office deliverables without becoming file-tool specialists",
+    "top_task":  "Install the matched operator and reviewer, produce a bounded first artifact or packet, verify what happened, and recover safely",
+    "surfaces_read_completely":  {
+                                     "root_markdown":  [
+                                                           "README.md",
+                                                           "START-HERE.md",
+                                                           "HOST-MATRIX.md",
+                                                           "RELEASE-NOTES.md",
+                                                           "CHANGELOG.md",
+                                                           "CONTRIBUTING.md",
+                                                           "LICENSE.md",
+                                                           "SECURITY.md",
+                                                           "SUPPORT.md"
+                                                       ],
+                                     "customer_docs":  [
+                                                           "docs/README.md",
+                                                           "docs/START-HERE.md",
+                                                           "docs/FIRST-JOB.md",
+                                                           "docs/INSTALL-CODEX.md",
+                                                           "docs/INSTALL-CLAUDE.md",
+                                                           "docs/HOST-CAPABILITIES-AND-EVIDENCE.md",
+                                                           "docs/OFFICEFILE-AND-RESUME.md",
+                                                           "docs/TROUBLESHOOTING.md",
+                                                           "docs/LIFECYCLE.md",
+                                                           "docs/TRUST-PRIVACY-AND-LIMITS.md",
+                                                           "docs/ACCESSIBILITY.md",
+                                                           "docs/VERIFICATION-AND-READINESS.md",
+                                                           "docs/PROVENANCE-AND-LICENSING.md",
+                                                           "docs/CHANGELOG.md",
+                                                           "docs/SUPPORT.md",
+                                                           "docs/SECURITY.md",
+                                                           "docs/CONTRIBUTING.md",
+                                                           "docs/SITE-SOURCE.md"
+                                                       ],
+                                     "pages_source":  [
+                                                          "docs/index.html",
+                                                          "docs/404.html",
+                                                          "docs/style.css",
+                                                          "scripts/build_pages.py"
+                                                      ],
+                                     "claim_sources":  [
+                                                           "operator and reviewer SKILL.md files",
+                                                           "operating/routing/host/cross-artifact/accessibility/privacy/format-production references",
+                                                           "Officefile initialization/validation/inspection/packaging scripts",
+                                                           "retained v0.1.0 release evidence"
+                                                       ]
+                                 },
+    "journey_results":  {
+                            "orientation_and_audience":  "PASS",
+                            "capabilities_and_limits":  "PASS",
+                            "codex_install_and_verification":  "PASS",
+                            "claude_install_and_verification":  "PASS",
+                            "first_value_and_examples":  "PASS",
+                            "inputs_outputs_and_configuration":  "PASS",
+                            "troubleshooting_and_recovery":  "PASS",
+                            "update_removal_rollback_cleanup":  "PASS",
+                            "privacy_storage_network_security":  "PASS",
+                            "provenance_validation_and_evidence":  "PASS",
+                            "support_contribution_license":  "PASS",
+                            "pages_information_architecture":  "PASS"
+                        },
+    "executed_evidence":  {
+                              "pages_build":  "19 routes; two consecutive builds byte-identical",
+                              "markdown_lint":  "26 of 27 clean; MIT License line 12 produced one accepted directional-language heuristic false positive",
+                              "customer_journey_validator":  "27 Markdown documents, 19 HTML routes, all internal links, headings, landmarks, navigation, image alternatives, OG wiring, asset dimensions, distinct hashes, and social visible text passed",
+                              "officefile_tests":  "16 of 16 passed locally",
+                              "actions_capacity_safety":  "No push, pull_request, or schedule trigger remains; the sole workflow is workflow_dispatch only",
+                              "runtime_scope":  "No Codex runtime, Claude archive, release manifest, release custody, or frozen release evidence changed"
+                          },
+    "material_defects_repaired":  [
+                                      "Replaced a thin repository journey with product-led orientation, explicit limits, matched-host installation, verification, first value, workflows, lifecycle, trust, support, and contribution routes",
+                                      "Expanded a one-page site into a polished 19-route static customer experience with complete navigation and custom recovery",
+                                      "Corrected source-builder mojibake that would have reintroduced corrupted punctuation",
+                                      "Corrected four Markdown-to-generated-HTML source links",
+                                      "Completed the custom 404 metadata and footer shell",
+                                      "Replaced mobile CSS that hid all navigation except GitHub with a horizontally scrollable complete navigation route",
+                                      "Removed duplicate automatic workflow triggers and retained an explicit manual line-ending workflow compatible with protected public release gating"
+                                  ],
+    "residual_boundaries":  [
+                                "Local structural and semantic review is not live rendered Pages verification; live verification follows publication",
+                                "No fresh-host Codex or Claude installation, discovery, or invocation was performed",
+                                "No native Office rendering, spreadsheet recalculation, external delivery, representative-user test, or formal accessibility assessment was performed",
+                                "The MIT License heuristic finding is retained as a false positive rather than changing license text"
+                            ],
+    "rerun_trigger":  "Any byte change in the 125 governed candidate files invalidates this receipt and requires a new fingerprint and complete review"
 }
