@@ -1,0 +1,35 @@
+{
+  "format": "cd-testforge-independent-review/v1",
+  "product": "Owen Burnett Officecraft",
+  "review_date": "2026-08-12",
+  "reviewer": {"mode":"independent-fresh-context","starting_state":"UNKNOWN","capability":"verification-reviewer"},
+  "target_commit": "fb84a3765daa601ea71752ff5a732e328c0403c5",
+  "governed_fingerprint": "637eb2a5928cd5b1858775f4cae480de91424ec5cdb3d5b9c50bc85ffed74c85",
+  "governed_file_count": 125,
+  "disposition": "REVIEW_PASS_WITH_CONDITIONS",
+  "supported_transition_status": "READY_WITH_RESIDUAL_RISK",
+  "repository_status_before_live_verification": "INSUFFICIENT_EVIDENCE",
+  "decision_changing_findings": [],
+  "observations": [
+    "Manifest and traceability validators independently reran with zero errors or warnings",
+    "Four lexical snapshot smell hits are validly classified TEST_TOOLING_FALSE_POSITIVE because the test asserts a specific failure and two forbidden post-states",
+    "16 unit tests pass",
+    "Two 19-route builds are byte-identical and all 19 named routes serve locally",
+    "Three visual roles are distinct and the social card visibly carries exact product text",
+    "No push, pull_request, or schedule workflow trigger remains",
+    "Runtime, Claude archives, manifests, and frozen release evidence are unchanged",
+    "Accessibility evidence supports static structural review only"
+  ],
+  "conditions": [
+    "Commit and push the evidence package once without changing governed candidate bytes",
+    "Remote main equals the intended final commit",
+    "Pages uses legacy main:/docs deployment and no hosted Actions workflow is invoked",
+    "The exact final deployment completes",
+    "The landing page, 17 generated docs, and direct 404 return HTTP 200; an unknown route returns HTTP 404 with custom recovery body",
+    "All live internal links resolve",
+    "All three live PNG hashes match committed bytes",
+    "Open Graph and Twitter metadata point to the exact social card and name Owen Burnett Officecraft",
+    "Live README hero wiring and repository Pages metadata match the final candidate"
+  ],
+  "failure_rule": "Any unmet condition is LIVE VERIFICATION FAIL, not repository PASS"
+}

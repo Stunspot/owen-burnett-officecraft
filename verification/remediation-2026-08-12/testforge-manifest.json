@@ -1,0 +1,613 @@
+{
+    "manifest_version":  "1.0",
+    "target":  {
+                   "name":  "Owen Burnett Officecraft public documentation and presentation candidate",
+                   "revision":  "fb84a3765daa601ea71752ff5a732e328c0403c5",
+                   "target_class":  "release_candidate",
+                   "governed_fingerprint":  "637eb2a5928cd5b1858775f4cae480de91424ec5cdb3d5b9c50bc85ffed74c85"
+               },
+    "scope":  {
+                  "included":  [
+                                   "root customer documentation",
+                                   "19-route committed GitHub Pages site",
+                                   "README hero",
+                                   "Pages hero",
+                                   "social/Open Graph card",
+                                   "workflow trigger safety",
+                                   "unchanged v0.1.0 runtime and release evidence"
+                               ],
+                  "excluded":  [
+                                   "fresh-host Codex or Claude activation",
+                                   "native Office rendering or recalculation",
+                                   "formal accessibility conformance",
+                                   "representative-user success",
+                                   "live Pages bytes until publication"
+                               ],
+                  "constraints":  [
+                                      "GitHub-hosted Actions minutes unavailable; no automatic workflow may run",
+                                      "local Windows host",
+                                      "publication occurs only after independent TestForge review"
+                                  ],
+                  "safety_boundary":  [
+                                          "local non-production verification only",
+                                          "no customer data",
+                                          "no external delivery before READY disposition"
+                                      ]
+              },
+    "claim_custody":  {
+                          "observed":  [
+                                           {
+                                               "id":  "O-001",
+                                               "statement":  "The governed candidate has 125 files and fingerprint 637eb2a5928cd5b1858775f4cae480de91424ec5cdb3d5b9c50bc85ffed74c85.",
+                                               "basis":  "independent Hesperos/accessibility recomputation and testforge-local-evidence.json",
+                                               "confidence":  "high"
+                                           },
+                                           {
+                                               "id":  "O-002",
+                                               "statement":  "All 16 Officefile unit tests pass on commit fb84a3765daa601ea71752ff5a732e328c0403c5.",
+                                               "basis":  "testforge-local-evidence.json E-001",
+                                               "confidence":  "high"
+                                           },
+                                           {
+                                               "id":  "O-003",
+                                               "statement":  "Two Pages builds are byte-identical across 19 HTML routes and all routes serve locally over HTTP.",
+                                               "basis":  "testforge-local-evidence.json",
+                                               "confidence":  "high"
+                                           },
+                                           {
+                                               "id":  "O-004",
+                                               "statement":  "Hesperos and independent accessibility reviews pass for the governed fingerprint.",
+                                               "basis":  "hesperos-documentation-review.json and documentation-accessibility-review.json",
+                                               "confidence":  "high"
+                                           },
+                                           {
+                                               "id":  "O-005",
+                                               "statement":  "No push, pull_request, or schedule workflow trigger remains.",
+                                               "basis":  "testforge-local-evidence.json workflows",
+                                               "confidence":  "high"
+                                           }
+                                       ],
+                          "inferred":  [
+
+                                       ],
+                          "assumed":  [
+
+                                      ],
+                          "unresolved":  [
+                                             {
+                                                 "id":  "U-001",
+                                                 "statement":  "GitHub Pages will deploy the exact main/docs bytes and dispatch the custom 404 after publication.",
+                                                 "basis":  "post-publication live verification not yet executed",
+                                                 "confidence":  "low",
+                                                 "consequence":  "Repository cannot receive final PASS until exact live bytes and routes are checked."
+                                             }
+                                         ]
+                      },
+    "impact_map":  [
+                       "README and Pages entry points -\u003e installation and first-job routes -\u003e truthful customer action",
+                       "source Markdown -\u003e deterministic committed HTML -\u003e legacy main/docs deployment -\u003e live visitor experience",
+                       "three visual roles -\u003e GitHub README, Pages hero, and Open Graph preview",
+                       "workflow configuration -\u003e push event -\u003e Actions minute consumption"
+                   ],
+    "invariants":  [
+                       {
+                           "id":  "INV-001",
+                           "statement":  "No documentation claim promotes copied, discovered, invoked, produced, inspected, native-verified, approved, delivered, or published into another state without evidence."
+                       },
+                       {
+                           "id":  "INV-002",
+                           "statement":  "Every customer route remains findable, internally linked, semantically structured, and recoverable through a custom 404."
+                       },
+                       {
+                           "id":  "INV-003",
+                           "statement":  "README, Pages, and social roles use distinct approved assets; the social card visibly names the exact product and identifying line."
+                       },
+                       {
+                           "id":  "INV-004",
+                           "statement":  "Publishing this candidate cannot automatically consume GitHub-hosted Actions minutes."
+                       },
+                       {
+                           "id":  "INV-005",
+                           "statement":  "Documentation remediation does not alter the distributed operator, reviewer, Claude archives, or frozen v0.1.0 evidence."
+                       }
+                   ],
+    "risks":  [
+                  {
+                      "id":  "R-001",
+                      "statement":  "Documentation overstates activation or production evidence -\u003e customers trust an unobserved capability -\u003e unsafe or misleading handoff.",
+                      "severity":  "critical",
+                      "likelihood":  "medium",
+                      "confidence":  "high",
+                      "disposition":  "covered",
+                      "verification":  [
+                                           "S-CLAIMS-001",
+                                           "T-HESPEROS",
+                                           "E-003"
+                                       ]
+                  },
+                  {
+                      "id":  "R-002",
+                      "statement":  "A generated route or link is missing -\u003e customer cannot install, begin, or recover -\u003e public journey fails.",
+                      "severity":  "high",
+                      "likelihood":  "medium",
+                      "confidence":  "high",
+                      "disposition":  "covered",
+                      "verification":  [
+                                           "S-ROUTES-001",
+                                           "T-ROUTES",
+                                           "E-002"
+                                       ]
+                  },
+                  {
+                      "id":  "R-003",
+                      "statement":  "A visual is duplicated, broken, illegible, or wrongly wired -\u003e public identity and social preview fail.",
+                      "severity":  "high",
+                      "likelihood":  "medium",
+                      "confidence":  "high",
+                      "disposition":  "covered",
+                      "verification":  [
+                                           "S-VISUAL-001",
+                                           "T-VISUAL",
+                                           "E-005"
+                                       ]
+                  },
+                  {
+                      "id":  "R-004",
+                      "statement":  "Navigation or semantic structure excludes keyboard or narrow-screen users -\u003e essential documentation becomes inaccessible.",
+                      "severity":  "high",
+                      "likelihood":  "medium",
+                      "confidence":  "high",
+                      "disposition":  "covered",
+                      "verification":  [
+                                           "S-A11Y-001",
+                                           "T-A11Y",
+                                           "E-004"
+                                       ]
+                  },
+                  {
+                      "id":  "R-005",
+                      "statement":  "Push triggers an automatic workflow while Actions minutes are exhausted -\u003e deployment/test refusal and noisy false-red evidence.",
+                      "severity":  "high",
+                      "likelihood":  "high",
+                      "confidence":  "high",
+                      "disposition":  "covered",
+                      "verification":  [
+                                           "S-ACTIONS-001",
+                                           "T-ACTIONS",
+                                           "E-002"
+                                       ]
+                  },
+                  {
+                      "id":  "R-006",
+                      "statement":  "Documentation work mutates runtime or frozen release evidence -\u003e published claims no longer match the v0.1.0 package.",
+                      "severity":  "high",
+                      "likelihood":  "low",
+                      "confidence":  "high",
+                      "disposition":  "covered",
+                      "verification":  [
+                                           "S-SCOPE-001",
+                                           "T-SCOPE",
+                                           "E-006"
+                                       ]
+                  },
+                  {
+                      "id":  "R-007",
+                      "statement":  "Existing Officefile behavior regresses -\u003e documentation candidate ships beside a broken product boundary.",
+                      "severity":  "high",
+                      "likelihood":  "low",
+                      "confidence":  "high",
+                      "disposition":  "covered",
+                      "verification":  [
+                                           "S-UNIT-001",
+                                           "T-UNIT",
+                                           "E-001"
+                                       ]
+                  },
+                  {
+                      "id":  "R-008",
+                      "statement":  "Legacy Pages deployment serves stale or incomplete bytes -\u003e local readiness does not become a valid live customer experience.",
+                      "severity":  "medium",
+                      "likelihood":  "medium",
+                      "confidence":  "high",
+                      "disposition":  "planned",
+                      "verification":  [
+                                           "S-LIVE-001",
+                                           "T-LIVE"
+                                       ]
+                  }
+              ],
+    "scenarios":  [
+                      {
+                          "id":  "S-CLAIMS-001",
+                          "risk_ids":  [
+                                           "R-001"
+                                       ],
+                          "title":  "claim custody through complete customer journey",
+                          "layer":  "static",
+                          "preconditions":  [
+                                                "frozen candidate fingerprint"
+                                            ],
+                          "action":  [
+                                         "read all customer docs and claim sources; challenge evidence-state language"
+                                     ],
+                          "expected":  [
+                                           "capabilities and limits match source and observed evidence"
+                                       ],
+                          "forbidden":  [
+                                            "activation, native production, accessibility, or delivery claim without evidence"
+                                        ],
+                          "evidence":  [
+                                           "T-HESPEROS",
+                                           "E-003"
+                                       ],
+                          "status":  "executed"
+                      },
+                      {
+                          "id":  "S-ROUTES-001",
+                          "risk_ids":  [
+                                           "R-002"
+                                       ],
+                          "title":  "all static customer routes serve and resolve",
+                          "layer":  "integration",
+                          "preconditions":  [
+                                                "committed docs output"
+                                            ],
+                          "action":  [
+                                         "double-build and serve every HTML route locally"
+                                     ],
+                          "expected":  [
+                                           "19 deterministic routes return 200; direct 404 page contains recovery text"
+                                       ],
+                          "forbidden":  [
+                                            "missing route, link, landmark, or nondeterministic output"
+                                        ],
+                          "evidence":  [
+                                           "T-ROUTES",
+                                           "E-002"
+                                       ],
+                          "status":  "executed"
+                      },
+                      {
+                          "id":  "S-VISUAL-001",
+                          "risk_ids":  [
+                                           "R-003"
+                                       ],
+                          "title":  "three role-specific visual assets",
+                          "layer":  "exploratory",
+                          "preconditions":  [
+                                                "final PNG and SVG assets"
+                                            ],
+                          "action":  [
+                                         "inspect complete pixels, text source, hashes, dimensions, aspect ratios, and wiring"
+                                     ],
+                          "expected":  [
+                                           "three distinct suitable compositions and exact social title"
+                                       ],
+                          "forbidden":  [
+                                            "duplicate composition, crop failure, blank area, illegible social text, wrong wiring"
+                                        ],
+                          "evidence":  [
+                                           "T-VISUAL",
+                                           "E-005"
+                                       ],
+                          "status":  "executed"
+                      },
+                      {
+                          "id":  "S-A11Y-001",
+                          "risk_ids":  [
+                                           "R-004"
+                                       ],
+                          "title":  "static documentation accessibility challenge",
+                          "layer":  "static",
+                          "preconditions":  [
+                                                "independent reviewer starts UNKNOWN"
+                                            ],
+                          "action":  [
+                                         "review semantics, navigation, focus, mobile route, alternatives, contrast, recovery, and claims"
+                                     ],
+                          "expected":  [
+                                           "REVIEW_PASS with bounded residuals"
+                                       ],
+                          "forbidden":  [
+                                            "hidden essential route or formal conformance inflation"
+                                        ],
+                          "evidence":  [
+                                           "T-A11Y",
+                                           "E-004"
+                                       ],
+                          "status":  "executed"
+                      },
+                      {
+                          "id":  "S-ACTIONS-001",
+                          "risk_ids":  [
+                                           "R-005"
+                                       ],
+                          "title":  "push cannot trigger hosted Actions",
+                          "layer":  "static",
+                          "preconditions":  [
+                                                "final workflow files"
+                                            ],
+                          "action":  [
+                                         "scan workflow triggers"
+                                     ],
+                          "expected":  [
+                                           "workflow_dispatch only"
+                                       ],
+                          "forbidden":  [
+                                            "push, pull_request, or schedule triggers"
+                                        ],
+                          "evidence":  [
+                                           "T-ACTIONS",
+                                           "E-002"
+                                       ],
+                          "status":  "executed"
+                      },
+                      {
+                          "id":  "S-SCOPE-001",
+                          "risk_ids":  [
+                                           "R-006"
+                                       ],
+                          "title":  "runtime and frozen evidence remain unchanged",
+                          "layer":  "static",
+                          "preconditions":  [
+                                                "baseline d1452c58 and candidate fb84a376"
+                                            ],
+                          "action":  [
+                                         "inspect exact committed diff and governed scope"
+                                     ],
+                          "expected":  [
+                                           "documentation, presentation, builder, workflow, and receipt changes only"
+                                       ],
+                          "forbidden":  [
+                                            "Codex runtime, Claude archive, release manifest, or release evidence mutation"
+                                        ],
+                          "evidence":  [
+                                           "T-SCOPE",
+                                           "E-006"
+                                       ],
+                          "status":  "executed"
+                      },
+                      {
+                          "id":  "S-UNIT-001",
+                          "risk_ids":  [
+                                           "R-007"
+                                       ],
+                          "title":  "Officefile regression suite",
+                          "layer":  "unit",
+                          "preconditions":  [
+                                                "candidate commit"
+                                            ],
+                          "action":  [
+                                         "run unittest discovery against operator tests"
+                                     ],
+                          "expected":  [
+                                           "16 tests pass"
+                                       ],
+                          "forbidden":  [
+                                            "test failure or unexpected side effect"
+                                        ],
+                          "evidence":  [
+                                           "T-UNIT",
+                                           "E-001"
+                                       ],
+                          "status":  "executed"
+                      },
+                      {
+                          "id":  "S-LIVE-001",
+                          "risk_ids":  [
+                                           "R-008"
+                                       ],
+                          "title":  "exact live GitHub and Pages deployment",
+                          "layer":  "browser",
+                          "preconditions":  [
+                                                "candidate pushed to main and legacy main/docs deployment complete"
+                                            ],
+                          "action":  [
+                                         "compare remote main, Pages build, 19 routes, custom missing route, metadata, and asset hashes"
+                                     ],
+                          "expected":  [
+                                           "live bytes and final commit match"
+                                       ],
+                          "forbidden":  [
+                                            "stale commit, dead route, placeholder, wrong asset, wrong social metadata"
+                                        ],
+                          "evidence":  [
+                                           "T-LIVE"
+                                       ],
+                          "status":  "designed"
+                      }
+                  ],
+    "tests":  [
+                  {
+                      "id":  "T-HESPEROS",
+                      "scenario_ids":  [
+                                           "S-CLAIMS-001"
+                                       ],
+                      "path":  "verification/remediation-2026-08-12/hesperos-documentation-review.json",
+                      "status":  "passed",
+                      "execution_id":  "E-003"
+                  },
+                  {
+                      "id":  "T-ROUTES",
+                      "scenario_ids":  [
+                                           "S-ROUTES-001"
+                                       ],
+                      "path":  "verification/remediation-2026-08-12/verify_candidate.py",
+                      "status":  "passed",
+                      "execution_id":  "E-002"
+                  },
+                  {
+                      "id":  "T-VISUAL",
+                      "scenario_ids":  [
+                                           "S-VISUAL-001"
+                                       ],
+                      "path":  "verification/remediation-2026-08-12/visual-review.json",
+                      "status":  "passed",
+                      "execution_id":  "E-005"
+                  },
+                  {
+                      "id":  "T-A11Y",
+                      "scenario_ids":  [
+                                           "S-A11Y-001"
+                                       ],
+                      "path":  "verification/remediation-2026-08-12/documentation-accessibility-review.json",
+                      "status":  "passed",
+                      "execution_id":  "E-004"
+                  },
+                  {
+                      "id":  "T-ACTIONS",
+                      "scenario_ids":  [
+                                           "S-ACTIONS-001"
+                                       ],
+                      "path":  "verification/remediation-2026-08-12/verify_candidate.py",
+                      "status":  "passed",
+                      "execution_id":  "E-002"
+                  },
+                  {
+                      "id":  "T-SCOPE",
+                      "scenario_ids":  [
+                                           "S-SCOPE-001"
+                                       ],
+                      "path":  "verification/remediation-2026-08-12/testforge-local-evidence.json",
+                      "status":  "passed",
+                      "execution_id":  "E-006"
+                  },
+                  {
+                      "id":  "T-UNIT",
+                      "scenario_ids":  [
+                                           "S-UNIT-001"
+                                       ],
+                      "path":  "codex/owen-burnett-officecraft/tests/test_officefile_scripts.py",
+                      "status":  "passed",
+                      "execution_id":  "E-001"
+                  },
+                  {
+                      "id":  "T-LIVE",
+                      "scenario_ids":  [
+                                           "S-LIVE-001"
+                                       ],
+                      "path":  "verification/remediation-2026-08-12/live-verification-plan.md",
+                      "status":  "unexecuted"
+                  }
+              ],
+    "executions":  [
+                       {
+                           "id":  "E-001",
+                           "command":  [
+                                           "python",
+                                           "-B",
+                                           "-m",
+                                           "unittest",
+                                           "discover",
+                                           "-s",
+                                           "codex/owen-burnett-officecraft/tests",
+                                           "-p",
+                                           "test_*.py",
+                                           "-v"
+                                       ],
+                           "working_directory":  "repository root",
+                           "status":  "passed",
+                           "exit_code":  0,
+                           "raw_evidence":  "verification/remediation-2026-08-12/testforge-local-evidence.json"
+                       },
+                       {
+                           "id":  "E-002",
+                           "command":  [
+                                           "python",
+                                           "-B",
+                                           "verification/remediation-2026-08-12/verify_candidate.py",
+                                           "--output",
+                                           "verification/remediation-2026-08-12/testforge-local-evidence.json"
+                                       ],
+                           "working_directory":  "repository root",
+                           "status":  "passed",
+                           "exit_code":  0,
+                           "raw_evidence":  "verification/remediation-2026-08-12/testforge-local-evidence.json"
+                       },
+                       {
+                           "id":  "E-003",
+                           "command":  [
+                                           "manual",
+                                           "complete Hesperos authorship and semantic journey review"
+                                       ],
+                           "working_directory":  "repository root",
+                           "status":  "passed",
+                           "exit_code":  0,
+                           "raw_evidence":  "verification/remediation-2026-08-12/hesperos-documentation-review.json"
+                       },
+                       {
+                           "id":  "E-004",
+                           "command":  [
+                                           "independent-review",
+                                           "documentation-accessibility-reviewer"
+                                       ],
+                           "working_directory":  "repository root",
+                           "status":  "passed",
+                           "exit_code":  0,
+                           "raw_evidence":  "verification/remediation-2026-08-12/documentation-accessibility-review.json"
+                       },
+                       {
+                           "id":  "E-005",
+                           "command":  [
+                                           "manual",
+                                           "direct visual pixel and composition inspection"
+                                       ],
+                           "working_directory":  "repository root",
+                           "status":  "passed",
+                           "exit_code":  0,
+                           "raw_evidence":  "verification/remediation-2026-08-12/visual-review.json"
+                       },
+                       {
+                           "id":  "E-006",
+                           "command":  [
+                                           "git",
+                                           "diff",
+                                           "--name-status",
+                                           "d1452c58cf859c1213bc94756b2667dafe114781",
+                                           "fb84a3765daa601ea71752ff5a732e328c0403c5"
+                                       ],
+                           "working_directory":  "repository root",
+                           "status":  "passed",
+                           "exit_code":  0,
+                           "raw_evidence":  "TestForge exact diff reconstruction: 46 changed files; no runtime or frozen release files"
+                       }
+                   ],
+    "findings":  [
+
+                 ],
+    "residual_risks":  [
+                           {
+                               "id":  "RR-001",
+                               "statement":  "Live Pages deployment and missing-route dispatch are not established before publication.",
+                               "treatment":  "After the one authorized push, switch Pages to legacy main/docs, poll the deployment, then crawl every live route and compare exact asset hashes and remote commit.",
+                               "owner":  "repository publisher",
+                               "revisit_condition":  "candidate is visible on remote main"
+                           },
+                           {
+                               "id":  "RR-002",
+                               "statement":  "Static accessibility review does not establish assistive-technology or formal conformance.",
+                               "treatment":  "Keep the public claim explicitly bounded; run AT or formal assessment only when that stronger claim is needed.",
+                               "owner":  "product maintainer",
+                               "revisit_condition":  "formal accessibility claim or material UI change"
+                           }
+                       ],
+    "review":  {
+                   "status":  "REVIEW_PASS_WITH_CONDITIONS",
+                   "findings":  [
+                                    "No local blocker; repository PASS remains contingent on exact live verification"
+                                ],
+                   "reviewer":  "independent fresh-context verification-reviewer"
+               },
+    "decision":  {
+                     "status":  "READY_WITH_RESIDUAL_RISK",
+                     "basis":  [
+                                   "All decision-critical local publication-candidate checks passed",
+                                   "Independent TestForge review passed with the exact post-publication conditions retained",
+                                   "The remaining live-deployment check is observable only after publication and is required before repository PASS"
+                               ],
+                     "authority_required":  [
+                                                "User has explicitly authorized publication",
+                                                "Do not assign final PASS until exact live verification succeeds"
+                                            ]
+                 }
+}

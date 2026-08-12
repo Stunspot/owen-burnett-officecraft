@@ -1,0 +1,195 @@
+{
+  "format": "cd-testforge-local-evidence/v1",
+  "target_commit": "fb84a3765daa601ea71752ff5a732e328c0403c5",
+  "executions": [
+    {
+      "id": "E-001",
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "codex/owen-burnett-officecraft/tests",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_corrupt_ooxml_and_pdf_return_nonzero_inspector_status (test_officefile_scripts.OfficefileScriptTests.test_corrupt_ooxml_and_pdf_return_nonzero_inspector_status) ... ok\ntest_csv_markdown_checkers_and_undefined_other_inspection (test_officefile_scripts.OfficefileScriptTests.test_csv_markdown_checkers_and_undefined_other_inspection) ... ok\ntest_forged_saved_inspection_cannot_replace_direct_container_inspection (test_officefile_scripts.OfficefileScriptTests.test_forged_saved_inspection_cannot_replace_direct_container_inspection) ... ok\ntest_init_is_non_overwriting_and_package_round_trips (test_officefile_scripts.OfficefileScriptTests.test_init_is_non_overwriting_and_package_round_trips) ... ok\ntest_inspected_office_artifact_requires_matching_structural_evidence (test_officefile_scripts.OfficefileScriptTests.test_inspected_office_artifact_requires_matching_structural_evidence) ... ok\ntest_malformed_json_types_return_structured_invalid_results (test_officefile_scripts.OfficefileScriptTests.test_malformed_json_types_return_structured_invalid_results) ... ok\ntest_ooxml_named_garbage_part_fails_xml_root_check (test_officefile_scripts.OfficefileScriptTests.test_ooxml_named_garbage_part_fails_xml_root_check) ... ok\ntest_package_preflight_includes_produced_artifact_and_cleans_partial_output (test_officefile_scripts.OfficefileScriptTests.test_package_preflight_includes_produced_artifact_and_cleans_partial_output) ... ok\ntest_package_rejects_mutation_between_validation_snapshots_without_output (test_officefile_scripts.OfficefileScriptTests.test_package_rejects_mutation_between_validation_snapshots_without_output) ... ok\ntest_pass_review_must_match_current_state_and_registered_produced_digest (test_officefile_scripts.OfficefileScriptTests.test_pass_review_must_match_current_state_and_registered_produced_digest) ... ok\ntest_reviewed_and_approved_states_require_current_digest_bound_authority (test_officefile_scripts.OfficefileScriptTests.test_reviewed_and_approved_states_require_current_digest_bound_authority) ... ok\ntest_small_valid_pdf_passes_bounded_oracle_and_lexical_decoy_fails (test_officefile_scripts.OfficefileScriptTests.test_small_valid_pdf_passes_bounded_oracle_and_lexical_decoy_fails) ... ok\ntest_symlink_and_windows_junction_are_rejected_when_supported (test_officefile_scripts.OfficefileScriptTests.test_symlink_and_windows_junction_are_rejected_when_supported) ... ok\ntest_synthetic_packet_is_valid_and_has_no_produced_artifacts (test_officefile_scripts.OfficefileScriptTests.test_synthetic_packet_is_valid_and_has_no_produced_artifacts) ... ok\ntest_validator_rejects_format_mismatch_and_untrusted_sourced_ledger (test_officefile_scripts.OfficefileScriptTests.test_validator_rejects_format_mismatch_and_untrusted_sourced_ledger) ... ok\ntest_validator_rejects_unsafe_windows_path_forms (test_officefile_scripts.OfficefileScriptTests.test_validator_rejects_unsafe_windows_path_forms) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 1.142s\n\nOK\n"
+    },
+    {
+      "id": "E-002A",
+      "command": [
+        "python",
+        "-B",
+        "scripts/build_pages.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{'status': 'PASS', 'pages': 17, 'built': ['ACCESSIBILITY.html', 'CHANGELOG.html', 'CONTRIBUTING.html', 'FIRST-JOB.html', 'HOST-CAPABILITIES-AND-EVIDENCE.html', 'INSTALL-CLAUDE.html', 'INSTALL-CODEX.html', 'LIFECYCLE.html', 'OFFICEFILE-AND-RESUME.html', 'PROVENANCE-AND-LICENSING.html', 'README.html', 'SECURITY.html', 'START-HERE.html', 'SUPPORT.html', 'TROUBLESHOOTING.html', 'TRUST-PRIVACY-AND-LIMITS.html', 'VERIFICATION-AND-READINESS.html']}\n",
+      "stderr": ""
+    },
+    {
+      "id": "E-002B",
+      "command": [
+        "python",
+        "-B",
+        "scripts/build_pages.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{'status': 'PASS', 'pages': 17, 'built': ['ACCESSIBILITY.html', 'CHANGELOG.html', 'CONTRIBUTING.html', 'FIRST-JOB.html', 'HOST-CAPABILITIES-AND-EVIDENCE.html', 'INSTALL-CLAUDE.html', 'INSTALL-CODEX.html', 'LIFECYCLE.html', 'OFFICEFILE-AND-RESUME.html', 'PROVENANCE-AND-LICENSING.html', 'README.html', 'SECURITY.html', 'START-HERE.html', 'SUPPORT.html', 'TROUBLESHOOTING.html', 'TRUST-PRIVACY-AND-LIMITS.html', 'VERIFICATION-AND-READINESS.html']}\n",
+      "stderr": ""
+    }
+  ],
+  "pages_determinism": {
+    "status": "PASS",
+    "route_count": 19,
+    "changed": []
+  },
+  "local_http": {
+    "routes": {
+      "404.html": {
+        "status": 200,
+        "bytes": 2222,
+        "page_not_found_text": true
+      },
+      "ACCESSIBILITY.html": {
+        "status": 200,
+        "bytes": 4099,
+        "page_not_found_text": false
+      },
+      "CHANGELOG.html": {
+        "status": 200,
+        "bytes": 3336,
+        "page_not_found_text": false
+      },
+      "CONTRIBUTING.html": {
+        "status": 200,
+        "bytes": 3770,
+        "page_not_found_text": false
+      },
+      "FIRST-JOB.html": {
+        "status": 200,
+        "bytes": 5296,
+        "page_not_found_text": false
+      },
+      "HOST-CAPABILITIES-AND-EVIDENCE.html": {
+        "status": 200,
+        "bytes": 5996,
+        "page_not_found_text": false
+      },
+      "index.html": {
+        "status": 200,
+        "bytes": 19287,
+        "page_not_found_text": false
+      },
+      "INSTALL-CLAUDE.html": {
+        "status": 200,
+        "bytes": 4244,
+        "page_not_found_text": false
+      },
+      "INSTALL-CODEX.html": {
+        "status": 200,
+        "bytes": 4954,
+        "page_not_found_text": false
+      },
+      "LIFECYCLE.html": {
+        "status": 200,
+        "bytes": 4876,
+        "page_not_found_text": false
+      },
+      "OFFICEFILE-AND-RESUME.html": {
+        "status": 200,
+        "bytes": 7539,
+        "page_not_found_text": false
+      },
+      "PROVENANCE-AND-LICENSING.html": {
+        "status": 200,
+        "bytes": 4948,
+        "page_not_found_text": false
+      },
+      "README.html": {
+        "status": 200,
+        "bytes": 6316,
+        "page_not_found_text": false
+      },
+      "SECURITY.html": {
+        "status": 200,
+        "bytes": 3725,
+        "page_not_found_text": false
+      },
+      "START-HERE.html": {
+        "status": 200,
+        "bytes": 5389,
+        "page_not_found_text": false
+      },
+      "SUPPORT.html": {
+        "status": 200,
+        "bytes": 3692,
+        "page_not_found_text": false
+      },
+      "TROUBLESHOOTING.html": {
+        "status": 200,
+        "bytes": 6821,
+        "page_not_found_text": false
+      },
+      "TRUST-PRIVACY-AND-LIMITS.html": {
+        "status": 200,
+        "bytes": 4699,
+        "page_not_found_text": false
+      },
+      "VERIFICATION-AND-READINESS.html": {
+        "status": 200,
+        "bytes": 7423,
+        "page_not_found_text": false
+      }
+    },
+    "all_200": true,
+    "custom_404_direct": {
+      "status": 200,
+      "bytes": 2222,
+      "page_not_found_text": true
+    }
+  },
+  "assets": {
+    "readme": {
+      "path": "docs/assets/officecraft-readme-hero.png",
+      "width": 1600,
+      "height": 720,
+      "sha256": "aaa19fc19c96916b996c4ad8005535ea2fa1b48f290a00b3d0b3f3bd1d273442"
+    },
+    "pages": {
+      "path": "docs/assets/officecraft-pages-hero.png",
+      "width": 1200,
+      "height": 800,
+      "sha256": "c9a09330ff1316350040b463ef9e13933a6c4e2a5e5a90dd84acd9e2fc3605aa"
+    },
+    "social": {
+      "path": "docs/assets/officecraft-social-card.png",
+      "width": 1200,
+      "height": 630,
+      "sha256": "fc01b119973b46c1d9ab0b79ab337e4e367997d5097d24ee92635250d0abc651"
+    }
+  },
+  "asset_distinct": {
+    "hashes": true,
+    "ratios": true
+  },
+  "workflows": {
+    "line-ending-policy.yml": {
+      "push": false,
+      "pull_request": false,
+      "schedule": false,
+      "workflow_dispatch": true
+    }
+  },
+  "governed_candidate": {
+    "file_count": 125,
+    "fingerprint": "637eb2a5928cd5b1858775f4cae480de91424ec5cdb3d5b9c50bc85ffed74c85"
+  },
+  "governed_worktree_clean": true,
+  "unresolved_live_oracle": "GitHub Pages missing-route dispatch and current live bytes are verified only after publication",
+  "status": "PASS"
+}

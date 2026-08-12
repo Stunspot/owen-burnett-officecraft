@@ -1,0 +1,13 @@
+# Post-publication live verification plan
+
+Target the exact final `main` commit after the complete local evidence package is committed and pushed once.
+
+1. Confirm remote `main` equals the intended final commit.
+2. Confirm GitHub Pages is configured for legacy branch deployment from `main` and `/docs` without a hosted Actions workflow.
+3. Poll until the Pages deployment reports built from the final commit.
+4. Request the product landing page, all 17 generated documentation routes, the direct 404 page, and an unknown route.
+5. Require HTTP 200 for the 19 named routes, HTTP 404 with the custom recovery body for the unknown route, and zero broken internal links.
+6. Compare the three live PNG hashes byte-for-byte with the committed README, Pages, and social assets.
+7. Confirm landing-page Open Graph and Twitter metadata point to the exact social card and name Owen Burnett Officecraft.
+8. Confirm the live repository README wires the exact README hero and the repository metadata points to the live Pages URL.
+9. Assign repository PASS only after all observations succeed; otherwise record LIVE VERIFICATION FAIL and repair the diagnosed layer.

@@ -1,0 +1,16 @@
+{
+  "format": "cd-testforge-smell-classification/v1",
+  "scanner": "scan_test_smells.py",
+  "source": "verification/remediation-2026-08-12/test-smells.json",
+  "classification": "TEST_TOOLING_FALSE_POSITIVE",
+  "findings_reviewed": 4,
+  "basis": "All four hits are lexical matches on the word snapshot in a test name, fixture paths, and a glob. The test does not use snapshot approval or bulk expected-output replacement. It injects a mutation after validation and asserts both a specific ValueError and the forbidden post-state that neither final output nor temporary package remains.",
+  "oracle": {
+    "expected_exception": "ValueError containing changed during validation",
+    "forbidden_side_effect_1": "final package output exists",
+    "forbidden_side_effect_2": "temporary snapshot package remains"
+  },
+  "product_change_required": false,
+  "test_change_required": false,
+  "scanner_change_scope": "Out of scope; heuristic output is retained unmodified"
+}
