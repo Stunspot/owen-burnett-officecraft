@@ -7,8 +7,8 @@
                      "starting_state":  "UNKNOWN",
                      "capability":  "verification-reviewer"
                  },
-    "target_commit":  "fb84a3765daa601ea71752ff5a732e328c0403c5",
-    "governed_fingerprint":  "637eb2a5928cd5b1858775f4cae480de91424ec5cdb3d5b9c50bc85ffed74c85",
+    "target_commit":  "9f92deaae3b5f517b6cfb9d194480745ab7da7d9",
+    "governed_fingerprint":  "ec4e78710ca8af8f69a93ae79f20c5d6d1183405a5f0e1668d5e7ef79a9b6983",
     "governed_file_count":  125,
     "disposition":  "REVIEW_PASS_WITH_CONDITIONS",
     "supported_transition_status":  "READY_WITH_RESIDUAL_RISK",
@@ -22,7 +22,7 @@
                          "16 unit tests pass",
                          "Two 19-route builds are byte-identical and all 19 named routes serve locally",
                          "Three visual roles are distinct and the social card visibly carries exact product text",
-                         "No push, pull_request, or schedule workflow trigger remains",
+                         "The line-ending workflow has pull_request and workflow_dispatch triggers, with no push or schedule trigger",
                          "Runtime, Claude archives, manifests, and frozen release evidence are unchanged",
                          "Accessibility evidence supports static structural review only"
                      ],

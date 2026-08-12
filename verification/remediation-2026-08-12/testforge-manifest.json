@@ -2,9 +2,9 @@
     "manifest_version":  "1.0",
     "target":  {
                    "name":  "Owen Burnett Officecraft public documentation and presentation candidate",
-                   "revision":  "fb84a3765daa601ea71752ff5a732e328c0403c5",
+                   "revision":  "9f92deaae3b5f517b6cfb9d194480745ab7da7d9",
                    "target_class":  "release_candidate",
-                   "governed_fingerprint":  "637eb2a5928cd5b1858775f4cae480de91424ec5cdb3d5b9c50bc85ffed74c85"
+                   "governed_fingerprint":  "ec4e78710ca8af8f69a93ae79f20c5d6d1183405a5f0e1668d5e7ef79a9b6983"
                },
     "scope":  {
                   "included":  [
@@ -24,7 +24,7 @@
                                    "live Pages bytes until publication"
                                ],
                   "constraints":  [
-                                      "Public standard GitHub runners are free; invoke only the single required manual line-ending job and retain legacy branch Pages deployment",
+                                      "Public standard GitHub runners are free; require the single pull-request line-ending job and retain legacy branch Pages deployment",
                                       "local Windows host",
                                       "publication occurs only after independent TestForge review"
                                   ],
@@ -38,13 +38,13 @@
                           "observed":  [
                                            {
                                                "id":  "O-001",
-                                               "statement":  "The governed candidate has 125 files and fingerprint 637eb2a5928cd5b1858775f4cae480de91424ec5cdb3d5b9c50bc85ffed74c85.",
+                                               "statement":  "The governed candidate has 125 files and fingerprint ec4e78710ca8af8f69a93ae79f20c5d6d1183405a5f0e1668d5e7ef79a9b6983.",
                                                "basis":  "independent Hesperos/accessibility recomputation and testforge-local-evidence.json",
                                                "confidence":  "high"
                                            },
                                            {
                                                "id":  "O-002",
-                                               "statement":  "All 16 Officefile unit tests pass on commit fb84a3765daa601ea71752ff5a732e328c0403c5.",
+                                               "statement":  "All 16 Officefile unit tests pass on commit 9f92deaae3b5f517b6cfb9d194480745ab7da7d9.",
                                                "basis":  "testforge-local-evidence.json E-001",
                                                "confidence":  "high"
                                            },
@@ -62,7 +62,7 @@
                                            },
                                            {
                                                "id":  "O-005",
-                                               "statement":  "No push, pull_request, or schedule workflow trigger remains.",
+                                               "statement":  "The line-ending workflow has pull_request and workflow_dispatch triggers, with no push or schedule trigger.",
                                                "basis":  "testforge-local-evidence.json workflows",
                                                "confidence":  "high"
                                            }
@@ -166,7 +166,7 @@
                   },
                   {
                       "id":  "R-005",
-                      "statement":  "Automatic push/PR triggers could duplicate checks, while omitting the deliberate manual dispatch would leave protected main without its required status.",
+                      "statement":  "A push trigger would duplicate the required pull-request check; workflow_dispatch remains available for deliberate exact-head diagnosis.",
                       "severity":  "high",
                       "likelihood":  "medium",
                       "confidence":  "high",
@@ -322,13 +322,13 @@
                           "risk_ids":  [
                                            "R-005"
                                        ],
-                          "title":  "manual public line-ending dispatch without duplicate triggers",
+                          "title":  "single public pull-request line-ending check without push duplication",
                           "layer":  "static",
                           "preconditions":  [
                                                 "final workflow files"
                                             ],
                           "action":  [
-                                         "confirm workflow_dispatch is the only trigger",
+                                         "confirm pull_request and workflow_dispatch are the only triggers",
                                          "dispatch once on the exact feature-branch head before merge"
                                      ],
                           "expected":  [
@@ -567,7 +567,7 @@
                                            "diff",
                                            "--name-status",
                                            "d1452c58cf859c1213bc94756b2667dafe114781",
-                                           "fb84a3765daa601ea71752ff5a732e328c0403c5"
+                                           "9f92deaae3b5f517b6cfb9d194480745ab7da7d9"
                                        ],
                            "working_directory":  "repository root",
                            "status":  "passed",

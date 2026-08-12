@@ -12,7 +12,7 @@
   "candidate_fingerprint": {
     "algorithm": "sha256 over ordinal-sorted UTF-8 path + NUL + raw file SHA-256 + LF",
     "file_count": 125,
-    "fingerprint": "637eb2a5928cd5b1858775f4cae480de91424ec5cdb3d5b9c50bc85ffed74c85",
+    "fingerprint": "ec4e78710ca8af8f69a93ae79f20c5d6d1183405a5f0e1668d5e7ef79a9b6983",
     "excluded_prefix": "verification/remediation-2026-08-12/",
     "independently_recomputed": true,
     "matched": true
