@@ -55,3 +55,6 @@ Preserve evidence before resetting anything. A missing route, broken export, or 
 ## Safe stopping state
 
 When work cannot continue, leave the sources, Officefile records, artifact register, current outputs, check evidence, and `HANDOFF.md` intact. Record the blocking condition and the event that makes re-entry safe. This gives the next operator a fact trail instead of a mystery pile of almost-final files.
+
+
+For matched-version updating, removal, rollback, and retained-data cleanup, read [Lifecycle](LIFECYCLE.md).

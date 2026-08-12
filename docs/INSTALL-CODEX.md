@@ -39,3 +39,6 @@ If the skill does not appear or does not route the job, preserve the copied fold
 When the active Codex host exposes applicable document, presentation, spreadsheet, PDF, or connected-native capabilities, Officecraft may route a job through them. Those capabilities remain host dependencies. The Officecraft release does not include, copy, or redistribute bundled OpenAI office skills.
 
 The availability of an installed host capability is not a claim that a particular document, deck, workbook, PDF, connector, or renderer will work in every Codex installation.
+
+
+For matched-version updating, removal, rollback, and retained-data cleanup, read [Lifecycle](LIFECYCLE.md).

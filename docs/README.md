@@ -16,7 +16,11 @@ This documentation supports Owen Burnett Officecraft v0.1.0, an office-productio
 | What has and has not been verified? | [Verification and readiness](VERIFICATION-AND-READINESS.md) |
 | Where did this product come from, and what may I redistribute? | [Provenance and licensing](PROVENANCE-AND-LICENSING.md) |
 | What changed in this version? | [Changelog](CHANGELOG.md) |
-| How do I report a problem safely? | [Support](../SUPPORT.md) and [security policy](../SECURITY.md) |
+| How do I update, remove, roll back, or clean up? | [Lifecycle](LIFECYCLE.md) |
+| What are the storage, network, privacy, and security limits? | [Trust, privacy, network behavior, and limits](TRUST-PRIVACY-AND-LIMITS.md) |
+| What accessibility route and evidence boundary applies? | [Accessibility](ACCESSIBILITY.md) |
+| How do I report a problem safely? | [Support](SUPPORT.md) and [security policy](SECURITY.md) |
+| How do I contribute? | [Contributing](CONTRIBUTING.md) |
 
 ## Product boundary
 
