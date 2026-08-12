@@ -11,8 +11,8 @@
   "disposition": "REVIEW_PASS",
   "candidate_fingerprint": {
     "algorithm": "sha256 over ordinal-sorted UTF-8 path + NUL + raw file SHA-256 + LF",
-    "file_count": 125,
-    "fingerprint": "ec4e78710ca8af8f69a93ae79f20c5d6d1183405a5f0e1668d5e7ef79a9b6983",
+    "file_count": 126,
+    "fingerprint": "d72754ca3e829c5414862e8f57ff2a48a5704795f29ecba71e0ac2c5584e7060",
     "excluded_prefix": "verification/remediation-2026-08-12/",
     "independently_recomputed": true,
     "matched": true
@@ -34,7 +34,8 @@
     "unit_tests_passed": 16,
     "hesperos_lint": "26 of 27 clean plus accepted MIT License line 12 heuristic false positive",
     "minimum_static_contrast_ratio": "4.59:1",
-    "mobile_navigation": "all links preserved through horizontal overflow"
+    "mobile_navigation": "all links preserved through horizontal overflow",
+    "post_change_scope_check": "Restored Pages deployment workflow changes publication only; documentation, HTML, CSS, and visual bytes remain unchanged"
   },
   "residual_boundaries": [
     "No browser matrix or keyboard traversal evidence",
@@ -44,5 +45,5 @@
     "No fresh-host activation evidence",
     "No formal WCAG conformance assessment"
   ],
-  "rerun_trigger": "Any byte change in the 125 governed candidate files invalidates this receipt"
+  "rerun_trigger": "Any byte change in the 126 governed candidate files invalidates this receipt"
 }

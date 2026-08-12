@@ -2,9 +2,9 @@
     "manifest_version":  "1.0",
     "target":  {
                    "name":  "Owen Burnett Officecraft public documentation and presentation candidate",
-                   "revision":  "9f92deaae3b5f517b6cfb9d194480745ab7da7d9",
+                   "revision":  "be405245a07526f36af54ceeea2f79eab983ae95",
                    "target_class":  "release_candidate",
-                   "governed_fingerprint":  "ec4e78710ca8af8f69a93ae79f20c5d6d1183405a5f0e1668d5e7ef79a9b6983"
+                   "governed_fingerprint":  "d72754ca3e829c5414862e8f57ff2a48a5704795f29ecba71e0ac2c5584e7060"
                },
     "scope":  {
                   "included":  [
@@ -24,7 +24,7 @@
                                    "live Pages bytes until publication"
                                ],
                   "constraints":  [
-                                      "Public standard GitHub runners are free; require the single pull-request line-ending job and retain legacy branch Pages deployment",
+                                      "Public standard GitHub runners are free; require one pull-request line-ending job and one main-branch Pages deployment job",
                                       "local Windows host",
                                       "publication occurs only after independent TestForge review"
                                   ],
@@ -38,13 +38,13 @@
                           "observed":  [
                                            {
                                                "id":  "O-001",
-                                               "statement":  "The governed candidate has 125 files and fingerprint ec4e78710ca8af8f69a93ae79f20c5d6d1183405a5f0e1668d5e7ef79a9b6983.",
+                                               "statement":  "The governed candidate has 126 files and fingerprint d72754ca3e829c5414862e8f57ff2a48a5704795f29ecba71e0ac2c5584e7060.",
                                                "basis":  "independent Hesperos/accessibility recomputation and testforge-local-evidence.json",
                                                "confidence":  "high"
                                            },
                                            {
                                                "id":  "O-002",
-                                               "statement":  "All 16 Officefile unit tests pass on commit 9f92deaae3b5f517b6cfb9d194480745ab7da7d9.",
+                                               "statement":  "All 16 Officefile unit tests pass on commit be405245a07526f36af54ceeea2f79eab983ae95.",
                                                "basis":  "testforge-local-evidence.json E-001",
                                                "confidence":  "high"
                                            },
@@ -62,7 +62,7 @@
                                            },
                                            {
                                                "id":  "O-005",
-                                               "statement":  "The line-ending workflow has pull_request and workflow_dispatch triggers, with no push or schedule trigger.",
+                                               "statement":  "The line-ending workflow uses pull_request and workflow_dispatch without push or schedule; the Pages workflow uses main push and workflow_dispatch without pull_request or schedule.",
                                                "basis":  "testforge-local-evidence.json workflows",
                                                "confidence":  "high"
                                            }
@@ -85,9 +85,9 @@
                       },
     "impact_map":  [
                        "README and Pages entry points -\u003e installation and first-job routes -\u003e truthful customer action",
-                       "source Markdown -\u003e deterministic committed HTML -\u003e legacy main/docs deployment -\u003e live visitor experience",
+                       "source Markdown -\u003e deterministic committed HTML -\u003e official Pages artifact deployment -\u003e live visitor experience",
                        "three visual roles -\u003e GitHub README, Pages hero, and Open Graph preview",
-                       "workflow configuration -\u003e explicit public line-ending dispatch -\u003e required status without duplicate automatic runs"
+                       "workflow configuration -\u003e one PR check plus one main Pages deployment -\u003e required status and live publication without duplicate push checks"
                    ],
     "invariants":  [
                        {
@@ -104,7 +104,7 @@
                        },
                        {
                            "id":  "INV-004",
-                           "statement":  "Publishing this candidate triggers no automatic workflow; the required line-ending status is obtained by one deliberate public standard-runner dispatch."
+                           "statement":  "The PR triggers one required line-ending job; merging docs or the Pages workflow to main triggers one official Pages deployment job, with no duplicate push check."
                        },
                        {
                            "id":  "INV-005",
@@ -205,7 +205,7 @@
                   },
                   {
                       "id":  "R-008",
-                      "statement":  "Legacy Pages deployment serves stale or incomplete bytes -\u003e local readiness does not become a valid live customer experience.",
+                      "statement":  "Missing or failed official Pages deployment serves stale bytes -\u003e local readiness does not become a valid live customer experience.",
                       "severity":  "medium",
                       "likelihood":  "medium",
                       "confidence":  "high",
@@ -328,8 +328,8 @@
                                                 "final workflow files"
                                             ],
                           "action":  [
-                                         "confirm pull_request and workflow_dispatch are the only triggers",
-                                         "dispatch once on the exact feature-branch head before merge"
+                                         "confirm line-ending uses pull_request plus workflow_dispatch and Pages uses main push plus workflow_dispatch",
+                                         "require the PR-associated check on the exact feature-branch head before merge"
                                      ],
                           "expected":  [
                                            "one public standard-runner job supplies line-ending-policy status"
@@ -353,7 +353,7 @@
                           "title":  "runtime and frozen evidence remain unchanged",
                           "layer":  "static",
                           "preconditions":  [
-                                                "baseline d1452c58 and candidate fb84a376"
+                                                "baseline d1452c58 and candidate be405245"
                                             ],
                           "action":  [
                                          "inspect exact committed diff and governed scope"
@@ -403,7 +403,7 @@
                           "title":  "exact live GitHub and Pages deployment",
                           "layer":  "browser",
                           "preconditions":  [
-                                                "candidate pushed to main and legacy main/docs deployment complete"
+                                                "candidate merged to main and official Pages deployment complete"
                                             ],
                           "action":  [
                                          "compare remote main, Pages build, 19 routes, custom missing route, metadata, and asset hashes"
@@ -567,12 +567,12 @@
                                            "diff",
                                            "--name-status",
                                            "d1452c58cf859c1213bc94756b2667dafe114781",
-                                           "9f92deaae3b5f517b6cfb9d194480745ab7da7d9"
+                                           "be405245a07526f36af54ceeea2f79eab983ae95"
                                        ],
                            "working_directory":  "repository root",
                            "status":  "passed",
                            "exit_code":  0,
-                           "raw_evidence":  "TestForge exact diff reconstruction: 46 changed files; no runtime or frozen release files"
+                           "raw_evidence":  "TestForge exact diff reconstruction: 56 changed files; no product runtime or frozen release files"
                        }
                    ],
     "findings":  [
@@ -582,7 +582,7 @@
                            {
                                "id":  "RR-001",
                                "statement":  "Live Pages deployment and missing-route dispatch are not established before publication.",
-                               "treatment":  "After the one authorized push, switch Pages to legacy main/docs, poll the deployment, then crawl every live route and compare exact asset hashes and remote commit.",
+                               "treatment":  "After merge, require the official Pages deployment for the final main commit, then crawl every live route and compare exact asset hashes and remote commit.",
                                "owner":  "repository publisher",
                                "revisit_condition":  "candidate is visible on remote main"
                            },
