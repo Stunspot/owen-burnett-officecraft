@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./docs/assets/officecraft-readme-hero.png" alt="A document, deck, workbook, and PDF remain aligned through one governed content spine and independent review checkpoint.">
+  <img src="./docs/assets/officecraft-readme-hero.png" alt="An editorial workbench turns rough notes into a coordinated set of polished office deliverables.">
 </p>
 
 # Owen Burnett Officecraft

@@ -19,7 +19,7 @@ The page does not claim universal host activation, native rendering, spreadsheet
 - `index.html` - semantic product overview;
 - generated `*.html` documentation routes - locally built from the customer Markdown sources;
 - `style.css` - responsive product and documentation presentation;
-- `assets/officecraft-readme-hero.png` - 1600x720 README composition;
+- `assets/officecraft-readme-hero.png` - 1600x900 README composition;
 - `assets/officecraft-pages-hero.png` - 1200x800 Pages composition;
 - `assets/officecraft-social-card.png` - 1200x630 Open Graph composition with exact product text;
 - `scripts/build_pages.py` - deterministic local Markdown-to-HTML builder;
