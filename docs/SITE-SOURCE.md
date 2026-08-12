@@ -27,7 +27,7 @@ The page does not claim universal host activation, native rendering, spreadsheet
 
 ## Deployment
 
-GitHub Pages publishes the static `docs/` directory from `main` through the legacy branch/path build. The remediation does not require GitHub Actions minutes.
+GitHub Pages publishes the static `docs/` directory through `.github/workflows/deploy-pages.yml` when documentation changes reach `main`, or through a deliberate workflow dispatch. Publication is complete only after the official Pages deployment succeeds and the live routes and assets are rechecked.
 
 ## Review notes
 
