@@ -1,36 +1,36 @@
 {
-  "format": "cd-visual-review/v1",
-  "product": "Owen Burnett Officecraft",
-  "review_date": "2026-08-12",
-  "candidate_fingerprint": "d72754ca3e829c5414862e8f57ff2a48a5704795f29ecba71e0ac2c5584e7060",
-  "method": "Direct inspection of complete raster pixels at full composition and compact whole-image scale; source SVG text inspected separately",
-  "assets": [
-    {
-      "role": "README hero",
-      "path": "docs/assets/officecraft-readme-hero.png",
-      "dimensions": "1600x720",
-      "sha256": "aaa19fc19c96916b996c4ad8005535ea2fa1b48f290a00b3d0b3f3bd1d273442",
-      "verdict": "PASS",
-      "observations": "Distinct wide composition: document, deck, workbook, and PDF forms orbit a vertical governed content spine and independent review seal. Restrained symbolic labels only; no product-title text required. Balanced crop-safe hierarchy, opaque background, legible forms, and clear Officecraft identity."
-    },
-    {
-      "role": "GitHub Pages hero",
-      "path": "docs/assets/officecraft-pages-hero.png",
-      "dimensions": "1200x800",
-      "sha256": "c9a09330ff1316350040b463ef9e13933a6c4e2a5e5a90dd84acd9e2fc3605aa",
-      "verdict": "PASS",
-      "observations": "Distinct taller left-to-right workflow composition: sources enter a routing gate, align through a content spine, branch into an office artifact family, and reach review. No title text competing with the adjacent HTML H1. Opaque, balanced, high-contrast, and readable at page scale."
-    },
-    {
-      "role": "Social/Open Graph card",
-      "path": "docs/assets/officecraft-social-card.png",
-      "dimensions": "1200x630",
-      "sha256": "fc01b119973b46c1d9ab0b79ab337e4e367997d5097d24ee92635250d0abc651",
-      "verdict": "PASS",
-      "observations": "Distinct text-led composition with exact visible title 'Owen Burnett Officecraft', identifying lines 'Coherent office deliverables.' and 'One governed content spine.', plus format-family footer. Text remains inside safe margins and legible at compact share-card scale; no accidental transparency or generic filler."
-    }
-  ],
-  "set_verdict": "PASS",
-  "set_distinction": "Three different files, compositions, hashes, dimensions, and aspect ratios; not crops or duplicates",
-  "rerun_trigger": "Any byte change to a reviewed asset invalidates this receipt"
+    "format":  "cd-visual-review/v1",
+    "product":  "Owen Burnett Officecraft",
+    "review_date":  "2026-08-12",
+    "candidate_fingerprint":  "ccc1b35ec813918a4d76752ffed73a080b3f174eb2456bdfc5f2b672e2dc1355",
+    "method":  "Direct inspection of each final raster after final sizing at whole-image scale; composition, crop, hierarchy, contrast, legibility, identity, and role fit reviewed",
+    "assets":  [
+                   {
+                       "role":  "README hero",
+                       "path":  "docs/assets/officecraft-readme-hero.png",
+                       "dimensions":  "1600x900",
+                       "sha256":  "f2e94a33e56fce3ee9ea0dc6bb27175121cf02731d77d36895efbe8e7e5847b7",
+                       "verdict":  "PASS",
+                       "observations":  "Restored pre-remediation generated artwork: a wide, quiet editorial workbench with a central production surface and real office tools. No title text is needed in this role. Strong crop, material identity, depth, and restraint."
+                   },
+                   {
+                       "role":  "GitHub Pages hero",
+                       "path":  "docs/assets/officecraft-pages-hero.png",
+                       "dimensions":  "1200x800",
+                       "sha256":  "b44394e9fc1327a3b5a50b4b5e84d708cc1209a1509ff04b4389902ed3fa9e91",
+                       "verdict":  "PASS",
+                       "observations":  "Distinct human production scene: rough notes, a governed ledger, coordinated document and data proofs, and a second independent review hand share one working table. No title text competes with the HTML H1."
+                   },
+                   {
+                       "role":  "Social/Open Graph card",
+                       "path":  "docs/assets/officecraft-social-card.png",
+                       "dimensions":  "1200x630",
+                       "sha256":  "30675b29c4ab4b1ce2012e3e87883db9cc3419bf9614f57489ba02e989100f38",
+                       "verdict":  "PASS",
+                       "observations":  "Distinct text-led editorial still life with exact visible title Owen Burnett Officecraft and exact identifying line Documents, decks, workbooks, and PDFs that still agree. Crop-safe margins and legibility pass at compact scale."
+                   }
+               ],
+    "set_verdict":  "PASS",
+    "set_distinction":  "Three different files, compositions, hashes, dimensions, and aspect ratios; not crops or duplicates. Rejected deterministic SVG sources removed.",
+    "rerun_trigger":  "Any byte change to a reviewed asset invalidates this receipt"
 }

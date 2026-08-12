@@ -2,9 +2,9 @@
     "manifest_version":  "1.0",
     "target":  {
                    "name":  "Owen Burnett Officecraft public documentation and presentation candidate",
-                   "revision":  "be405245a07526f36af54ceeea2f79eab983ae95",
+                   "revision":  "d885efe569672492da6404d1841e28fd8f2559f4",
                    "target_class":  "release_candidate",
-                   "governed_fingerprint":  "d72754ca3e829c5414862e8f57ff2a48a5704795f29ecba71e0ac2c5584e7060"
+                   "governed_fingerprint":  "ccc1b35ec813918a4d76752ffed73a080b3f174eb2456bdfc5f2b672e2dc1355"
                },
     "scope":  {
                   "included":  [
@@ -38,13 +38,13 @@
                           "observed":  [
                                            {
                                                "id":  "O-001",
-                                               "statement":  "The governed candidate has 126 files and fingerprint d72754ca3e829c5414862e8f57ff2a48a5704795f29ecba71e0ac2c5584e7060.",
+                                               "statement":  "The governed candidate has 123 files and fingerprint ccc1b35ec813918a4d76752ffed73a080b3f174eb2456bdfc5f2b672e2dc1355.",
                                                "basis":  "independent Hesperos/accessibility recomputation and testforge-local-evidence.json",
                                                "confidence":  "high"
                                            },
                                            {
                                                "id":  "O-002",
-                                               "statement":  "All 16 Officefile unit tests pass on commit be405245a07526f36af54ceeea2f79eab983ae95.",
+                                               "statement":  "All 16 Officefile unit tests pass on commit d885efe569672492da6404d1841e28fd8f2559f4.",
                                                "basis":  "testforge-local-evidence.json E-001",
                                                "confidence":  "high"
                                            },
@@ -353,7 +353,7 @@
                           "title":  "runtime and frozen evidence remain unchanged",
                           "layer":  "static",
                           "preconditions":  [
-                                                "baseline d1452c58 and candidate be405245"
+                                                "baseline d1452c58 and candidate d885efe5"
                                             ],
                           "action":  [
                                          "inspect exact committed diff and governed scope"
@@ -567,7 +567,7 @@
                                            "diff",
                                            "--name-status",
                                            "d1452c58cf859c1213bc94756b2667dafe114781",
-                                           "be405245a07526f36af54ceeea2f79eab983ae95"
+                                           "d885efe569672492da6404d1841e28fd8f2559f4"
                                        ],
                            "working_directory":  "repository root",
                            "status":  "passed",

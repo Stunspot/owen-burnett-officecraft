@@ -3,13 +3,13 @@
     "product":  "Owen Burnett Officecraft",
     "review_date":  "2026-08-12",
     "reviewer":  {
-                     "mode":  "independent-fresh-context",
+                     "mode":  "separate-adversarial-pass",
                      "starting_state":  "UNKNOWN",
                      "capability":  "verification-reviewer"
                  },
-    "target_commit":  "be405245a07526f36af54ceeea2f79eab983ae95",
-    "governed_fingerprint":  "d72754ca3e829c5414862e8f57ff2a48a5704795f29ecba71e0ac2c5584e7060",
-    "governed_file_count":  126,
+    "target_commit":  "d885efe569672492da6404d1841e28fd8f2559f4",
+    "governed_fingerprint":  "ccc1b35ec813918a4d76752ffed73a080b3f174eb2456bdfc5f2b672e2dc1355",
+    "governed_file_count":  123,
     "disposition":  "REVIEW_PASS_WITH_CONDITIONS",
     "supported_transition_status":  "READY_WITH_RESIDUAL_RISK",
     "repository_status_before_live_verification":  "INSUFFICIENT_EVIDENCE",
@@ -25,7 +25,9 @@
                          "The line-ending workflow uses pull_request and workflow_dispatch without push or schedule; the Pages workflow uses main push and workflow_dispatch without pull_request or schedule",
                          "Post-merge live diagnosis proved the site remained stale because the workflow-configured Pages site lacked its deployment workflow; the final candidate restores the exact last-successful official workflow",
                          "Runtime, Claude archives, manifests, and frozen release evidence are unchanged",
-                         "Accessibility evidence supports static structural review only"
+                         "Accessibility evidence supports static structural review only",
+                         "Final local candidate verifier passed on commit d885efe5 with 16 unit tests, two byte-identical 19-route builds, 19 served routes, distinct final asset hashes and aspect ratios, custom 404, workflow policy, and exact governed fingerprint",
+                         "All three replacement rasters were opened after final sizing; the social card visibly contains the exact product title and concrete identifying line"
                      ],
     "conditions":  [
                        "Commit and push the evidence package once without changing governed candidate bytes",
@@ -38,5 +40,5 @@
                        "Open Graph and Twitter metadata point to the exact social card and name Owen Burnett Officecraft",
                        "Live README hero wiring and repository Pages metadata match the final candidate"
                    ],
-    "failure_rule":  "Any unmet condition is LIVE VERIFICATION FAIL, not repository PASS"
+    "failure_rule":  "Any unmet publication or live-verification condition is LIVE VERIFICATION FAIL, not repository PASS"
 }
