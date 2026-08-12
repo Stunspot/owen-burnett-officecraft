@@ -8,8 +8,8 @@
     "candidate":  {
                       "algorithm":  "sha256 over ordinal-sorted UTF-8 path + NUL + raw file SHA-256 + LF",
                       "excluded_prefix":  "verification/remediation-2026-08-12/",
-                      "file_count":  125,
-                      "fingerprint":  "ec4e78710ca8af8f69a93ae79f20c5d6d1183405a5f0e1668d5e7ef79a9b6983"
+                      "file_count":  126,
+                      "fingerprint":  "d72754ca3e829c5414862e8f57ff2a48a5704795f29ecba71e0ac2c5584e7060"
                   },
     "reader":  "People who need coherent office deliverables without becoming file-tool specialists",
     "top_task":  "Install the matched operator and reviewer, produce a bounded first artifact or packet, verify what happened, and recover safely",
@@ -77,7 +77,8 @@
                               "markdown_lint":  "26 of 27 clean; MIT License line 12 produced one accepted directional-language heuristic false positive",
                               "customer_journey_validator":  "27 Markdown documents, 19 HTML routes, all internal links, headings, landmarks, navigation, image alternatives, OG wiring, asset dimensions, distinct hashes, and social visible text passed",
                               "officefile_tests":  "16 of 16 passed locally",
-                              "actions_capacity_safety":  "The line-ending workflow runs on pull_request and workflow_dispatch, with no push or schedule trigger",
+                              "actions_capacity_safety":  "The line-ending workflow runs on pull_request and workflow_dispatch without push or schedule; the Pages workflow deploys docs on main push or deliberate dispatch",
+                              "publication_workflow_review":  "The restored deploy-pages.yml exactly matches the repository\u0027s last successful official Pages workflow and is limited to docs or workflow changes on main plus deliberate dispatch",
                               "runtime_scope":  "No Codex runtime, Claude archive, release manifest, release custody, or frozen release evidence changed"
                           },
     "material_defects_repaired":  [
@@ -87,7 +88,8 @@
                                       "Corrected four Markdown-to-generated-HTML source links",
                                       "Completed the custom 404 metadata and footer shell",
                                       "Replaced mobile CSS that hid all navigation except GitHub with a horizontally scrollable complete navigation route",
-                                      "Removed the duplicate push trigger; retained pull_request for protected-branch gating and workflow_dispatch for deliberate exact-head diagnosis"
+                                      "Removed the duplicate line-ending push trigger; retained pull_request for protected-branch gating and workflow_dispatch for deliberate exact-head diagnosis",
+                                      "Restored the missing official Pages deployment workflow after the merged documentation remained stale; the legacy build endpoint correctly rejected the workflow-configured site"
                                   ],
     "residual_boundaries":  [
                                 "Local structural and semantic review is not live rendered Pages verification; live verification follows publication",
@@ -95,5 +97,5 @@
                                 "No native Office rendering, spreadsheet recalculation, external delivery, representative-user test, or formal accessibility assessment was performed",
                                 "The MIT License heuristic finding is retained as a false positive rather than changing license text"
                             ],
-    "rerun_trigger":  "Any byte change in the 125 governed candidate files invalidates this receipt and requires a new fingerprint and complete review"
+    "rerun_trigger":  "Any byte change in the 126 governed candidate files invalidates this receipt and requires a new fingerprint and complete review"
 }

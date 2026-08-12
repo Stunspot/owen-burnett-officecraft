@@ -1,6 +1,6 @@
 {
   "format": "cd-testforge-local-evidence/v1",
-  "target_commit": "9f92deaae3b5f517b6cfb9d194480745ab7da7d9",
+  "target_commit": "be405245a07526f36af54ceeea2f79eab983ae95",
   "executions": [
     {
       "id": "E-001",
@@ -18,7 +18,7 @@
       ],
       "exit_code": 0,
       "stdout": "",
-      "stderr": "test_corrupt_ooxml_and_pdf_return_nonzero_inspector_status (test_officefile_scripts.OfficefileScriptTests.test_corrupt_ooxml_and_pdf_return_nonzero_inspector_status) ... ok\ntest_csv_markdown_checkers_and_undefined_other_inspection (test_officefile_scripts.OfficefileScriptTests.test_csv_markdown_checkers_and_undefined_other_inspection) ... ok\ntest_forged_saved_inspection_cannot_replace_direct_container_inspection (test_officefile_scripts.OfficefileScriptTests.test_forged_saved_inspection_cannot_replace_direct_container_inspection) ... ok\ntest_init_is_non_overwriting_and_package_round_trips (test_officefile_scripts.OfficefileScriptTests.test_init_is_non_overwriting_and_package_round_trips) ... ok\ntest_inspected_office_artifact_requires_matching_structural_evidence (test_officefile_scripts.OfficefileScriptTests.test_inspected_office_artifact_requires_matching_structural_evidence) ... ok\ntest_malformed_json_types_return_structured_invalid_results (test_officefile_scripts.OfficefileScriptTests.test_malformed_json_types_return_structured_invalid_results) ... ok\ntest_ooxml_named_garbage_part_fails_xml_root_check (test_officefile_scripts.OfficefileScriptTests.test_ooxml_named_garbage_part_fails_xml_root_check) ... ok\ntest_package_preflight_includes_produced_artifact_and_cleans_partial_output (test_officefile_scripts.OfficefileScriptTests.test_package_preflight_includes_produced_artifact_and_cleans_partial_output) ... ok\ntest_package_rejects_mutation_between_validation_snapshots_without_output (test_officefile_scripts.OfficefileScriptTests.test_package_rejects_mutation_between_validation_snapshots_without_output) ... ok\ntest_pass_review_must_match_current_state_and_registered_produced_digest (test_officefile_scripts.OfficefileScriptTests.test_pass_review_must_match_current_state_and_registered_produced_digest) ... ok\ntest_reviewed_and_approved_states_require_current_digest_bound_authority (test_officefile_scripts.OfficefileScriptTests.test_reviewed_and_approved_states_require_current_digest_bound_authority) ... ok\ntest_small_valid_pdf_passes_bounded_oracle_and_lexical_decoy_fails (test_officefile_scripts.OfficefileScriptTests.test_small_valid_pdf_passes_bounded_oracle_and_lexical_decoy_fails) ... ok\ntest_symlink_and_windows_junction_are_rejected_when_supported (test_officefile_scripts.OfficefileScriptTests.test_symlink_and_windows_junction_are_rejected_when_supported) ... ok\ntest_synthetic_packet_is_valid_and_has_no_produced_artifacts (test_officefile_scripts.OfficefileScriptTests.test_synthetic_packet_is_valid_and_has_no_produced_artifacts) ... ok\ntest_validator_rejects_format_mismatch_and_untrusted_sourced_ledger (test_officefile_scripts.OfficefileScriptTests.test_validator_rejects_format_mismatch_and_untrusted_sourced_ledger) ... ok\ntest_validator_rejects_unsafe_windows_path_forms (test_officefile_scripts.OfficefileScriptTests.test_validator_rejects_unsafe_windows_path_forms) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 1.150s\n\nOK\n"
+      "stderr": "test_corrupt_ooxml_and_pdf_return_nonzero_inspector_status (test_officefile_scripts.OfficefileScriptTests.test_corrupt_ooxml_and_pdf_return_nonzero_inspector_status) ... ok\ntest_csv_markdown_checkers_and_undefined_other_inspection (test_officefile_scripts.OfficefileScriptTests.test_csv_markdown_checkers_and_undefined_other_inspection) ... ok\ntest_forged_saved_inspection_cannot_replace_direct_container_inspection (test_officefile_scripts.OfficefileScriptTests.test_forged_saved_inspection_cannot_replace_direct_container_inspection) ... ok\ntest_init_is_non_overwriting_and_package_round_trips (test_officefile_scripts.OfficefileScriptTests.test_init_is_non_overwriting_and_package_round_trips) ... ok\ntest_inspected_office_artifact_requires_matching_structural_evidence (test_officefile_scripts.OfficefileScriptTests.test_inspected_office_artifact_requires_matching_structural_evidence) ... ok\ntest_malformed_json_types_return_structured_invalid_results (test_officefile_scripts.OfficefileScriptTests.test_malformed_json_types_return_structured_invalid_results) ... ok\ntest_ooxml_named_garbage_part_fails_xml_root_check (test_officefile_scripts.OfficefileScriptTests.test_ooxml_named_garbage_part_fails_xml_root_check) ... ok\ntest_package_preflight_includes_produced_artifact_and_cleans_partial_output (test_officefile_scripts.OfficefileScriptTests.test_package_preflight_includes_produced_artifact_and_cleans_partial_output) ... ok\ntest_package_rejects_mutation_between_validation_snapshots_without_output (test_officefile_scripts.OfficefileScriptTests.test_package_rejects_mutation_between_validation_snapshots_without_output) ... ok\ntest_pass_review_must_match_current_state_and_registered_produced_digest (test_officefile_scripts.OfficefileScriptTests.test_pass_review_must_match_current_state_and_registered_produced_digest) ... ok\ntest_reviewed_and_approved_states_require_current_digest_bound_authority (test_officefile_scripts.OfficefileScriptTests.test_reviewed_and_approved_states_require_current_digest_bound_authority) ... ok\ntest_small_valid_pdf_passes_bounded_oracle_and_lexical_decoy_fails (test_officefile_scripts.OfficefileScriptTests.test_small_valid_pdf_passes_bounded_oracle_and_lexical_decoy_fails) ... ok\ntest_symlink_and_windows_junction_are_rejected_when_supported (test_officefile_scripts.OfficefileScriptTests.test_symlink_and_windows_junction_are_rejected_when_supported) ... ok\ntest_synthetic_packet_is_valid_and_has_no_produced_artifacts (test_officefile_scripts.OfficefileScriptTests.test_synthetic_packet_is_valid_and_has_no_produced_artifacts) ... ok\ntest_validator_rejects_format_mismatch_and_untrusted_sourced_ledger (test_officefile_scripts.OfficefileScriptTests.test_validator_rejects_format_mismatch_and_untrusted_sourced_ledger) ... ok\ntest_validator_rejects_unsafe_windows_path_forms (test_officefile_scripts.OfficefileScriptTests.test_validator_rejects_unsafe_windows_path_forms) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 1.113s\n\nOK\n"
     },
     {
       "id": "E-002A",
@@ -178,6 +178,12 @@
     "ratios": true
   },
   "workflows": {
+    "deploy-pages.yml": {
+      "push": true,
+      "pull_request": false,
+      "schedule": false,
+      "workflow_dispatch": true
+    },
     "line-ending-policy.yml": {
       "push": false,
       "pull_request": true,
@@ -186,8 +192,8 @@
     }
   },
   "governed_candidate": {
-    "file_count": 125,
-    "fingerprint": "ec4e78710ca8af8f69a93ae79f20c5d6d1183405a5f0e1668d5e7ef79a9b6983"
+    "file_count": 126,
+    "fingerprint": "d72754ca3e829c5414862e8f57ff2a48a5704795f29ecba71e0ac2c5584e7060"
   },
   "governed_worktree_clean": true,
   "unresolved_live_oracle": "GitHub Pages missing-route dispatch and current live bytes are verified only after publication",
