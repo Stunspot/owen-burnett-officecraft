@@ -1,0 +1,48 @@
+{
+  "format": "cd-documentation-accessibility-review/v1",
+  "product": "Owen Burnett Officecraft",
+  "version": "0.1.0",
+  "review_date": "2026-08-12",
+  "reviewer": {
+    "mode": "independent-fresh-context",
+    "starting_state": "UNKNOWN",
+    "capability": "documentation-accessibility-reviewer"
+  },
+  "disposition": "REVIEW_PASS",
+  "candidate_fingerprint": {
+    "algorithm": "sha256 over ordinal-sorted UTF-8 path + NUL + raw file SHA-256 + LF",
+    "file_count": 125,
+    "fingerprint": "ec4e78710ca8af8f69a93ae79f20c5d6d1183405a5f0e1668d5e7ef79a9b6983",
+    "excluded_prefix": "verification/remediation-2026-08-12/",
+    "independently_recomputed": true,
+    "matched": true
+  },
+  "material_findings": [],
+  "results": {
+    "customer_journey": "PASS",
+    "semantic_structure": "PASS",
+    "navigation_and_findability": "PASS",
+    "link_purpose": "PASS",
+    "image_alternatives_and_wiring": "PASS",
+    "keyboard_source_route": "PASS",
+    "responsive_source_behavior": "PASS",
+    "static_contrast": "PASS",
+    "claim_boundaries": "PASS"
+  },
+  "retained_evidence": {
+    "routes_structurally_reviewed": 19,
+    "unit_tests_passed": 16,
+    "hesperos_lint": "26 of 27 clean plus accepted MIT License line 12 heuristic false positive",
+    "minimum_static_contrast_ratio": "4.59:1",
+    "mobile_navigation": "all links preserved through horizontal overflow"
+  },
+  "residual_boundaries": [
+    "No browser matrix or keyboard traversal evidence",
+    "No screen-reader, voice-control, magnification, or forced-colors testing",
+    "No representative-user testing",
+    "No native Office or PDF accessibility verification",
+    "No fresh-host activation evidence",
+    "No formal WCAG conformance assessment"
+  ],
+  "rerun_trigger": "Any byte change in the 125 governed candidate files invalidates this receipt"
+}

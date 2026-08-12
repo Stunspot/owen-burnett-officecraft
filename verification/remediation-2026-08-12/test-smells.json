@@ -1,0 +1,36 @@
+{
+  "format_version": "1.0",
+  "heuristic_only": true,
+  "files_scanned": 1,
+  "finding_count": 4,
+  "findings": [
+    {
+      "file": "E:\\Github\\.portfolio-remediation-019ff22b\\owen-burnett-officecraft\\codex\\owen-burnett-officecraft\\tests\\test_officefile_scripts.py",
+      "line": 242,
+      "smell": "snapshot_assertion",
+      "severity": "low",
+      "evidence": "snapshot"
+    },
+    {
+      "file": "E:\\Github\\.portfolio-remediation-019ff22b\\owen-burnett-officecraft\\codex\\owen-burnett-officecraft\\tests\\test_officefile_scripts.py",
+      "line": 245,
+      "smell": "snapshot_assertion",
+      "severity": "low",
+      "evidence": "snapshot"
+    },
+    {
+      "file": "E:\\Github\\.portfolio-remediation-019ff22b\\owen-burnett-officecraft\\codex\\owen-burnett-officecraft\\tests\\test_officefile_scripts.py",
+      "line": 247,
+      "smell": "snapshot_assertion",
+      "severity": "low",
+      "evidence": "snapshot"
+    },
+    {
+      "file": "E:\\Github\\.portfolio-remediation-019ff22b\\owen-burnett-officecraft\\codex\\owen-burnett-officecraft\\tests\\test_officefile_scripts.py",
+      "line": 259,
+      "smell": "snapshot_assertion",
+      "severity": "low",
+      "evidence": "snapshot"
+    }
+  ]
+}

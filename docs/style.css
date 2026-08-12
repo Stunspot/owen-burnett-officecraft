@@ -199,8 +199,9 @@ footer p { margin: 0.35rem 0; }
 }
 
 @media (max-width: 38rem) {
-  nav { padding-inline: 1rem; }
-  .nav-links a:not(:last-child) { display: none; }
+  nav { padding-inline: 1rem; flex-direction: column; align-items: stretch; }
+  .nav-links { width: 100%; flex-wrap: nowrap; justify-content: flex-start; overflow-x: auto; padding-bottom: 0.35rem; }
+  .nav-links a { flex: 0 0 auto; }
   .hero, .section { padding: 4.6rem 1rem; }
   .hero { padding-top: 5.6rem; }
   .artifact-grid, .ownership-grid, .source-notes, .evidence-language, .review-tests, .degraded-grid, .boundary-grid { grid-template-columns: 1fr; }
@@ -215,3 +216,15 @@ footer p { margin: 0.35rem 0; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+.doc-page { max-width: 76rem; margin: 0 auto; padding: 5rem 1.5rem 7rem; min-height: 76vh; }
+.doc-page > h1:first-child { max-width: 18ch; margin: 0 0 1.4rem; font-size: clamp(2.5rem, 6vw, 5rem); line-height: 1.04; letter-spacing: -0.045em; }
+.doc-page h2 { margin-top: 3rem; font-size: clamp(1.7rem, 3.5vw, 2.6rem); }
+.doc-page h3 { margin-top: 2rem; }
+.doc-page p, .doc-page li { max-width: 72ch; color: var(--pale); }
+.doc-page table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; }
+.doc-page th, .doc-page td { padding: .72rem; border: 1px solid var(--line); text-align: left; vertical-align: top; }
+.doc-page th { color: var(--amber); }
+.doc-page pre { max-width: 100%; overflow: auto; padding: 1rem; background: var(--night-deep); border: 1px solid var(--line); }
+.doc-page code { overflow-wrap: anywhere; color: var(--blue-soft); }
+.doc-page blockquote { margin: 1.5rem 0; padding: 1rem 1.25rem; border-left: .35rem solid var(--amber); background: rgba(221,169,92,.08); }

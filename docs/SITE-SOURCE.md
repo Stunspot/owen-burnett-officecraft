@@ -16,14 +16,18 @@ The page does not claim universal host activation, native rendering, spreadsheet
 
 ## Files
 
-- `index.html` — semantic single-page project overview;
-- `style.css` — responsive presentation and accessibility treatment;
-- `assets/officecraft-hero.png` — generated 1600×900 raster hero artwork;
-- `.nojekyll` — direct static-file serving marker.
+- `index.html` - semantic product overview;
+- generated `*.html` documentation routes - locally built from the customer Markdown sources;
+- `style.css` - responsive product and documentation presentation;
+- `assets/officecraft-readme-hero.png` - 1600x720 README composition;
+- `assets/officecraft-pages-hero.png` - 1200x800 Pages composition;
+- `assets/officecraft-social-card.png` - 1200x630 Open Graph composition with exact product text;
+- `scripts/build_pages.py` - deterministic local Markdown-to-HTML builder;
+- `.nojekyll` - direct static-file serving marker.
 
 ## Deployment
 
-`.github/workflows/deploy-pages.yml` uploads this directory with GitHub's official Pages Actions. Repository Pages must be configured to use **GitHub Actions** before the first deployment can publish.
+GitHub Pages publishes the static `docs/` directory from `main` through the legacy branch/path build. The remediation does not require GitHub Actions minutes.
 
 ## Review notes
 

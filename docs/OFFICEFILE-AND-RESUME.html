@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Use an Officefile for substantial work | Owen Burnett Officecraft</title><meta name="description" content="Customer documentation for coherent documents, decks, workbooks, PDFs, and office packets.">
+<meta name="theme-color" content="#08141d"><link rel="stylesheet" href="style.css">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Owen Burnett Officecraft"><meta property="og:title" content="Use an Officefile for substantial work | Owen Burnett Officecraft"><meta property="og:description" content="Coherent office deliverables. One governed content spine."><meta property="og:image" content="https://stunspot.github.io/owen-burnett-officecraft/assets/officecraft-social-card.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Owen Burnett Officecraft. Coherent office deliverables. One governed content spine."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://stunspot.github.io/owen-burnett-officecraft/assets/officecraft-social-card.png">
+</head><body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><nav aria-label="Primary"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">OB</span><span>Officecraft</span></a><div class="nav-links"><a href="START-HERE.html">Start</a><a href="FIRST-JOB.html">First job</a><a href="OFFICEFILE-AND-RESUME.html">Officefile</a><a href="TRUST-PRIVACY-AND-LIMITS.html">Trust</a><a href="TROUBLESHOOTING.html">Recover</a><a href="README.html">All docs</a></div></nav></header><main id="main" class="doc-page"><h1>Use an Officefile for substantial work</h1>
+<p>An Officefile is a resumable local project folder. Use one when the job spans several artifacts, has consequential facts or source custody, needs revision history, or will be handed to another person or host.</p>
+<p>For a one-page low-risk file, skip the ceremony. Officecraft should not build office bureaucracy to solve office bureaucracy.</p>
+<h2>Start an Officefile</h2>
+<p>From the operator skill folder, run the included initializer with a new destination:</p>
+<pre><code class="language-text">python scripts/init_officefile.py &lt;new-officefile-folder&gt;
+</code></pre>
+<p>Use a new empty destination. The initializer is designed to refuse overwriting an existing project. Keep imported originals in <code>sources/</code> or preserve a clearly recorded original location before editing copies.</p>
+<p>The resulting structure is:</p>
+<pre><code class="language-text">officefile/
+  sources/
+    manifest.json
+  state/
+    brief.json
+    content-ledger.json
+    artifact-register.json
+    decisions.jsonl
+  working/
+  output/
+  review/
+    officecraft-review.json
+  HANDOFF.md
+</code></pre>
+<h2>What each part protects</h2>
+<table>
+<thead>
+<tr>
+<th>Location</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sources/manifest.json</code></td>
+<td>Identifies supplied material, custody, content status, and hashes where recorded.</td>
+</tr>
+<tr>
+<td><code>state/brief.json</code></td>
+<td>Records audience, purpose, requested outcomes, constraints, approval owner, and delivery authority.</td>
+</tr>
+<tr>
+<td><code>state/content-ledger.json</code></td>
+<td>Holds controlled names, dates, units, metrics, claims, decisions, and their source status.</td>
+</tr>
+<tr>
+<td><code>state/artifact-register.json</code></td>
+<td>Names every planned or produced artifact, its format, editability, source relationship, status, and check evidence.</td>
+</tr>
+<tr>
+<td><code>state/decisions.jsonl</code></td>
+<td>Retains consequential choices without becoming a transcript.</td>
+</tr>
+<tr>
+<td><code>working/</code></td>
+<td>Holds editable working materials and format specifications.</td>
+</tr>
+<tr>
+<td><code>output/</code></td>
+<td>Holds produced artifacts only after they exist.</td>
+</tr>
+<tr>
+<td><code>review/officecraft-review.json</code></td>
+<td>Records operator and independent-review status, digest-bound reviewed artifacts, and any separately supplied approval record.</td>
+</tr>
+<tr>
+<td><code>HANDOFF.md</code></td>
+<td>Gives a person-readable receipt for the current state and next action.</td>
+</tr>
+</tbody>
+</table>
+<h2>Resume safely</h2>
+<ol>
+<li>Read <code>HANDOFF.md</code>, then read the brief, content ledger, and artifact register before changing a deliverable.</li>
+<li>Confirm which file is the canonical editable source for each derivative. A PDF is often a final-form derivative, not the place to make a revision.</li>
+<li>Put new facts, changed dates, changed metrics, and changed recommendations in the content ledger first.</li>
+<li>Update the affected editable source, regenerate each derivative that depends on it, and rerun the checks affected by the change.</li>
+<li>Record material decisions, the current artifact status, evidence actually obtained, and the next owner action.</li>
+</ol>
+<h2>Validate and inspect without overstating the result</h2>
+<p>The operator includes these standard-library scripts:</p>
+<pre><code class="language-text">python scripts/validate_officefile.py &lt;officefile-folder&gt;
+python scripts/inspect_office_artifacts.py &lt;officefile-folder&gt;
+python scripts/package_officefile.py &lt;officefile-folder&gt; &lt;output-zip&gt;
+</code></pre>
+<p>Validation checks Officefile state, required records, controlled references, and declared artifact status. An artifact marked <code>reviewed</code> must have a passing review tied to its current digest and Officefile state. An artifact marked <code>approved</code> must additionally have a scoped, timestamped approval record from the approval owner named in the brief. These records preserve evidence custody; they are not digital signatures and do not prove the approver's identity.</p>
+<p>Inspection inventories files and performs bounded container checks; validation directly repeats the relevant current-container check before accepting saved inspection evidence. Neither route renders pages or slides, calculates workbook formulas, executes macros, decrypts files, or proves accessibility. Packaging requires a valid Officefile, binds the ZIP to the validated file snapshot, and refuses an overwrite.</p>
+<p>Read a script result as evidence for exactly that script's scope. Use native or rendered inspection where available for visual and final-format claims.</p>
+<h2>Worked shape, not a finished packet</h2>
+<p>The operator includes a fictional <code>monday-leadership-packet</code> example. It demonstrates a shaped Officefile for a brief, deck, workbook, and PDF handout. Its outputs are intentionally planned only: no DOCX, PPTX, XLSX, or PDF exists in that example, and it records no native opening, formula calculation, renderer, visual inspection, accessibility review, or independent review.</p>
+<p>That limitation is deliberate. Use the example to understand the state model, not as evidence that an office artifact was generated.</p>
+</main><footer><p><strong>Owen Burnett Officecraft</strong> · Collaborative Dynamics · Free dual-host occupational Augment.</p><p><a href="index.html">Product site</a> · <a href="SUPPORT.html">Support</a> · <a href="https://github.com/Stunspot/owen-burnett-officecraft">GitHub</a> · <a href="https://github.com/Stunspot/owen-burnett-officecraft/blob/main/LICENSE.md">MIT License</a></p></footer></body></html>

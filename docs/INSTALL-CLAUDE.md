@@ -29,3 +29,6 @@ Each archive should contain one top-level folder named for the installed skill. 
 An uploaded archive is not evidence that the skill is discoverable, invoked, able to create the requested artifact, or able to inspect its result. Confirm those steps in order. If the current Claude environment has no compatible file-production or inspection tool, Officecraft should produce a source-ready production packet rather than pretend a DOCX, deck, workbook, or PDF exists.
 
 Use [Troubleshooting and recovery](TROUBLESHOOTING.md) when the host cannot install the archive or lacks the requested route.
+
+
+For matched-version updating, removal, rollback, and retained-data cleanup, read [Lifecycle](LIFECYCLE.md).

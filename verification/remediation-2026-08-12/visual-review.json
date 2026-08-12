@@ -1,0 +1,36 @@
+{
+  "format": "cd-visual-review/v1",
+  "product": "Owen Burnett Officecraft",
+  "review_date": "2026-08-12",
+  "candidate_fingerprint": "ec4e78710ca8af8f69a93ae79f20c5d6d1183405a5f0e1668d5e7ef79a9b6983",
+  "method": "Direct inspection of complete raster pixels at full composition and compact whole-image scale; source SVG text inspected separately",
+  "assets": [
+    {
+      "role": "README hero",
+      "path": "docs/assets/officecraft-readme-hero.png",
+      "dimensions": "1600x720",
+      "sha256": "aaa19fc19c96916b996c4ad8005535ea2fa1b48f290a00b3d0b3f3bd1d273442",
+      "verdict": "PASS",
+      "observations": "Distinct wide composition: document, deck, workbook, and PDF forms orbit a vertical governed content spine and independent review seal. Restrained symbolic labels only; no product-title text required. Balanced crop-safe hierarchy, opaque background, legible forms, and clear Officecraft identity."
+    },
+    {
+      "role": "GitHub Pages hero",
+      "path": "docs/assets/officecraft-pages-hero.png",
+      "dimensions": "1200x800",
+      "sha256": "c9a09330ff1316350040b463ef9e13933a6c4e2a5e5a90dd84acd9e2fc3605aa",
+      "verdict": "PASS",
+      "observations": "Distinct taller left-to-right workflow composition: sources enter a routing gate, align through a content spine, branch into an office artifact family, and reach review. No title text competing with the adjacent HTML H1. Opaque, balanced, high-contrast, and readable at page scale."
+    },
+    {
+      "role": "Social/Open Graph card",
+      "path": "docs/assets/officecraft-social-card.png",
+      "dimensions": "1200x630",
+      "sha256": "fc01b119973b46c1d9ab0b79ab337e4e367997d5097d24ee92635250d0abc651",
+      "verdict": "PASS",
+      "observations": "Distinct text-led composition with exact visible title 'Owen Burnett Officecraft', identifying lines 'Coherent office deliverables.' and 'One governed content spine.', plus format-family footer. Text remains inside safe margins and legible at compact share-card scale; no accidental transparency or generic filler."
+    }
+  ],
+  "set_verdict": "PASS",
+  "set_distinction": "Three different files, compositions, hashes, dimensions, and aspect ratios; not crops or duplicates",
+  "rerun_trigger": "Any byte change to a reviewed asset invalidates this receipt"
+}
