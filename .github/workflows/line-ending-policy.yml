@@ -1,6 +1,7 @@
 name: Line ending policy
 
 on:
+  pull_request:
   workflow_dispatch:
 
 permissions:
