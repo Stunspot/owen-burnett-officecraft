@@ -21,7 +21,7 @@ The page does not claim universal host activation, native rendering, spreadsheet
 - `style.css` - responsive product and documentation presentation;
 - `assets/officecraft-readme-hero.png` - 1600x900 README composition;
 - `assets/officecraft-pages-hero.png` - 1200x800 Pages composition;
-- `assets/officecraft-social-card.png` - 1200x630 Open Graph composition with exact product text;
+- `assets/officecraft-social-card.jpg` - 1200x630 Open Graph composition with exact product text;
 - `scripts/build_pages.py` - deterministic local Markdown-to-HTML builder;
 - `.nojekyll` - direct static-file serving marker.
 
