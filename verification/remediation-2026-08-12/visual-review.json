@@ -2,7 +2,7 @@
     "format":  "cd-visual-review/v1",
     "product":  "Owen Burnett Officecraft",
     "review_date":  "2026-08-12",
-    "candidate_fingerprint":  "ccc1b35ec813918a4d76752ffed73a080b3f174eb2456bdfc5f2b672e2dc1355",
+    "candidate_fingerprint":  "bd5768c530d3d643d6258366db9b9c085f7d030124ae2951d372a5668df97ec8",
     "method":  "Direct inspection of each final raster after final sizing at whole-image scale; composition, crop, hierarchy, contrast, legibility, identity, and role fit reviewed",
     "assets":  [
                    {
@@ -23,11 +23,11 @@
                    },
                    {
                        "role":  "Social/Open Graph card",
-                       "path":  "docs/assets/officecraft-social-card.png",
+                       "path":  "docs/assets/officecraft-social-card.jpg",
                        "dimensions":  "1200x630",
-                       "sha256":  "30675b29c4ab4b1ce2012e3e87883db9cc3419bf9614f57489ba02e989100f38",
+                       "sha256":  "33b697dfa538f9823f5477dcb7f838b57fc5a5427f1f04446d62762d8ada5d86",
                        "verdict":  "PASS",
-                       "observations":  "Distinct text-led editorial still life with exact visible title Owen Burnett Officecraft and exact identifying line Documents, decks, workbooks, and PDFs that still agree. Crop-safe margins and legibility pass at compact scale."
+                       "observations":  "Distinct text-led editorial still life with exact visible title Owen Burnett Officecraft and exact identifying line Documents, decks, workbooks, and PDFs that still agree. User-provided JPEG encoding was directly inspected at compact scale; crop-safe margins and legibility pass."
                    }
                ],
     "set_verdict":  "PASS",

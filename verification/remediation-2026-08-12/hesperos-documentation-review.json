@@ -9,7 +9,7 @@
                       "algorithm":  "sha256 over ordinal-sorted UTF-8 path + NUL + raw file SHA-256 + LF",
                       "excluded_prefix":  "verification/remediation-2026-08-12/",
                       "file_count":  123,
-                      "fingerprint":  "ccc1b35ec813918a4d76752ffed73a080b3f174eb2456bdfc5f2b672e2dc1355"
+                      "fingerprint":  "bd5768c530d3d643d6258366db9b9c085f7d030124ae2951d372a5668df97ec8"
                   },
     "reader":  "People who need coherent office deliverables without becoming file-tool specialists",
     "top_task":  "Install the matched operator and reviewer, produce a bounded first artifact or packet, verify what happened, and recover safely",

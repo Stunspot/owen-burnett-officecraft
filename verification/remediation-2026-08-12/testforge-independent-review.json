@@ -8,7 +8,7 @@
                      "capability":  "verification-reviewer"
                  },
     "target_commit":  "d885efe569672492da6404d1841e28fd8f2559f4",
-    "governed_fingerprint":  "ccc1b35ec813918a4d76752ffed73a080b3f174eb2456bdfc5f2b672e2dc1355",
+    "governed_fingerprint":  "bd5768c530d3d643d6258366db9b9c085f7d030124ae2951d372a5668df97ec8",
     "governed_file_count":  123,
     "disposition":  "REVIEW_PASS_WITH_CONDITIONS",
     "supported_transition_status":  "READY_WITH_RESIDUAL_RISK",

@@ -27,8 +27,22 @@ def main():
     finally: srv.shutdown(); srv.server_close(); os.chdir(old)
     result['local_http']={'routes':routes,'all_200':all(v['status']==200 for v in routes.values()),'custom_404_direct':routes.get('404.html')}
     assets={}
-    for key,name in [('readme','officecraft-readme-hero.png'),('pages','officecraft-pages-hero.png'),('social','officecraft-social-card.png')]:
-        p=docs/'assets'/name; data=p.read_bytes(); width,height=struct.unpack('>II',data[16:24]); assets[key]={'path':p.relative_to(root).as_posix(),'width':width,'height':height,'sha256':hashlib.sha256(data).hexdigest()}
+    for key,name in [('readme','officecraft-readme-hero.png'),('pages','officecraft-pages-hero.png'),('social','officecraft-social-card.jpg')]:
+        p=docs/'assets'/name; data=p.read_bytes()
+        if data[:8]==b'\x89PNG\r\n\x1a\n': width,height=struct.unpack('>II',data[16:24])
+        else:
+            if data[:2]!=b'\xff\xd8': raise RuntimeError(f'unsupported image format: {p}')
+            offset=2; sof={0xC0,0xC1,0xC2,0xC3,0xC5,0xC6,0xC7,0xC9,0xCA,0xCB,0xCD,0xCE,0xCF}
+            while offset+3<len(data):
+                if data[offset]!=0xFF: offset+=1; continue
+                while offset<len(data) and data[offset]==0xFF: offset+=1
+                marker=data[offset]; offset+=1
+                if marker in {0xD8,0xD9}: continue
+                length=struct.unpack('>H',data[offset:offset+2])[0]
+                if marker in sof: height,width=struct.unpack('>HH',data[offset+3:offset+7]); break
+                offset+=length
+            else: raise RuntimeError(f'JPEG dimensions not found: {p}')
+        assets[key]={'path':p.relative_to(root).as_posix(),'width':width,'height':height,'sha256':hashlib.sha256(data).hexdigest()}
     result['assets']=assets; result['asset_distinct']={'hashes':len({v['sha256'] for v in assets.values()})==3,'ratios':len({round(v['width']/v['height'],6) for v in assets.values()})==3}
     workflows={}
     for p in sorted((root/'.github/workflows').glob('*.yml')):
@@ -38,6 +52,6 @@ def main():
     for rel in paths:
         digest=hashlib.sha256((root/rel).read_bytes()).digest(); aggregate.update(rel.encode()); aggregate.update(b'\0'); aggregate.update(digest); aggregate.update(b'\n')
     result['governed_candidate']={'file_count':len(paths),'fingerprint':aggregate.hexdigest()}; result['governed_worktree_clean']=subprocess.run(['git','diff','--quiet','HEAD','--','.github','README.md','CONTRIBUTING.md','docs','requirements-docs.txt','scripts'],cwd=root).returncode==0
-    checks=[one==two,len(routes)==19,result['local_http']['all_200'],routes['404.html']['page_not_found_text'],result['asset_distinct']['hashes'],result['asset_distinct']['ratios'],(not workflows.get('line-ending-policy.yml',{}).get('push')) and workflows.get('line-ending-policy.yml',{}).get('pull_request') and (not workflows.get('line-ending-policy.yml',{}).get('schedule')) and workflows.get('line-ending-policy.yml',{}).get('workflow_dispatch') and workflows.get('deploy-pages.yml',{}).get('push') and (not workflows.get('deploy-pages.yml',{}).get('pull_request')) and (not workflows.get('deploy-pages.yml',{}).get('schedule')) and workflows.get('deploy-pages.yml',{}).get('workflow_dispatch'),result['governed_candidate']=={'file_count':123,'fingerprint':'ccc1b35ec813918a4d76752ffed73a080b3f174eb2456bdfc5f2b672e2dc1355'},result['governed_worktree_clean']]
+    checks=[one==two,len(routes)==19,result['local_http']['all_200'],routes['404.html']['page_not_found_text'],result['asset_distinct']['hashes'],result['asset_distinct']['ratios'],(not workflows.get('line-ending-policy.yml',{}).get('push')) and workflows.get('line-ending-policy.yml',{}).get('pull_request') and (not workflows.get('line-ending-policy.yml',{}).get('schedule')) and workflows.get('line-ending-policy.yml',{}).get('workflow_dispatch') and workflows.get('deploy-pages.yml',{}).get('push') and (not workflows.get('deploy-pages.yml',{}).get('pull_request')) and (not workflows.get('deploy-pages.yml',{}).get('schedule')) and workflows.get('deploy-pages.yml',{}).get('workflow_dispatch'),result['governed_candidate']=={'file_count':123,'fingerprint':'bd5768c530d3d643d6258366db9b9c085f7d030124ae2951d372a5668df97ec8'},result['governed_worktree_clean']]
     result['unresolved_live_oracle']='GitHub Pages missing-route dispatch and current live bytes are verified only after publication'; result['status']='PASS' if all(checks) else 'FAIL'; Path(args.output).write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8',newline='\n'); print(json.dumps({'status':result['status'],'commit':result['target_commit'],'routes':len(routes),'fingerprint':result['governed_candidate']},indent=2)); return 0 if result['status']=='PASS' else 1
 if __name__=='__main__': raise SystemExit(main())
