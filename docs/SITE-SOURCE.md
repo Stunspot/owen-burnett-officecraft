@@ -4,7 +4,7 @@ The static project site is published from this `docs/` directory.
 
 ## Source and evidence boundary
 
-The site describes the public v0.1.0 dual-host distribution in this repository. Its product claims are derived from:
+The site describes the public v0.1.1 dual-host distribution in this repository. Its product claims are derived from:
 
 - `README.md` and `START-HERE.md`;
 - `codex/owen-burnett-officecraft/SKILL.md`;

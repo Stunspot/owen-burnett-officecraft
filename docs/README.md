@@ -1,6 +1,6 @@
 # Owen Burnett Officecraft documentation
 
-This documentation supports Owen Burnett Officecraft v0.1.0, an office-production Augment for Codex and Claude. It is written for people who need finished office work without becoming file-tool specialists.
+This documentation supports Owen Burnett Officecraft v0.1.1, an office-production Augment for Codex and Claude. It is written for people who need finished office work without becoming file-tool specialists.
 
 ## Documentation map
 

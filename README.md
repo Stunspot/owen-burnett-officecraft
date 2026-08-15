@@ -8,7 +8,7 @@
 
 Owen Burnett Officecraft turns workplace material into coherent documents, presentations, spreadsheets, PDFs, and coordinated deliverable families. It combines a production operator, an independent reviewer, and a resumable Officefile that keeps sources, facts, derivatives, checks, and authority distinct.
 
-**[Explore the product site](https://stunspot.github.io/owen-burnett-officecraft/)** | **[Download v0.1.0](https://github.com/Stunspot/owen-burnett-officecraft/releases/tag/v0.1.0)** | **[Run a first job](docs/FIRST-JOB.md)**
+**[Explore the product site](https://stunspot.github.io/owen-burnett-officecraft/)** | **[Download v0.1.1](https://github.com/Stunspot/owen-burnett-officecraft/releases/tag/v0.1.1)** | **[Run a first job](docs/FIRST-JOB.md)**
 
 Officecraft is for operators, analysts, executive assistants, consultants, project leads, researchers, and teams that need finished office work without letting a memo, deck, workbook, and PDF become four competing versions of the truth.
 
@@ -39,8 +39,8 @@ The repository and release contain two separate skills:
 
 - `codex/owen-burnett-officecraft/` - production operator;
 - `codex/officecraft-reviewer/` - independent reviewer;
-- `claude/owen-burnett-officecraft-v0.1.0.zip` - Claude operator archive;
-- `claude/officecraft-reviewer-v0.1.0.zip` - Claude reviewer archive.
+- `claude/owen-burnett-officecraft-v0.1.1.zip` - Claude operator archive;
+- `claude/officecraft-reviewer-v0.1.1.zip` - Claude reviewer archive.
 
 Use [Install in Codex](docs/INSTALL-CODEX.md) or [Install in Claude](docs/INSTALL-CLAUDE.md). Keep the operator and reviewer on the same version, start a fresh host task, verify discovery, invoke the operator explicitly, and use a small low-risk request before consequential work.
 
@@ -92,7 +92,7 @@ When compatible file tooling is absent, the honest result is a source-ready prod
 
 ## Evidence status
 
-Observed in the retained v0.1.0 release evidence:
+Observed in the retained v0.1.1 release evidence:
 
 - all 16 Officefile unit tests passed;
 - both skills passed deterministic Codex and Claude package validation;

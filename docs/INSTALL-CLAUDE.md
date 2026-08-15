@@ -8,15 +8,15 @@ You need a Claude environment that supports installing skills, this repository o
 
 ```text
 claude/
-  owen-burnett-officecraft-v0.1.0.zip
-  officecraft-reviewer-v0.1.0.zip
+  owen-burnett-officecraft-v0.1.1.zip
+  officecraft-reviewer-v0.1.1.zip
 ```
 
 ## Install
 
 1. In your Claude environment, open its skill-installation workflow.
-2. Add `owen-burnett-officecraft-v0.1.0.zip` as one skill.
-3. Add `officecraft-reviewer-v0.1.0.zip` as a second skill.
+2. Add `owen-burnett-officecraft-v0.1.1.zip` as one skill.
+3. Add `officecraft-reviewer-v0.1.1.zip` as a second skill.
 4. Start a new conversation or task after the host reports installation.
 5. Give a small office-production request, then confirm the host selected an appropriate route before relying on it for a consequential job.
 
