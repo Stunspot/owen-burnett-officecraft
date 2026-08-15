@@ -1,8 +1,8 @@
 {
   "format": "officecraft-documentation-fingerprint/v1",
-  "generated_at": "2026-08-15T03:28:06.492011Z",
+  "generated_at": "2026-08-15T03:34:14.136315Z",
   "product_version": "0.1.1",
-  "aggregate_sha256": "6c208ecb2168c7d90def9c8e2c3749c70055d5bc3a64cc22472ceda4f002287e",
+  "aggregate_sha256": "72fd337598b52b24e2e24b4ac880df6da80a843b8041b042879b680ab465d786",
   "files": [
     {
       "path": "CHANGELOG.md",
@@ -202,7 +202,7 @@
     },
     {
       "path": "docs/index.html",
-      "sha256": "eba5bc0cf1135a97c239ec38558b65df65dce9d1604c8cba0293d18d38d3ffa1"
+      "sha256": "9fecda8a235a47e8c87bc9d3d5bd5ef2f6bc5e4829afa97655e11cecc8671706"
     },
     {
       "path": "docs/style.css",

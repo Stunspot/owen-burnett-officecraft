@@ -1,7 +1,7 @@
 # Hesperos documentation review — Owen Burnett Officecraft v0.1.1
 
 - Disposition: PASS_WITH_BOUNDED_EVIDENCE
-- Governed fingerprint: `6c208ecb2168c7d90def9c8e2c3749c70055d5bc3a64cc22472ceda4f002287e`
+- Governed fingerprint: `72fd337598b52b24e2e24b4ac880df6da80a843b8041b042879b680ab465d786`
 - Governed files: 57
 - Review date: 2026-08-14
 
