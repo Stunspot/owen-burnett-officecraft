@@ -1,4 +1,4 @@
-# Start here: Owen Burnett Officecraft v0.1.0
+# Start here: Owen Burnett Officecraft v0.1.1
 
 Owen Burnett Officecraft turns ordinary office requests into a disciplined production job: a document, deck, workbook, PDF, or a coordinated packet whose consequential facts still agree. You supply the subject truth and approval; Owen organizes the work, chooses the right artifact route, and records what actually happened.
 
@@ -10,7 +10,7 @@ Use Officecraft when the request sounds like any of these:
 - "I need a polished PDF and the editable source."
 - "Make these four office files say the same thing."
 
-Officecraft v0.1.0 is file-production focused. It does not replace your calendar, inbox, HR, accounting, database, or live collaboration systems. It never publishes, emails, uploads, shares, overwrites an external artifact, or marks a deliverable approved without your separate authority.
+Officecraft v0.1.1 is file-production focused. It does not replace your calendar, inbox, HR, accounting, database, or live collaboration systems. It never publishes, emails, uploads, shares, overwrites an external artifact, or marks a deliverable approved without your separate authority.
 
 ## Choose your next move
 

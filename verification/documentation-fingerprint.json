@@ -1,0 +1,237 @@
+{
+  "format": "officecraft-documentation-fingerprint/v1",
+  "generated_at": "2026-08-15T03:28:06.492011Z",
+  "product_version": "0.1.1",
+  "aggregate_sha256": "6c208ecb2168c7d90def9c8e2c3749c70055d5bc3a64cc22472ceda4f002287e",
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "ab44012f1471ba5f81c61d0a1faf0b624d497877a443eee89530dab8275d253e"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "f23949da9c49ed8a66747eaac73cddcb0ede925da403f1a51b2b549728e3d37f"
+    },
+    {
+      "path": "HOST-MATRIX.md",
+      "sha256": "370056f1ae00a02c792d3fbd5104722038e20a579d109cabe533e5133c86a717"
+    },
+    {
+      "path": "LICENSE.md",
+      "sha256": "88ac32f447ecbd63041d11b77a157e0715ac56663afadfd8ad3e202a42cca4ed"
+    },
+    {
+      "path": "README.md",
+      "sha256": "d75fbb7b8baf72833c65e038de80cf7f6518d422dd77a9532e77ed9a0a83b88f"
+    },
+    {
+      "path": "RELEASE-NOTES.md",
+      "sha256": "c26df5b73291948ff157e5a1570be4c3085efac6ef1d0fae8ef63ce75ff2ebfd"
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "a1808d7788ff2646e41591251b8eb42cb2aac6f0a59fde369f394f37a71cdf23"
+    },
+    {
+      "path": "START-HERE.md",
+      "sha256": "c7a4ac0ec565f26db25ae47b92192b12ff838c11f697f39235fe0131d6a5fc24"
+    },
+    {
+      "path": "SUPPORT.md",
+      "sha256": "c402ad980f5bedc761d20f4eef4ad7eff3eefa732c305702ec38acc594a22355"
+    },
+    {
+      "path": "docs/.nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/404.html",
+      "sha256": "6e1a1b896808d906c3f976450969ad73bf3462a92cc374e2dee66cb7759ed512"
+    },
+    {
+      "path": "docs/ACCESSIBILITY.html",
+      "sha256": "e228b39d92e8586585b1beff8165915c1c51125f19b30d582b384328107539d3"
+    },
+    {
+      "path": "docs/ACCESSIBILITY.md",
+      "sha256": "ffd92895a4705b40cc3c5e445183649b8ac0c39e4ee0cfa8379ab42962dea19c"
+    },
+    {
+      "path": "docs/CHANGELOG.html",
+      "sha256": "a0d7b5a92e0c3a27d9b806eeb403714223255e386f026a5871227d603a81ffcb"
+    },
+    {
+      "path": "docs/CHANGELOG.md",
+      "sha256": "1c0f74729fc8f73d9c84ee8cfb2a09c05280c68bbb6f70b8525d1f627068a7ae"
+    },
+    {
+      "path": "docs/CONTRIBUTING.html",
+      "sha256": "e5276eb31c8489ed91366cab341d9f690bf67af26b03226c72c8f95662d9b63c"
+    },
+    {
+      "path": "docs/CONTRIBUTING.md",
+      "sha256": "ea066590523c16d70fda51c2c02a1cbb38cdd28676b8bbfcd63f67410ccaaf60"
+    },
+    {
+      "path": "docs/FIRST-JOB.html",
+      "sha256": "9e26a6bb555271c70cd41ae4f124b1049eee4e823f26f5a6d067a9a71378a978"
+    },
+    {
+      "path": "docs/FIRST-JOB.md",
+      "sha256": "5dae3955cae95f139d6f176931f702fee2827185d58052513100f517889426bd"
+    },
+    {
+      "path": "docs/HOST-CAPABILITIES-AND-EVIDENCE.html",
+      "sha256": "1d41800d4c69598c59ccf36c6e76e24cd4185f29d641726c95657afe46ab6430"
+    },
+    {
+      "path": "docs/HOST-CAPABILITIES-AND-EVIDENCE.md",
+      "sha256": "1ec40792e91b1a5438f345da23dada9b8cdd8274457a4b2e98b4df94ae1740d0"
+    },
+    {
+      "path": "docs/INSTALL-CLAUDE.html",
+      "sha256": "08157471b059fbe8e1cf947ebfe132549814eb0fe47c40f67107d8b64bb94f81"
+    },
+    {
+      "path": "docs/INSTALL-CLAUDE.md",
+      "sha256": "83865a59970f4bb9e6205796f895b1ac1678e83b3c8163fa7c0819698e6a95b9"
+    },
+    {
+      "path": "docs/INSTALL-CODEX.html",
+      "sha256": "c9b7be03f07c223c2ab506c9466040a2444b68ed0c1e593cc9921fd8b121a6cf"
+    },
+    {
+      "path": "docs/INSTALL-CODEX.md",
+      "sha256": "e3bc87227da00152884156d164f711f98b5fa70cf1a8f9ed72fc19d1960dfec6"
+    },
+    {
+      "path": "docs/LIFECYCLE.html",
+      "sha256": "7aa62d7034cdfb819ee424b2ba21726c722ed04df80a91a8b759249959e9ec46"
+    },
+    {
+      "path": "docs/LIFECYCLE.md",
+      "sha256": "0cb539f05797138b8bc978a4f798c971dc25bd615c5d97e6703185286796e9d3"
+    },
+    {
+      "path": "docs/OFFICEFILE-AND-RESUME.html",
+      "sha256": "b6cbbbd498febba28f0b874456bc76e8e4583789cd62e7c52b591ba789d28cf2"
+    },
+    {
+      "path": "docs/OFFICEFILE-AND-RESUME.md",
+      "sha256": "55922392b17e273bd142f6a86e386ada2af3cc6ba935dc54fb3291044e8302ae"
+    },
+    {
+      "path": "docs/PROVENANCE-AND-LICENSING.html",
+      "sha256": "851f2aa0b3c20303ea72b707871afa4c6c30fc7cc326e0531acde0ef4b19e079"
+    },
+    {
+      "path": "docs/PROVENANCE-AND-LICENSING.md",
+      "sha256": "a39fa6aa76b636c7d679a879ba40bf1b80b513fbd92e8a0b954a5e5c34f63741"
+    },
+    {
+      "path": "docs/README.html",
+      "sha256": "9c985f5a730aa3b0d68133bbbe09505dde35f01bebba303f582d8456a42920d2"
+    },
+    {
+      "path": "docs/README.md",
+      "sha256": "db207de489ff53573c443a0d0e91d07c60716b445047100c356938fc753cb207"
+    },
+    {
+      "path": "docs/SECURITY.html",
+      "sha256": "e310bddc61aa5ea993c366836fd1d12cb83130b71d4708eccb42b9dcc90153f9"
+    },
+    {
+      "path": "docs/SECURITY.md",
+      "sha256": "a1808d7788ff2646e41591251b8eb42cb2aac6f0a59fde369f394f37a71cdf23"
+    },
+    {
+      "path": "docs/SITE-SOURCE.md",
+      "sha256": "4102c5b72a9efc8fba30d2587802eaa011fda5794ebc0ed102e17873e66a962c"
+    },
+    {
+      "path": "docs/START-HERE.html",
+      "sha256": "1714e1cd82332cdbaac542e2f683e1a94ba4b212226516fedb8b72d2ddd7bb7e"
+    },
+    {
+      "path": "docs/START-HERE.md",
+      "sha256": "6c576d9afb5a82ccab1abeb1ead26795dcd4dc7b6f44b313092cad305f85e320"
+    },
+    {
+      "path": "docs/SUPPORT.html",
+      "sha256": "754ad9444cd6827f31c1050ac5f0a4c4d1766129f0e276e99c0e13425086a6f9"
+    },
+    {
+      "path": "docs/SUPPORT.md",
+      "sha256": "c402ad980f5bedc761d20f4eef4ad7eff3eefa732c305702ec38acc594a22355"
+    },
+    {
+      "path": "docs/TROUBLESHOOTING.html",
+      "sha256": "964ddd0a932856a493499902a4a2ea610ea59d03933663807660981d9a1576e3"
+    },
+    {
+      "path": "docs/TROUBLESHOOTING.md",
+      "sha256": "82ecec67579525b95913666f3eb5e808863c74147f0127c59dd15855b80e67eb"
+    },
+    {
+      "path": "docs/TRUST-PRIVACY-AND-LIMITS.html",
+      "sha256": "36310bf763b52d7d50066cb9810eaad4d5773d32e657e8f0f850c8f5e138773c"
+    },
+    {
+      "path": "docs/TRUST-PRIVACY-AND-LIMITS.md",
+      "sha256": "18ee06bdeb4e083114d7b617983b459e970aaccbc8f41dcf6a270e1d9aaf6404"
+    },
+    {
+      "path": "docs/VERIFICATION-AND-READINESS.html",
+      "sha256": "ea268939b761ee08cb6c6edefa054f1042d34f4fcef7438d14c98df796a631e5"
+    },
+    {
+      "path": "docs/VERIFICATION-AND-READINESS.md",
+      "sha256": "a15f0b532aedeabda851e6d5372eccfc51ce062571dc13769065b7a2f921c79b"
+    },
+    {
+      "path": "docs/assets/officecraft-pages-hero.png",
+      "sha256": "b44394e9fc1327a3b5a50b4b5e84d708cc1209a1509ff04b4389902ed3fa9e91"
+    },
+    {
+      "path": "docs/assets/officecraft-readme-hero.png",
+      "sha256": "f2e94a33e56fce3ee9ea0dc6bb27175121cf02731d77d36895efbe8e7e5847b7"
+    },
+    {
+      "path": "docs/assets/officecraft-social-card.jpg",
+      "sha256": "33b697dfa538f9823f5477dcb7f838b57fc5a5427f1f04446d62762d8ada5d86"
+    },
+    {
+      "path": "docs/index.html",
+      "sha256": "eba5bc0cf1135a97c239ec38558b65df65dce9d1604c8cba0293d18d38d3ffa1"
+    },
+    {
+      "path": "docs/style.css",
+      "sha256": "85f39e4eea36095369c64d6fe8f67afd9460c8de7d2f81b8ce2ff9c789b3bd70"
+    },
+    {
+      "path": "release-v0.1.1/HOST-MATRIX.md",
+      "sha256": "60ee85cfad85211cec713f11a0f2cec4289f5868f676864ea566a847d5ab2367"
+    },
+    {
+      "path": "release-v0.1.1/PACKAGE-REFERENCE.md",
+      "sha256": "c3aa9f4e2dfc62d95b567237b60f7c32f46cfa15c2141125599b6bd5c3eac18b"
+    },
+    {
+      "path": "release-v0.1.1/PROVENANCE.md",
+      "sha256": "f0937c74e158646d988f455ae4bae6d6eba357222bcab71255d56cebdb2331a6"
+    },
+    {
+      "path": "release-v0.1.1/README.md",
+      "sha256": "6af3b1302c97a58dd34edebc4f2241d22b8efe1ae010dd1d037141c135c177e7"
+    },
+    {
+      "path": "release-v0.1.1/RELEASE-NOTES-v0.1.1.md",
+      "sha256": "c26df5b73291948ff157e5a1570be4c3085efac6ef1d0fae8ef63ce75ff2ebfd"
+    },
+    {
+      "path": "release-v0.1.1/START-HERE.md",
+      "sha256": "d46b8f689c93dd38fb5c913c52223bf5ee2e67e9887ad651f0e70c1bcbb1ce8e"
+    }
+  ],
+  "algorithm": "sha256 over sorted path NUL canonical file-sha256 records; text line endings normalized to LF"
+}

@@ -1,0 +1,8 @@
+{
+  "format": "cd-augment-release-manifest/v2",
+  "product": "Owen Burnett Officecraft",
+  "version": "0.1.1",
+  "canonical_release_manifest": "release-v0.1.1/release-manifest.json",
+  "canonical_outer_zip": "release-assets/v0.1.1/Owen-Burnett-Officecraft-v0.1.1.zip",
+  "note": "v0.1.0 custody remains preserved by Git tag and GitHub release; this root record points only to the current reconciled version."
+}

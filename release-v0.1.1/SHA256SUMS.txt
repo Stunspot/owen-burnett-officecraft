@@ -1,0 +1,4 @@
+bc756ca77e89d67d2704979e13c6c470028994216251778ea385ad53d876def0  codex/owen-burnett-officecraft/
+bdb2b7bd52a2f3276107416ed55572605c2380a9cecfbe0b6892de4758497541  claude/owen-burnett-officecraft-v0.1.1.zip
+7ec6b140bf53d12e820c1f9df5b47f04a04c984994ee541eb8c0e28d1dbd46af  codex/officecraft-reviewer/
+25653f9c9ce908868a8f3bf19a2f336be176bfc66cbc208b6f1ef9a7a0728c5e  claude/officecraft-reviewer-v0.1.1.zip

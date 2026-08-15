@@ -1,21 +1,14 @@
-# Owen Burnett Officecraft v0.1.0
+# Owen Burnett Officecraft v0.1.1
 
-The first free public release packages one office-production operator and one independent reviewer for Codex and Claude.
+Version 0.1.1 reconciles the unchanged Officecraft operator and independent reviewer with the intended customer documentation and public presentation work merged after v0.1.0.
 
 ## Included
 
-- direct Codex skill folders for `owen-burnett-officecraft` and `officecraft-reviewer`;
-- one-root Claude archives for both skills;
-- Officefile schemas, templates, validators, packaging helpers, examples, and behavioral evaluation suites;
-- customer guidance for installation, first value, substantial-job continuity, troubleshooting, provenance, and evidence boundaries;
-- complete and per-skill release archives with SHA-256 checksums.
+- matched Codex skill folders and deterministic one-root Claude archives for the operator and reviewer;
+- the complete customer journey, Officefile continuity guidance, trust boundaries, lifecycle, troubleshooting, and support routes;
+- the restored 19-route public Pages experience and distinct inspected product artwork;
+- an exact maintained source snapshot, manifest, checksums, and reproducible release tooling.
 
-## Verified boundary
+## Evidence boundary
 
-The release candidate passed deterministic Officefile tests, package validation, evaluation-suite validation, archive round trips, path-safety checks, Markdown link checks, and structural documentation lint in the recorded release environment. Selected context-only behavioral evaluations support bounded prompt-level observations.
-
-Fresh-host discovery, native Office rendering and recalculation, formal accessibility conformance, representative-user success, and broad cross-host reliability remain open evidence layers.
-
-## Distribution
-
-The public source and release are available under the MIT License. Private development history, canonical persona source copies, workstation paths, and host-private evaluation traces are not part of the public repository.
+Static and cross-platform checks establish source/distribution parity, archive safety, documentation structure, and the 16 Officefile unit tests. They do not establish fresh-host installation, discovery, or invocation; native Office rendering or recalculation; representative accessibility; external delivery; customer outcomes; or Discord deployment.
