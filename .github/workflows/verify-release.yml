@@ -17,6 +17,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - run: python -m pip install -r requirements-docs.txt
       - run: python -B -m unittest discover -s codex/owen-burnett-officecraft/tests -p "test_*.py" -v
       - run: python -B scripts/build_pages.py
       - run: git diff --exit-code -- docs
