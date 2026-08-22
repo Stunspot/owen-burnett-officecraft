@@ -8,22 +8,22 @@
   "claim_boundary": "Exact static package custody; live hosts, office applications, people, and Discord require separate observation.",
   "skills": {
     "owen-burnett-officecraft": {
-      "codex_tree_sha256": "bc756ca77e89d67d2704979e13c6c470028994216251778ea385ad53d876def0",
+      "codex_tree_sha256": "1f00c31997652e2b5e77832a484c92d3c1fe32ab4860189cd6066de8f71eccc4",
       "file_count": 48,
       "claude_zip": "claude/owen-burnett-officecraft-v0.1.1.zip",
-      "claude_sha256": "bdb2b7bd52a2f3276107416ed55572605c2380a9cecfbe0b6892de4758497541"
+      "claude_sha256": "bba43c3f8065787fae524331a4b58ba2f3c9c9e72bd4caff9d4fbb574c07e92f"
     },
     "officecraft-reviewer": {
-      "codex_tree_sha256": "7ec6b140bf53d12e820c1f9df5b47f04a04c984994ee541eb8c0e28d1dbd46af",
+      "codex_tree_sha256": "573fbf14173a014bb7694e7437a8d73ea1aa79877433391b703c3b05425fa71c",
       "file_count": 9,
       "claude_zip": "claude/officecraft-reviewer-v0.1.1.zip",
-      "claude_sha256": "25653f9c9ce908868a8f3bf19a2f336be176bfc66cbc208b6f1ef9a7a0728c5e"
+      "claude_sha256": "00aa917e89921a26df4e38987934f2c774f4533692e3f1c35d8b1901d2188c4d"
     }
   },
   "source": {
     "path": "source/owen-burnett-officecraft-v0.1.1",
     "file_count": 119,
-    "tree_sha256": "46bcaf93a3f200d46456a3bc8f822dcc8b59847d5683e8171b04708d7c0153ba"
+    "tree_sha256": "6af21167f13c4eb1b4493c09943c7683f68ebd7f51ac3bb3de5ff8a4c87052f7"
   },
   "files": [
     {
@@ -59,7 +59,7 @@
     {
       "path": "SHA256SUMS.txt",
       "bytes": 406,
-      "sha256": "ead66e5a68aa64efab8890df6821d9115f3548b606dd0196e1f00cd1594b7e0c"
+      "sha256": "edac3f02f439af6653d5519b1b5086f47181d48338b85e44a9550d8e697cab1d"
     },
     {
       "path": "START-HERE.md",
@@ -68,23 +68,23 @@
     },
     {
       "path": "claude/officecraft-reviewer-v0.1.1.zip",
-      "bytes": 21544,
-      "sha256": "25653f9c9ce908868a8f3bf19a2f336be176bfc66cbc208b6f1ef9a7a0728c5e"
+      "bytes": 21572,
+      "sha256": "00aa917e89921a26df4e38987934f2c774f4533692e3f1c35d8b1901d2188c4d"
     },
     {
       "path": "claude/owen-burnett-officecraft-v0.1.1.zip",
-      "bytes": 170846,
-      "sha256": "bdb2b7bd52a2f3276107416ed55572605c2380a9cecfbe0b6892de4758497541"
+      "bytes": 170848,
+      "sha256": "bba43c3f8065787fae524331a4b58ba2f3c9c9e72bd4caff9d4fbb574c07e92f"
     },
     {
       "path": "codex/officecraft-reviewer/SKILL.md",
-      "bytes": 2219,
-      "sha256": "5fd563a6a79c3e15776764351b8fb342522201154cf6c00e8f7567e3afa2afce"
+      "bytes": 2233,
+      "sha256": "6b930b01e81fef4cd52739f03cebd101cf872868066fd879e0f641b07eb70a7e"
     },
     {
       "path": "codex/officecraft-reviewer/agents/openai.yaml",
-      "bytes": 356,
-      "sha256": "e9a882b2c0aeffa710f2ad7ae78941b77b3a31578e2f9df5b08b7087dc68f281"
+      "bytes": 370,
+      "sha256": "a303493a0318726860e3d8393ca27a515e6c78c6ae37d76c508a33c1cf3ed9e2"
     },
     {
       "path": "codex/officecraft-reviewer/assets/review-record.template.json",
@@ -123,8 +123,8 @@
     },
     {
       "path": "codex/owen-burnett-officecraft/SKILL.md",
-      "bytes": 5625,
-      "sha256": "5518787826a74fb04057b596c379bfd47bac7fdb7dbaf6c231a81a7d707e86f3"
+      "bytes": 5626,
+      "sha256": "129c1d2a7aa4f820f8740ca4375a84d4ba8053bfc78ec337948ce3d9c7dcfa30"
     },
     {
       "path": "codex/owen-burnett-officecraft/adapters/claude.md",
@@ -138,8 +138,8 @@
     },
     {
       "path": "codex/owen-burnett-officecraft/agents/openai.yaml",
-      "bytes": 298,
-      "sha256": "4e56b60dd7e57b3e1e0f74a9bde95763971439672778dfc539ffd4c327442cc5"
+      "bytes": 299,
+      "sha256": "4e6c2ea564c4bf63f984fcacf0fd7ba08fc32d5e877c119dec93b9d80a8c2be2"
     },
     {
       "path": "codex/owen-burnett-officecraft/assets/artifact-register-template.json",
@@ -443,13 +443,13 @@
     },
     {
       "path": "source/owen-burnett-officecraft-v0.1.1/codex/officecraft-reviewer/SKILL.md",
-      "bytes": 2219,
-      "sha256": "5fd563a6a79c3e15776764351b8fb342522201154cf6c00e8f7567e3afa2afce"
+      "bytes": 2233,
+      "sha256": "6b930b01e81fef4cd52739f03cebd101cf872868066fd879e0f641b07eb70a7e"
     },
     {
       "path": "source/owen-burnett-officecraft-v0.1.1/codex/officecraft-reviewer/agents/openai.yaml",
-      "bytes": 356,
-      "sha256": "e9a882b2c0aeffa710f2ad7ae78941b77b3a31578e2f9df5b08b7087dc68f281"
+      "bytes": 370,
+      "sha256": "a303493a0318726860e3d8393ca27a515e6c78c6ae37d76c508a33c1cf3ed9e2"
     },
     {
       "path": "source/owen-burnett-officecraft-v0.1.1/codex/officecraft-reviewer/assets/review-record.template.json",
@@ -488,8 +488,8 @@
     },
     {
       "path": "source/owen-burnett-officecraft-v0.1.1/codex/owen-burnett-officecraft/SKILL.md",
-      "bytes": 5625,
-      "sha256": "5518787826a74fb04057b596c379bfd47bac7fdb7dbaf6c231a81a7d707e86f3"
+      "bytes": 5626,
+      "sha256": "129c1d2a7aa4f820f8740ca4375a84d4ba8053bfc78ec337948ce3d9c7dcfa30"
     },
     {
       "path": "source/owen-burnett-officecraft-v0.1.1/codex/owen-burnett-officecraft/adapters/claude.md",
@@ -503,8 +503,8 @@
     },
     {
       "path": "source/owen-burnett-officecraft-v0.1.1/codex/owen-burnett-officecraft/agents/openai.yaml",
-      "bytes": 298,
-      "sha256": "4e56b60dd7e57b3e1e0f74a9bde95763971439672778dfc539ffd4c327442cc5"
+      "bytes": 299,
+      "sha256": "4e6c2ea564c4bf63f984fcacf0fd7ba08fc32d5e877c119dec93b9d80a8c2be2"
     },
     {
       "path": "source/owen-burnett-officecraft-v0.1.1/codex/owen-burnett-officecraft/assets/artifact-register-template.json",
