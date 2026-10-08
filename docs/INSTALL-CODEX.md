@@ -42,3 +42,7 @@ The availability of an installed host capability is not a claim that a particula
 
 
 For matched-version updating, removal, rollback, and retained-data cleanup, read [Lifecycle](LIFECYCLE.md).
+
+## Preserve earlier project records
+
+Version 0.2 changes the artifact-register and review formats. Updating the matched skills does not convert existing Officefiles. Use [Migration and review](MIGRATION-AND-REVIEW.md) to make a separate working copy; retain the original for recovery. A rollback to an earlier skill version should use its matching original Officefile, not a version 2 copy relabeled as version 1. Keep customer work outside installed skill folders so replacing a skill never replaces that work.

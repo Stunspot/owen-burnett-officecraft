@@ -10,7 +10,7 @@
 <p>From the operator skill folder, run the included initializer with a new destination:</p>
 <pre><code class="language-text">python scripts/init_officefile.py &lt;new-officefile-folder&gt;
 </code></pre>
-<p>Use a new empty destination. The initializer is designed to refuse overwriting an existing project. Keep imported originals in <code>sources/</code> or preserve a clearly recorded original location before editing copies.</p>
+<p>Use a destination that does not yet exist, with an existing parent directory. The initializer is designed to refuse overwriting an existing project. Keep imported originals in <code>sources/</code> or preserve a clearly recorded original location before editing copies.</p>
 <p>The resulting structure is:</p>
 <pre><code class="language-text">officefile/
   sources/
@@ -77,8 +77,8 @@
 <ol>
 <li>Read <code>HANDOFF.md</code>, then read the brief, content ledger, and artifact register before changing a deliverable.</li>
 <li>Confirm which file is the canonical editable source for each derivative. A PDF is often a final-form derivative, not the place to make a revision.</li>
-<li>Put new facts, changed dates, changed metrics, and changed recommendations in the content ledger first.</li>
-<li>Update the affected editable source, regenerate each derivative that depends on it, and rerun the checks affected by the change.</li>
+<li>Preserve the prior files and review records in history. Reconcile new facts, dates, figures and recommendations at the governing source and controlled ledger.</li>
+<li>Mark affected outputs working, update the editable source and regenerate dependent outputs. Record their actual production inputs, then rerun the affected checks and review. Unrelated ledger changes need not invalidate unaffected work.</li>
 <li>Record material decisions, the current artifact status, evidence actually obtained, and the next owner action.</li>
 </ol>
 <h2>Validate and inspect without overstating the result</h2>
@@ -87,10 +87,12 @@
 python scripts/inspect_office_artifacts.py &lt;officefile-folder&gt;
 python scripts/package_officefile.py &lt;officefile-folder&gt; &lt;output-zip&gt;
 </code></pre>
-<p>Validation checks Officefile state, required records, controlled references, and declared artifact status. An artifact marked <code>reviewed</code> must have a passing review tied to its current digest and Officefile state. An artifact marked <code>approved</code> must additionally have a scoped, timestamped approval record from the approval owner named in the brief. These records preserve evidence custody; they are not digital signatures and do not prove the approver's identity.</p>
+<p>Validation checks Officefile state, required records, controlled references, and declared artifact status. An artifact marked <code>reviewed</code> must have a passing review tied to its current digest, production input basis, intended use and Officefile state. An artifact marked <code>approved</code> must additionally have a scoped, timestamped approval record from the approval owner named in the brief. These records preserve evidence custody; they are not digital signatures and do not prove the approver's identity.</p>
 <p>Inspection inventories files and performs bounded container checks; validation directly repeats the relevant current-container check before accepting saved inspection evidence. Neither route renders pages or slides, calculates workbook formulas, executes macros, decrypts files, or proves accessibility. Packaging requires a valid Officefile, binds the ZIP to the validated file snapshot, and refuses an overwrite.</p>
 <p>Read a script result as evidence for exactly that script's scope. Use native or rendered inspection where available for visual and final-format claims.</p>
-<h2>Worked shape, not a finished packet</h2>
+<h2>Two examples for different questions</h2>
 <p>The operator includes a fictional <code>monday-leadership-packet</code> example. It demonstrates a shaped Officefile for a brief, deck, workbook, and PDF handout. Its outputs are intentionally planned only: no DOCX, PPTX, XLSX, or PDF exists in that example, and it records no native opening, formula calculation, renderer, visual inspection, accessibility review, or independent review.</p>
 <p>That limitation is deliberate. Use the example to understand the state model, not as evidence that an office artifact was generated.</p>
+<p>The <code>workshop-return</code> example contains real editable DOCX files and native Word PDF exports. Its current proposal totals USD 1,050; <code>history/v1</code> retains the original USD 1,000 proposal. The source correction, controlled ledger, production basis and exact reviews are inspectable. Both one-page exports were visually self-reviewed. This fictional builder example is not a representative-user trial or spending approval.</p>
+<p>For the binding fields, actual review adoption and copy-first conversion of older records, use <a href="MIGRATION-AND-REVIEW.html">Migration and review</a>. Complete only when the current handoff makes the governing version and remaining conditions clear.</p>
 </main><footer><p><strong>Owen Burnett Officecraft</strong> · Collaborative Dynamics · Free dual-host occupational Augment.</p><p><a href="index.html">Product site</a> · <a href="SUPPORT.html">Support</a> · <a href="https://github.com/Stunspot/owen-burnett-officecraft">GitHub</a> · <a href="https://github.com/Stunspot/owen-burnett-officecraft/blob/main/LICENSE.md">MIT License</a></p></footer></body></html>

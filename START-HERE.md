@@ -5,7 +5,7 @@ Officecraft helps turn rough workplace material into a coherent document, deck, 
 ## 1. Choose your host
 
 - For Codex, install both folders from `codex/` using [Install in Codex](docs/INSTALL-CODEX.md).
-- For Claude, install both archives from `claude/` using [Install in Claude](docs/INSTALL-CLAUDE.md).
+- For Claude, download and extract the matching complete release, then install both archives from its top-level `claude/` folder using [Install in Claude](docs/INSTALL-CLAUDE.md). This folder is beside `release-manifest.json`, outside the nested `source/` documentation. Repository source alone does not contain these generated archives.
 
 Keep the operator and reviewer on the same version.
 
@@ -31,3 +31,7 @@ One step does not establish the next by enthusiastic osmosis.
 For substantial work, preserve an Officefile containing the brief, source manifest, content ledger, artifact register, decisions, review evidence, and handoff. Continue with [Officefile and resume](docs/OFFICEFILE-AND-RESUME.md).
 
 If installation, discovery, or artifact production fails, use [Troubleshooting and recovery](docs/TROUBLESHOOTING.md). Preserve the exact host, version, request, error, and last trustworthy state.
+
+## Returning with earlier work
+
+Keep the matched 0.2 operator and reviewer together. Preserve the existing Officefile before installing or changing records. Version 1 artifact/review records use [copy-first migration](docs/MIGRATION-AND-REVIEW.md); migration preserves files and labels old review as history. It does not establish new readiness. A changed source requires affected outputs and reviews to be reconciled before their next use.

@@ -37,3 +37,6 @@ Use recoverable deletion where practical. Confirm exact paths and shared destina
 Restore both previously recorded skill artifacts, start a fresh host task, verify discovery, and repeat one low-risk first job. File restoration alone does not prove discovery, invocation, file production, or healthy behavior.
 
 Officecraft has no automatic updater, telemetry service, hosted account, background cleanup process, or support SLA.
+## Preserve earlier project records
+
+Version 0.2 changes the artifact-register and review formats. Updating the matched skills does not convert existing Officefiles. Use [Migration and review](MIGRATION-AND-REVIEW.md) to make a separate working copy; retain the original for recovery. A rollback to an earlier skill version should use its matching original Officefile, not a version 2 copy relabeled as version 1. Keep customer work outside installed skill folders so replacing a skill never replaces that work.

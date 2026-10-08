@@ -1,0 +1,1283 @@
+{
+  "schema": "collaborative-dynamics.customer-skill-family/v3",
+  "slug": "owen-burnett-officecraft",
+  "version": "0.2.0",
+  "skills": {
+    "owen-burnett-officecraft": {
+      "file_count": 81,
+      "claude_zip": "claude/owen-burnett-officecraft-v0.2.0.zip",
+      "claude_sha256": "8432e3f23405d0b70c7b23a50060b86e8da7b869b0fd48b39bc19d742b921cc4"
+    },
+    "officecraft-reviewer": {
+      "file_count": 9,
+      "claude_zip": "claude/officecraft-reviewer-v0.2.0.zip",
+      "claude_sha256": "e1235849ae764e94ee100762b3493bb0d2a81543a129bdebb2ced7381d285a61"
+    }
+  },
+  "source": {
+    "path": "source/owen-burnett-officecraft-v0.2.0",
+    "file_count": 155
+  },
+  "files": [
+    {
+      "path": "LICENSE.md",
+      "bytes": 1342,
+      "sha256": "88ac32f447ecbd63041d11b77a157e0715ac56663afadfd8ad3e202a42cca4ed"
+    },
+    {
+      "path": "SHA256SUMS.txt",
+      "bytes": 12630,
+      "sha256": "fb5a0d804a219a3a3f52af76c90f29595871d29da1180c60db1c70a08e2b790a"
+    },
+    {
+      "path": "START-HERE.md",
+      "bytes": 851,
+      "sha256": "5cddb30822fa366caeddc7f7e2645a1bf0cf0a613900a27967dfa257a5c16b2c"
+    },
+    {
+      "path": "claude/officecraft-reviewer-v0.2.0.zip",
+      "bytes": 26941,
+      "sha256": "e1235849ae764e94ee100762b3493bb0d2a81543a129bdebb2ced7381d285a61"
+    },
+    {
+      "path": "claude/owen-burnett-officecraft-v0.2.0.zip",
+      "bytes": 507611,
+      "sha256": "8432e3f23405d0b70c7b23a50060b86e8da7b869b0fd48b39bc19d742b921cc4"
+    },
+    {
+      "path": "codex/officecraft-reviewer/SKILL.md",
+      "bytes": 3845,
+      "sha256": "ffefb96348bb212e9a9e4be62875e7e824f5591fd95477a8b5ce29675d9710e6"
+    },
+    {
+      "path": "codex/officecraft-reviewer/agents/openai.yaml",
+      "bytes": 370,
+      "sha256": "a303493a0318726860e3d8393ca27a515e6c78c6ae37d76c508a33c1cf3ed9e2"
+    },
+    {
+      "path": "codex/officecraft-reviewer/assets/review-record.template.json",
+      "bytes": 1172,
+      "sha256": "8c54e69d87c9c1a0412d1acf6a447284e4c8df37af272556f7eaafdcabd17c51"
+    },
+    {
+      "path": "codex/officecraft-reviewer/evals/eval-manifest.yaml",
+      "bytes": 588,
+      "sha256": "f2dbaddc72d276dbec6c1a7ac6c980586555972b9ac5df3d9d8de2689a1b8285"
+    },
+    {
+      "path": "codex/officecraft-reviewer/evals/reviewer-transfer-cases.yaml",
+      "bytes": 5960,
+      "sha256": "a507292ba01d550868c0293547bf25201ba4228d847b9d950ce53184783e3e48"
+    },
+    {
+      "path": "codex/officecraft-reviewer/examples/quarterly-brief-review.md",
+      "bytes": 1351,
+      "sha256": "7eab3fdf66060d9737030e00a37347c11aec8b403c603e40d114f791a0e44d5b"
+    },
+    {
+      "path": "codex/officecraft-reviewer/references/evidence-boundary.md",
+      "bytes": 1476,
+      "sha256": "a8d8c4c4034729e5c64bae5ee43b025a656fec0a2ba32e6fd30f1976bb7fe377"
+    },
+    {
+      "path": "codex/officecraft-reviewer/references/review-rubric.md",
+      "bytes": 2589,
+      "sha256": "d6e61d8d2276d7ef7b9e256c0f788f4cd370323abcae99d4a440c565f3c4ace1"
+    },
+    {
+      "path": "codex/officecraft-reviewer/schemas/review-record.schema.json",
+      "bytes": 8020,
+      "sha256": "44586c1508817772169409449e61faf164b1e42b1ebda6089b8f6d15b080bb2d"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/SKILL.md",
+      "bytes": 6090,
+      "sha256": "e628f4fece5edfedce068b400c9acde0cb28c3174940e3b623080ad8be639700"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/adapters/claude.md",
+      "bytes": 1742,
+      "sha256": "7f3e5765a432eeec8016568532e3f724080c77852676437af1d2ea2055545e8c"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/adapters/codex.md",
+      "bytes": 2256,
+      "sha256": "9856b3226ce652a534570fa8cf8113d0bbfefa086fe5d69a9da459356d3288f6"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/agents/openai.yaml",
+      "bytes": 299,
+      "sha256": "4e6c2ea564c4bf63f984fcacf0fd7ba08fc32d5e877c119dec93b9d80a8c2be2"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/assets/artifact-register-template.json",
+      "bytes": 70,
+      "sha256": "035ae305304a2d04416b7eb1e2a67dbd412036fe4a1c0d2589f786c980886066"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/assets/brief-template.json",
+      "bytes": 507,
+      "sha256": "6325a38b9367e55407896d3526646a853b4e2ad75752cded0bf991ffca860152"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/assets/content-ledger-template.json",
+      "bytes": 63,
+      "sha256": "803547546f2fc817921a0829fe207666320e29ee5c15f8b2a1d48535d757a3ae"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/assets/handoff-template.md",
+      "bytes": 661,
+      "sha256": "a8329d55946f577537262aea1ec30c18b0d7a1ce1a724b115848e004d4ba74d4"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/assets/review-template.json",
+      "bytes": 441,
+      "sha256": "7cf6e71539d33bd70973dd508920c7af04824541580d913b287ba7593b2da007"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/assets/source-manifest-template.json",
+      "bytes": 66,
+      "sha256": "8cd3c15978ad6bcd44266d6b7b042306ab884f8baa0276b086f34b1a298f6a7c"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/assets/style-brief-template.md",
+      "bytes": 461,
+      "sha256": "e59cf1fd6d30b4e0c4a87f5544ada37270820ae26de8cfbf3c95ec1a42b3de56"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/evals/eval-manifest.yaml",
+      "bytes": 762,
+      "sha256": "9b44f1bace3db6bde011cfd6abbecb1149d29359f5081a6b05238bc4d511fd58"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/evals/officecraft-transfer-cases.yaml",
+      "bytes": 17149,
+      "sha256": "6325fade2cb4ae135c43ea3ad01710565f1c56acc6b72bc957d48d7c273cafa8"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/monday-leadership-packet/HANDOFF.md",
+      "bytes": 1280,
+      "sha256": "b427262b755cb988868df56e7be244952368f99b86e408905faf00ac4a24eeb0"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/monday-leadership-packet/output/README.md",
+      "bytes": 203,
+      "sha256": "f2f44d0a00a551f164644f29e5b2841d56e4c1e26a4f17d92687b9f699c00771"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/monday-leadership-packet/review/officecraft-review.json",
+      "bytes": 502,
+      "sha256": "045884bc5c90753753d6681da8cd76c5ab375055240ed319618cf5435f91e252"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/monday-leadership-packet/sources/data/pilot-budget.csv",
+      "bytes": 86,
+      "sha256": "c062f55ece1987029d7051af84251dcda2d547e1efa6c51943c5cf83c1da8e0e"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/monday-leadership-packet/sources/manifest.json",
+      "bytes": 834,
+      "sha256": "713ac5ce9d1d35da0a8b333da0baa59b5936ac3b2fe26eefd2394cf1eb9211ca"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/monday-leadership-packet/sources/notes/monday-leadership-notes.md",
+      "bytes": 699,
+      "sha256": "fe65c70e4bdf0ba6e50dca97c5a35513fbdc6990c161f45d5e935bdcb4e99eb8"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/monday-leadership-packet/state/artifact-register.json",
+      "bytes": 1232,
+      "sha256": "794dc53a7194217a01c79bc5adafdd2e4eb1b326af95656767c15281354cbf9e"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/monday-leadership-packet/state/brief.json",
+      "bytes": 1024,
+      "sha256": "7aa9925a755b14fb76d51fd330bd216830c228ed322455c7582798b4a94de7bc"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/monday-leadership-packet/state/content-ledger.json",
+      "bytes": 2303,
+      "sha256": "a659949af7932eb590acf7c78a35f9f6594173f2cce63b37022cc5ccd6e975c4"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/monday-leadership-packet/state/decisions.jsonl",
+      "bytes": 245,
+      "sha256": "e0b7c75328165f3c899844ced366e86a30fa1fcb235a47e736ed00817238179f"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/monday-leadership-packet/working/artifact-specifications.json",
+      "bytes": 868,
+      "sha256": "6c0f716c88e3aa4120ddee154a2fff1599257f4b65f066029d5d63c1466e3a8a"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/monday-leadership-packet/working/style-brief.md",
+      "bytes": 679,
+      "sha256": "80360b85accb6f053fea747ef8d2a67284d98a84e14ccfb7edcba92c6924a15e"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/workshop-return/HANDOFF.md",
+      "bytes": 729,
+      "sha256": "04c891ee2e09fe8860c8737fdf1688aac3b00b112bc24d6ea03061a4d2d1e793"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/workshop-return/history/v1/HANDOFF.md",
+      "bytes": 629,
+      "sha256": "38eaaac2942045a23ce9aa614b2a2b0c4a0a6e07b9b54af97d8eea05ac694135"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/workshop-return/history/v1/output/brief.docx",
+      "bytes": 37022,
+      "sha256": "2b0a0978d330a10a9c58c6f0aed020dc5e508c4963cd904ba3f57bf8d6ebd977"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/workshop-return/history/v1/output/brief.pdf",
+      "bytes": 81089,
+      "sha256": "a4bc033fdcfbe5dfbaf19b024c0061d84e17c066ec3d9eaa52bced13c667bdf5"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/workshop-return/history/v1/review/inspect.json",
+      "bytes": 5009,
+      "sha256": "185df5ff07dd9403a992b988aca0ad359ae6c4fc525f0063ffae38caa5f39bc5"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/workshop-return/history/v1/review/officecraft-review.json",
+      "bytes": 1203,
+      "sha256": "3b3c9ed98b2bce3f4a1c1a4795b15693d39c04bc4e528bc4735b5f33c07fe7dd"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/workshop-return/history/v1/review/visual.md",
+      "bytes": 821,
+      "sha256": "2eb9422846401e45750d673bdd37f1e8e51ab1a58a1a959774743ab67d809bdd"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/workshop-return/history/v1/sources/manifest.json",
+      "bytes": 260,
+      "sha256": "23e89f3b8e80695ece9e13aa751ce1df622e0d2e89c84d4e350215bbdf06ba1c"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/workshop-return/history/v1/sources/original.json",
+      "bytes": 289,
+      "sha256": "b727d7a3fea38da5365453ef77dfd6e9fc1db671592a4bb42dd8236a5402edfd"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/workshop-return/history/v1/state/artifact-register.json",
+      "bytes": 2779,
+      "sha256": "3b9960e914ce2cefb5297f4fd15883a7e80e3c19e734f0aafb5e35c55aed4cce"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/workshop-return/history/v1/state/brief.json",
+      "bytes": 731,
+      "sha256": "bee0d45bd1c9c6d3471a51dee2678e49abf9e2c9b4a65fa1efa42310cdc88065"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/workshop-return/history/v1/state/content-ledger.json",
+      "bytes": 424,
+      "sha256": "f78f35b75432caa110de4b45b001ea45f1e9fe10875efb75d070793402a92616"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/workshop-return/history/v1/state/decisions.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/workshop-return/history/v1/working/style-brief.md",
+      "bytes": 461,
+      "sha256": "e59cf1fd6d30b4e0c4a87f5544ada37270820ae26de8cfbf3c95ec1a42b3de56"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/workshop-return/output/brief.docx",
+      "bytes": 37129,
+      "sha256": "1ce71bda7ad0cf925738adfe08e85b50559c8ed09e99e55b768dc9b0cee288e5"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/workshop-return/output/brief.pdf",
+      "bytes": 89039,
+      "sha256": "ddde2e6f08d387af864d5098539a5324288d073a70b54e77c02f6dd9753b7cc0"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/workshop-return/review/inspect.json",
+      "bytes": 11219,
+      "sha256": "adac6e4624af51c2f28b5e4c65f6c86711a807a7e258bf801602084fc4ee0b68"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/workshop-return/review/officecraft-review.json",
+      "bytes": 1203,
+      "sha256": "894c5aad861e2a72377ee0e6e52a6bcf82146466b9e93dab933ee69427cbed72"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/workshop-return/review/visual.md",
+      "bytes": 821,
+      "sha256": "c4ed72e9e62e8d124621f74cb9a56f5493f745c3bf5f98e83cde082f5187b38d"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/workshop-return/sources/correction.json",
+      "bytes": 213,
+      "sha256": "080c1ae4612be4f18cffe874ceedec4b4b3bae262d878f5282a2134fdac9bbeb"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/workshop-return/sources/manifest.json",
+      "bytes": 456,
+      "sha256": "9f3587693160cb0f0df7ac099882d610ea2c4c868f342b28dcab6ef235bd1125"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/workshop-return/sources/original.json",
+      "bytes": 289,
+      "sha256": "b727d7a3fea38da5365453ef77dfd6e9fc1db671592a4bb42dd8236a5402edfd"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/workshop-return/state/artifact-register.json",
+      "bytes": 3389,
+      "sha256": "ab7afde1411871af9a51d73768c1368ccead8e1e3cef90152094a1cd30441a43"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/workshop-return/state/brief.json",
+      "bytes": 731,
+      "sha256": "bee0d45bd1c9c6d3471a51dee2678e49abf9e2c9b4a65fa1efa42310cdc88065"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/workshop-return/state/content-ledger.json",
+      "bytes": 468,
+      "sha256": "cd38e134424ad7b5b79d24703317d93800d769f243d85a8670ee8215106dba1e"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/workshop-return/state/decisions.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/examples/workshop-return/working/style-brief.md",
+      "bytes": 461,
+      "sha256": "e59cf1fd6d30b4e0c4a87f5544ada37270820ae26de8cfbf3c95ec1a42b3de56"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/fallbacks/degraded-capability.md",
+      "bytes": 3069,
+      "sha256": "aaffd15ff4b3b9aaa948134d4f05618d47527a1aac1f557f19ebbf886a37cc55"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/fallbacks/universal-copy-paste.md",
+      "bytes": 2917,
+      "sha256": "535c45a7f43289da797040a192c614d68227276a6b718c16d87a798d7f0f10b5"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/personas/owen-burnett-officecraft-practitioner.md",
+      "bytes": 3676,
+      "sha256": "2853db4b4b5dc5421955ae37b38faa167f6b3cf8be396cdb35e055261fb02b5f"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/references/accessibility-visual-and-privacy-quality.md",
+      "bytes": 2771,
+      "sha256": "f2dc106377ec9c2c0e8deddf766ecd4e2e2eda496315a67998076d5f76105101"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/references/cross-artifact-consistency.md",
+      "bytes": 2857,
+      "sha256": "9d2b0bab23f2ef704b4953685ea9bea48e729b37099415333176b68270ab3893"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/references/document-production.md",
+      "bytes": 2984,
+      "sha256": "44936cdcd62d77d03177e0b269309d2ed98e57ac5f088a35fb99730f5462dc2a"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/references/host-capability-routing.md",
+      "bytes": 3132,
+      "sha256": "4e67ae2d0715468478185c72047122b5bdc2f8a2938ccdeeb96757a8959c1ff2"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/references/intake-and-artifact-routing.md",
+      "bytes": 4253,
+      "sha256": "6c5202723d7fe33a95103f6887ecb93ecc7ad85db5770cb13041eefcda642496"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/references/operating-doctrine.md",
+      "bytes": 5262,
+      "sha256": "315418b34d2058543041f33b82c2836f0bd9b3b64d92d2ddb1eb5a4d5d85d126"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/references/pdf-and-export.md",
+      "bytes": 2381,
+      "sha256": "19428640782063656d6f6ce38a0c4f4a24f63e6f207aa6379d79a87a6b79ee24"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/references/presentation-production.md",
+      "bytes": 3144,
+      "sha256": "9a04f19f8a13ffefbe26c0e4f12b3bb14242cfdef0c8e285e4f52f440485af2b"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/references/revisions-and-review-bindings.md",
+      "bytes": 5896,
+      "sha256": "5ee10258a6dfb0e8e8799d7ef18112c4544de9c50b7906a312517cb61c97cdda"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/references/spreadsheet-production.md",
+      "bytes": 3009,
+      "sha256": "2f3bd5af5edd4a0c65ba86648add451890f988dfac8010c994f56909d86375ac"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/schemas/artifact-register.schema.json",
+      "bytes": 3199,
+      "sha256": "be683a6331610b87fc1d989b8ec97de532b14eea113c68d39a2c752b310419c1"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/schemas/brief.schema.json",
+      "bytes": 883,
+      "sha256": "1b6896b812d4d5e81d6c9cb7904438bb18c4ae267ccc22c4f78154821fa88269"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/schemas/content-ledger.schema.json",
+      "bytes": 930,
+      "sha256": "d59fb027e4b3ad5962916f4d3ef28b2b5a2d0df1cb7234b1b9c07530153dd018"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/schemas/review.schema.json",
+      "bytes": 7814,
+      "sha256": "dc5b10ebeb4cb2a3e49193def41dc7eeb400f54f80b63be8f20ec1312dbe3cf4"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/schemas/source-manifest.schema.json",
+      "bytes": 1106,
+      "sha256": "05f1488fb7caf0271a34cd27e7c0466a9f7b5176c2505e789d79843ea6443bf5"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/scripts/capture_artifact_binding.py",
+      "bytes": 3302,
+      "sha256": "49ddca5b318c455e856b5060665b328f5db224f2e14dab60f9fb15f30880d29e"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/scripts/init_officefile.py",
+      "bytes": 3280,
+      "sha256": "89abed00ff5c2256ecd561ece9943a305d37a97860777d5b85b8e14a83fcec49"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/scripts/inspect_office_artifacts.py",
+      "bytes": 12420,
+      "sha256": "0ba7f37681d9149c7c041ad781f74b4b6f069eff7735f28e93d7dd8778e43f38"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/scripts/migrate_officefile.py",
+      "bytes": 4854,
+      "sha256": "6de10f4161b3719645c4af4e4549a735f87f46f0c5a5ecec372627634320c447"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/scripts/officefile_relationships.py",
+      "bytes": 7120,
+      "sha256": "324b01e47dbaeb0a651734918b3034c453552bc4119241112494c96f184e9b10"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/scripts/officefile_review.py",
+      "bytes": 8374,
+      "sha256": "03b6a35d64538c95f1e94bdae4e9aed203d3c60316e1cceb051eb81b9645e620"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/scripts/officefile_safety.py",
+      "bytes": 4369,
+      "sha256": "c6b572028062d5f0ce07c7c41b8470c6c6765d044d33177b573b2873e7d368dd"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/scripts/package_officefile.py",
+      "bytes": 6542,
+      "sha256": "c64273f4604a2e8bce7b5bf5b495ecef2ef8333bafc7a2783e1cbf0023a90dac"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/scripts/validate_officefile.py",
+      "bytes": 26294,
+      "sha256": "955b5ef572485ba01f7e75b9cb6f5ac24d57e0707f3bb4d7171188c02a8376a7"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/tests/test_officefile_scripts.py",
+      "bytes": 23368,
+      "sha256": "b36f500ebe23c9c26bc680c6157cb308fd469eb093cb63fecf6326e66cc408c5"
+    },
+    {
+      "path": "codex/owen-burnett-officecraft/tests/test_revisions.py",
+      "bytes": 14013,
+      "sha256": "1d5d022b886e5f4cdd9cdcede93aefbe78d67ddf8d9cfd65580d1de90d36851b"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/.gitattributes",
+      "bytes": 569,
+      "sha256": "41ce397337bdebf2cf57e4ba50a7be2a0f61c125838a3c3c3d3a07304466bf5f"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/.github/PULL_REQUEST_TEMPLATE.md",
+      "bytes": 879,
+      "sha256": "ac61b64a10706b96f052aac61d33ed56a72da268099ccc80f74b1546c15bf0a7"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/.github/workflows/deploy-pages.yml",
+      "bytes": 781,
+      "sha256": "7a060c30a1d7bd0995ab6ddbe75a4140402f0eea4227637095cc814f0874a6c4"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/.github/workflows/line-ending-policy.yml",
+      "bytes": 305,
+      "sha256": "e83c4eddac5481c74238432bfde5b07e1f5e0aeb74a8cbc634e505fdbfb61d3b"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/.github/workflows/verify-release.yml",
+      "bytes": 758,
+      "sha256": "602fd646e81242634a9274718fbf7e6b6c2caca7bdc2ed65278f7e5ec57ea4fe"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/CHANGELOG.md",
+      "bytes": 490,
+      "sha256": "08acd4e74d2e4a055849b707e17752dff1f2a3ba182ce814c795553dbe9dd941"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/CONTRIBUTING.md",
+      "bytes": 2445,
+      "sha256": "612bdcaee840bb60e5e728ab37cd6420dc363f9b682f2d672ab4f854c3194650"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/HOST-MATRIX.md",
+      "bytes": 1070,
+      "sha256": "370056f1ae00a02c792d3fbd5104722038e20a579d109cabe533e5133c86a717"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/LICENSE.md",
+      "bytes": 1342,
+      "sha256": "88ac32f447ecbd63041d11b77a157e0715ac56663afadfd8ad3e202a42cca4ed"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/README.md",
+      "bytes": 8621,
+      "sha256": "1ba5d0ec7472b48fbe5badc30eb8063b5a04f0f32f746e1abbc80c188085de13"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/RELEASE-NOTES.md",
+      "bytes": 1090,
+      "sha256": "c32aa40b9da679b33094b9bd8e69f8e2c1ef10ed9409910e69669e56f7a5e41f"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/SECURITY.md",
+      "bytes": 1466,
+      "sha256": "a1808d7788ff2646e41591251b8eb42cb2aac6f0a59fde369f394f37a71cdf23"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/START-HERE.md",
+      "bytes": 2246,
+      "sha256": "8ffba9de49d3b9e60eaacd2ecbb19c62e7d5d38362c66fdc5af1503caa7fbff5"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/SUPPORT.md",
+      "bytes": 1337,
+      "sha256": "c402ad980f5bedc761d20f4eef4ad7eff3eefa732c305702ec38acc594a22355"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/VERSION",
+      "bytes": 6,
+      "sha256": "1f930dd1f133c1f97a94fe3acb8db34372cf4c01ffdb2b3ff4ca72f9494121e9"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/officecraft-reviewer/SKILL.md",
+      "bytes": 3845,
+      "sha256": "ffefb96348bb212e9a9e4be62875e7e824f5591fd95477a8b5ce29675d9710e6"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/officecraft-reviewer/agents/openai.yaml",
+      "bytes": 370,
+      "sha256": "a303493a0318726860e3d8393ca27a515e6c78c6ae37d76c508a33c1cf3ed9e2"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/officecraft-reviewer/assets/review-record.template.json",
+      "bytes": 1172,
+      "sha256": "8c54e69d87c9c1a0412d1acf6a447284e4c8df37af272556f7eaafdcabd17c51"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/officecraft-reviewer/evals/eval-manifest.yaml",
+      "bytes": 588,
+      "sha256": "f2dbaddc72d276dbec6c1a7ac6c980586555972b9ac5df3d9d8de2689a1b8285"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/officecraft-reviewer/evals/reviewer-transfer-cases.yaml",
+      "bytes": 5960,
+      "sha256": "a507292ba01d550868c0293547bf25201ba4228d847b9d950ce53184783e3e48"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/officecraft-reviewer/examples/quarterly-brief-review.md",
+      "bytes": 1351,
+      "sha256": "7eab3fdf66060d9737030e00a37347c11aec8b403c603e40d114f791a0e44d5b"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/officecraft-reviewer/references/evidence-boundary.md",
+      "bytes": 1476,
+      "sha256": "a8d8c4c4034729e5c64bae5ee43b025a656fec0a2ba32e6fd30f1976bb7fe377"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/officecraft-reviewer/references/review-rubric.md",
+      "bytes": 2589,
+      "sha256": "d6e61d8d2276d7ef7b9e256c0f788f4cd370323abcae99d4a440c565f3c4ace1"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/officecraft-reviewer/schemas/review-record.schema.json",
+      "bytes": 8020,
+      "sha256": "44586c1508817772169409449e61faf164b1e42b1ebda6089b8f6d15b080bb2d"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/SKILL.md",
+      "bytes": 6090,
+      "sha256": "e628f4fece5edfedce068b400c9acde0cb28c3174940e3b623080ad8be639700"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/adapters/claude.md",
+      "bytes": 1742,
+      "sha256": "7f3e5765a432eeec8016568532e3f724080c77852676437af1d2ea2055545e8c"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/adapters/codex.md",
+      "bytes": 2256,
+      "sha256": "9856b3226ce652a534570fa8cf8113d0bbfefa086fe5d69a9da459356d3288f6"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/agents/openai.yaml",
+      "bytes": 299,
+      "sha256": "4e6c2ea564c4bf63f984fcacf0fd7ba08fc32d5e877c119dec93b9d80a8c2be2"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/assets/artifact-register-template.json",
+      "bytes": 70,
+      "sha256": "035ae305304a2d04416b7eb1e2a67dbd412036fe4a1c0d2589f786c980886066"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/assets/brief-template.json",
+      "bytes": 507,
+      "sha256": "6325a38b9367e55407896d3526646a853b4e2ad75752cded0bf991ffca860152"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/assets/content-ledger-template.json",
+      "bytes": 63,
+      "sha256": "803547546f2fc817921a0829fe207666320e29ee5c15f8b2a1d48535d757a3ae"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/assets/handoff-template.md",
+      "bytes": 661,
+      "sha256": "a8329d55946f577537262aea1ec30c18b0d7a1ce1a724b115848e004d4ba74d4"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/assets/review-template.json",
+      "bytes": 441,
+      "sha256": "7cf6e71539d33bd70973dd508920c7af04824541580d913b287ba7593b2da007"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/assets/source-manifest-template.json",
+      "bytes": 66,
+      "sha256": "8cd3c15978ad6bcd44266d6b7b042306ab884f8baa0276b086f34b1a298f6a7c"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/assets/style-brief-template.md",
+      "bytes": 461,
+      "sha256": "e59cf1fd6d30b4e0c4a87f5544ada37270820ae26de8cfbf3c95ec1a42b3de56"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/evals/eval-manifest.yaml",
+      "bytes": 762,
+      "sha256": "9b44f1bace3db6bde011cfd6abbecb1149d29359f5081a6b05238bc4d511fd58"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/evals/officecraft-transfer-cases.yaml",
+      "bytes": 17149,
+      "sha256": "6325fade2cb4ae135c43ea3ad01710565f1c56acc6b72bc957d48d7c273cafa8"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/monday-leadership-packet/HANDOFF.md",
+      "bytes": 1280,
+      "sha256": "b427262b755cb988868df56e7be244952368f99b86e408905faf00ac4a24eeb0"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/monday-leadership-packet/output/README.md",
+      "bytes": 203,
+      "sha256": "f2f44d0a00a551f164644f29e5b2841d56e4c1e26a4f17d92687b9f699c00771"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/monday-leadership-packet/review/officecraft-review.json",
+      "bytes": 502,
+      "sha256": "045884bc5c90753753d6681da8cd76c5ab375055240ed319618cf5435f91e252"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/monday-leadership-packet/sources/data/pilot-budget.csv",
+      "bytes": 86,
+      "sha256": "c062f55ece1987029d7051af84251dcda2d547e1efa6c51943c5cf83c1da8e0e"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/monday-leadership-packet/sources/manifest.json",
+      "bytes": 834,
+      "sha256": "713ac5ce9d1d35da0a8b333da0baa59b5936ac3b2fe26eefd2394cf1eb9211ca"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/monday-leadership-packet/sources/notes/monday-leadership-notes.md",
+      "bytes": 699,
+      "sha256": "fe65c70e4bdf0ba6e50dca97c5a35513fbdc6990c161f45d5e935bdcb4e99eb8"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/monday-leadership-packet/state/artifact-register.json",
+      "bytes": 1232,
+      "sha256": "794dc53a7194217a01c79bc5adafdd2e4eb1b326af95656767c15281354cbf9e"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/monday-leadership-packet/state/brief.json",
+      "bytes": 1024,
+      "sha256": "7aa9925a755b14fb76d51fd330bd216830c228ed322455c7582798b4a94de7bc"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/monday-leadership-packet/state/content-ledger.json",
+      "bytes": 2303,
+      "sha256": "a659949af7932eb590acf7c78a35f9f6594173f2cce63b37022cc5ccd6e975c4"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/monday-leadership-packet/state/decisions.jsonl",
+      "bytes": 245,
+      "sha256": "e0b7c75328165f3c899844ced366e86a30fa1fcb235a47e736ed00817238179f"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/monday-leadership-packet/working/artifact-specifications.json",
+      "bytes": 868,
+      "sha256": "6c0f716c88e3aa4120ddee154a2fff1599257f4b65f066029d5d63c1466e3a8a"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/monday-leadership-packet/working/style-brief.md",
+      "bytes": 679,
+      "sha256": "80360b85accb6f053fea747ef8d2a67284d98a84e14ccfb7edcba92c6924a15e"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/workshop-return/HANDOFF.md",
+      "bytes": 729,
+      "sha256": "04c891ee2e09fe8860c8737fdf1688aac3b00b112bc24d6ea03061a4d2d1e793"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/workshop-return/history/v1/HANDOFF.md",
+      "bytes": 629,
+      "sha256": "38eaaac2942045a23ce9aa614b2a2b0c4a0a6e07b9b54af97d8eea05ac694135"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/workshop-return/history/v1/output/brief.docx",
+      "bytes": 37022,
+      "sha256": "2b0a0978d330a10a9c58c6f0aed020dc5e508c4963cd904ba3f57bf8d6ebd977"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/workshop-return/history/v1/output/brief.pdf",
+      "bytes": 81089,
+      "sha256": "a4bc033fdcfbe5dfbaf19b024c0061d84e17c066ec3d9eaa52bced13c667bdf5"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/workshop-return/history/v1/review/inspect.json",
+      "bytes": 5009,
+      "sha256": "185df5ff07dd9403a992b988aca0ad359ae6c4fc525f0063ffae38caa5f39bc5"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/workshop-return/history/v1/review/officecraft-review.json",
+      "bytes": 1203,
+      "sha256": "3b3c9ed98b2bce3f4a1c1a4795b15693d39c04bc4e528bc4735b5f33c07fe7dd"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/workshop-return/history/v1/review/visual.md",
+      "bytes": 821,
+      "sha256": "2eb9422846401e45750d673bdd37f1e8e51ab1a58a1a959774743ab67d809bdd"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/workshop-return/history/v1/sources/manifest.json",
+      "bytes": 260,
+      "sha256": "23e89f3b8e80695ece9e13aa751ce1df622e0d2e89c84d4e350215bbdf06ba1c"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/workshop-return/history/v1/sources/original.json",
+      "bytes": 289,
+      "sha256": "b727d7a3fea38da5365453ef77dfd6e9fc1db671592a4bb42dd8236a5402edfd"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/workshop-return/history/v1/state/artifact-register.json",
+      "bytes": 2779,
+      "sha256": "3b9960e914ce2cefb5297f4fd15883a7e80e3c19e734f0aafb5e35c55aed4cce"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/workshop-return/history/v1/state/brief.json",
+      "bytes": 731,
+      "sha256": "bee0d45bd1c9c6d3471a51dee2678e49abf9e2c9b4a65fa1efa42310cdc88065"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/workshop-return/history/v1/state/content-ledger.json",
+      "bytes": 424,
+      "sha256": "f78f35b75432caa110de4b45b001ea45f1e9fe10875efb75d070793402a92616"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/workshop-return/history/v1/state/decisions.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/workshop-return/history/v1/working/style-brief.md",
+      "bytes": 461,
+      "sha256": "e59cf1fd6d30b4e0c4a87f5544ada37270820ae26de8cfbf3c95ec1a42b3de56"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/workshop-return/output/brief.docx",
+      "bytes": 37129,
+      "sha256": "1ce71bda7ad0cf925738adfe08e85b50559c8ed09e99e55b768dc9b0cee288e5"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/workshop-return/output/brief.pdf",
+      "bytes": 89039,
+      "sha256": "ddde2e6f08d387af864d5098539a5324288d073a70b54e77c02f6dd9753b7cc0"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/workshop-return/review/inspect.json",
+      "bytes": 11219,
+      "sha256": "adac6e4624af51c2f28b5e4c65f6c86711a807a7e258bf801602084fc4ee0b68"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/workshop-return/review/officecraft-review.json",
+      "bytes": 1203,
+      "sha256": "894c5aad861e2a72377ee0e6e52a6bcf82146466b9e93dab933ee69427cbed72"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/workshop-return/review/visual.md",
+      "bytes": 821,
+      "sha256": "c4ed72e9e62e8d124621f74cb9a56f5493f745c3bf5f98e83cde082f5187b38d"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/workshop-return/sources/correction.json",
+      "bytes": 213,
+      "sha256": "080c1ae4612be4f18cffe874ceedec4b4b3bae262d878f5282a2134fdac9bbeb"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/workshop-return/sources/manifest.json",
+      "bytes": 456,
+      "sha256": "9f3587693160cb0f0df7ac099882d610ea2c4c868f342b28dcab6ef235bd1125"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/workshop-return/sources/original.json",
+      "bytes": 289,
+      "sha256": "b727d7a3fea38da5365453ef77dfd6e9fc1db671592a4bb42dd8236a5402edfd"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/workshop-return/state/artifact-register.json",
+      "bytes": 3389,
+      "sha256": "ab7afde1411871af9a51d73768c1368ccead8e1e3cef90152094a1cd30441a43"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/workshop-return/state/brief.json",
+      "bytes": 731,
+      "sha256": "bee0d45bd1c9c6d3471a51dee2678e49abf9e2c9b4a65fa1efa42310cdc88065"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/workshop-return/state/content-ledger.json",
+      "bytes": 468,
+      "sha256": "cd38e134424ad7b5b79d24703317d93800d769f243d85a8670ee8215106dba1e"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/workshop-return/state/decisions.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/examples/workshop-return/working/style-brief.md",
+      "bytes": 461,
+      "sha256": "e59cf1fd6d30b4e0c4a87f5544ada37270820ae26de8cfbf3c95ec1a42b3de56"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/fallbacks/degraded-capability.md",
+      "bytes": 3069,
+      "sha256": "aaffd15ff4b3b9aaa948134d4f05618d47527a1aac1f557f19ebbf886a37cc55"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/fallbacks/universal-copy-paste.md",
+      "bytes": 2917,
+      "sha256": "535c45a7f43289da797040a192c614d68227276a6b718c16d87a798d7f0f10b5"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/personas/owen-burnett-officecraft-practitioner.md",
+      "bytes": 3676,
+      "sha256": "2853db4b4b5dc5421955ae37b38faa167f6b3cf8be396cdb35e055261fb02b5f"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/references/accessibility-visual-and-privacy-quality.md",
+      "bytes": 2771,
+      "sha256": "f2dc106377ec9c2c0e8deddf766ecd4e2e2eda496315a67998076d5f76105101"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/references/cross-artifact-consistency.md",
+      "bytes": 2857,
+      "sha256": "9d2b0bab23f2ef704b4953685ea9bea48e729b37099415333176b68270ab3893"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/references/document-production.md",
+      "bytes": 2984,
+      "sha256": "44936cdcd62d77d03177e0b269309d2ed98e57ac5f088a35fb99730f5462dc2a"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/references/host-capability-routing.md",
+      "bytes": 3132,
+      "sha256": "4e67ae2d0715468478185c72047122b5bdc2f8a2938ccdeeb96757a8959c1ff2"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/references/intake-and-artifact-routing.md",
+      "bytes": 4253,
+      "sha256": "6c5202723d7fe33a95103f6887ecb93ecc7ad85db5770cb13041eefcda642496"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/references/operating-doctrine.md",
+      "bytes": 5262,
+      "sha256": "315418b34d2058543041f33b82c2836f0bd9b3b64d92d2ddb1eb5a4d5d85d126"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/references/pdf-and-export.md",
+      "bytes": 2381,
+      "sha256": "19428640782063656d6f6ce38a0c4f4a24f63e6f207aa6379d79a87a6b79ee24"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/references/presentation-production.md",
+      "bytes": 3144,
+      "sha256": "9a04f19f8a13ffefbe26c0e4f12b3bb14242cfdef0c8e285e4f52f440485af2b"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/references/revisions-and-review-bindings.md",
+      "bytes": 5896,
+      "sha256": "5ee10258a6dfb0e8e8799d7ef18112c4544de9c50b7906a312517cb61c97cdda"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/references/spreadsheet-production.md",
+      "bytes": 3009,
+      "sha256": "2f3bd5af5edd4a0c65ba86648add451890f988dfac8010c994f56909d86375ac"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/schemas/artifact-register.schema.json",
+      "bytes": 3199,
+      "sha256": "be683a6331610b87fc1d989b8ec97de532b14eea113c68d39a2c752b310419c1"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/schemas/brief.schema.json",
+      "bytes": 883,
+      "sha256": "1b6896b812d4d5e81d6c9cb7904438bb18c4ae267ccc22c4f78154821fa88269"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/schemas/content-ledger.schema.json",
+      "bytes": 930,
+      "sha256": "d59fb027e4b3ad5962916f4d3ef28b2b5a2d0df1cb7234b1b9c07530153dd018"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/schemas/review.schema.json",
+      "bytes": 7814,
+      "sha256": "dc5b10ebeb4cb2a3e49193def41dc7eeb400f54f80b63be8f20ec1312dbe3cf4"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/schemas/source-manifest.schema.json",
+      "bytes": 1106,
+      "sha256": "05f1488fb7caf0271a34cd27e7c0466a9f7b5176c2505e789d79843ea6443bf5"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/scripts/capture_artifact_binding.py",
+      "bytes": 3302,
+      "sha256": "49ddca5b318c455e856b5060665b328f5db224f2e14dab60f9fb15f30880d29e"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/scripts/init_officefile.py",
+      "bytes": 3280,
+      "sha256": "89abed00ff5c2256ecd561ece9943a305d37a97860777d5b85b8e14a83fcec49"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/scripts/inspect_office_artifacts.py",
+      "bytes": 12420,
+      "sha256": "0ba7f37681d9149c7c041ad781f74b4b6f069eff7735f28e93d7dd8778e43f38"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/scripts/migrate_officefile.py",
+      "bytes": 4854,
+      "sha256": "6de10f4161b3719645c4af4e4549a735f87f46f0c5a5ecec372627634320c447"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/scripts/officefile_relationships.py",
+      "bytes": 7120,
+      "sha256": "324b01e47dbaeb0a651734918b3034c453552bc4119241112494c96f184e9b10"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/scripts/officefile_review.py",
+      "bytes": 8374,
+      "sha256": "03b6a35d64538c95f1e94bdae4e9aed203d3c60316e1cceb051eb81b9645e620"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/scripts/officefile_safety.py",
+      "bytes": 4369,
+      "sha256": "c6b572028062d5f0ce07c7c41b8470c6c6765d044d33177b573b2873e7d368dd"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/scripts/package_officefile.py",
+      "bytes": 6542,
+      "sha256": "c64273f4604a2e8bce7b5bf5b495ecef2ef8333bafc7a2783e1cbf0023a90dac"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/scripts/validate_officefile.py",
+      "bytes": 26294,
+      "sha256": "955b5ef572485ba01f7e75b9cb6f5ac24d57e0707f3bb4d7171188c02a8376a7"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/tests/test_officefile_scripts.py",
+      "bytes": 23368,
+      "sha256": "b36f500ebe23c9c26bc680c6157cb308fd469eb093cb63fecf6326e66cc408c5"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/codex/owen-burnett-officecraft/tests/test_revisions.py",
+      "bytes": 14013,
+      "sha256": "1d5d022b886e5f4cdd9cdcede93aefbe78d67ddf8d9cfd65580d1de90d36851b"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/.nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/404.html",
+      "bytes": 2397,
+      "sha256": "6e1a1b896808d906c3f976450969ad73bf3462a92cc374e2dee66cb7759ed512"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/ACCESSIBILITY.html",
+      "bytes": 4270,
+      "sha256": "e228b39d92e8586585b1beff8165915c1c51125f19b30d582b384328107539d3"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/ACCESSIBILITY.md",
+      "bytes": 1850,
+      "sha256": "ffd92895a4705b40cc3c5e445183649b8ac0c39e4ee0cfa8379ab42962dea19c"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/CHANGELOG.html",
+      "bytes": 4548,
+      "sha256": "7e6a6606f4c41eeeabe8765036c38f0ec73cbca92d73e860d422420a45becdd4"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/CHANGELOG.md",
+      "bytes": 2052,
+      "sha256": "84a6258c34d55dcf56a5fcc0d522a286ec518df153ff7362b170844fdd0abfa4"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/CONTRIBUTING.html",
+      "bytes": 3941,
+      "sha256": "e5276eb31c8489ed91366cab341d9f690bf67af26b03226c72c8f95662d9b63c"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/CONTRIBUTING.md",
+      "bytes": 1463,
+      "sha256": "ea066590523c16d70fda51c2c02a1cbb38cdd28676b8bbfcd63f67410ccaaf60"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/FIRST-JOB.html",
+      "bytes": 6102,
+      "sha256": "f1a8f50683310116ad0578abda247ff0d5042f34f2bfe5ae840bf073ead31441"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/FIRST-JOB.md",
+      "bytes": 3500,
+      "sha256": "1bf6bf8bf6e87c9caa390249219fa27b00ca84e5b5726a995e50923ffabd3774"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/HOST-CAPABILITIES-AND-EVIDENCE.html",
+      "bytes": 6903,
+      "sha256": "902237f85c093e1ba4e94017e0e15fc6fb4978691f1955c393692a5e90bc9fba"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/HOST-CAPABILITIES-AND-EVIDENCE.md",
+      "bytes": 3969,
+      "sha256": "44ba30c256eaae6acbbb0beff26f4a0fb7195fab10e4b869c9ca86806877c1c8"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/INSTALL-CLAUDE.html",
+      "bytes": 5510,
+      "sha256": "a0aa1ee0c7538ffff611c7054c370de8ccefc4accd0ec5731b6d2aa8cc9643ae"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/INSTALL-CLAUDE.md",
+      "bytes": 2792,
+      "sha256": "bdcae2e17d22e176ed737679a6ea90a314357f9c710b84d6bb857ab6b1d361e9"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/INSTALL-CODEX.html",
+      "bytes": 5662,
+      "sha256": "0b39e88e4bc8f2e8c41cde0f30fd761e70afdb61dc309ba812c4bdff8658831d"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/INSTALL-CODEX.md",
+      "bytes": 2963,
+      "sha256": "7807ee0317ef5a25f204d91a3c62debd11329819a58f2bc858b16c5a6d3fb7c4"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/LIFECYCLE.html",
+      "bytes": 5584,
+      "sha256": "f0ecfe2afe24f836e6ba5347de9295df2278c0d896e27866d72a031de8e0f602"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/LIFECYCLE.md",
+      "bytes": 2896,
+      "sha256": "cccde858dd3f3baea61d116a9f8ea15a093af77af65eb6cef36793a549a578e0"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/MIGRATION-AND-REVIEW.html",
+      "bytes": 7330,
+      "sha256": "2737d034e7dabed4f0d91400d9539670bdbb98df10c16fda5a78e974038ef405"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/MIGRATION-AND-REVIEW.md",
+      "bytes": 4650,
+      "sha256": "ea6d8066432c140e6a06a4c429032fb3383290ceda364f1d087bd37889b151e4"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/OFFICEFILE-AND-RESUME.html",
+      "bytes": 8671,
+      "sha256": "21d04905ff80309b04d70c44654b9f4c59f84704411a6177c435abf197b503cf"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/OFFICEFILE-AND-RESUME.md",
+      "bytes": 5532,
+      "sha256": "41d2f4414eb2b59cabb74388ada684d94e4da720c118a9715dfef1218e60327a"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/PROVENANCE-AND-LICENSING.html",
+      "bytes": 5619,
+      "sha256": "5448c1b3a582ecc95875680dce4a1f53815a22857cbadc011662196ead1261ef"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/PROVENANCE-AND-LICENSING.md",
+      "bytes": 2915,
+      "sha256": "7ddc9ccf147947d822bf5e39798cbb42b7b604b3b20c21c72861b20c9eb8e47d"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/README.html",
+      "bytes": 6771,
+      "sha256": "1b76a6457cadbccc723baa52fee33c6c112e267c05338474883636d951d0957c"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/README.md",
+      "bytes": 3556,
+      "sha256": "dbe3ec1921ece1b26212d7572a84d939e6dfbeb525f008d85c2d6b3bd65b3f60"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/SECURITY.html",
+      "bytes": 3896,
+      "sha256": "e310bddc61aa5ea993c366836fd1d12cb83130b71d4708eccb42b9dcc90153f9"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/SECURITY.md",
+      "bytes": 1466,
+      "sha256": "a1808d7788ff2646e41591251b8eb42cb2aac6f0a59fde369f394f37a71cdf23"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/SITE-SOURCE.md",
+      "bytes": 2162,
+      "sha256": "55ecf8b5a79db624ef7ca9ab107adccf3759a750cb300551127942b1d8030c57"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/START-HERE.html",
+      "bytes": 5881,
+      "sha256": "13fafa0d49a51782fb64b95fd78d123d3fd355b635a0565aaf2b31105f92027f"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/START-HERE.md",
+      "bytes": 3123,
+      "sha256": "afbad60750716a00f1d1f37e5043464a62b97d9b5d7d4bdda201f853932f3955"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/SUPPORT.html",
+      "bytes": 3863,
+      "sha256": "754ad9444cd6827f31c1050ac5f0a4c4d1766129f0e276e99c0e13425086a6f9"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/SUPPORT.md",
+      "bytes": 1337,
+      "sha256": "c402ad980f5bedc761d20f4eef4ad7eff3eefa732c305702ec38acc594a22355"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/TROUBLESHOOTING.html",
+      "bytes": 8356,
+      "sha256": "dca67c9ff21f3df612afae36a7e8ee6712877b3e270458ff27e6025988686547"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/TROUBLESHOOTING.md",
+      "bytes": 5441,
+      "sha256": "c01a6c621af4caefbb9284a4ae71941ec22783f14b0029144225e5f9951b46a4"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/TRUST-PRIVACY-AND-LIMITS.html",
+      "bytes": 4870,
+      "sha256": "36310bf763b52d7d50066cb9810eaad4d5773d32e657e8f0f850c8f5e138773c"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/TRUST-PRIVACY-AND-LIMITS.md",
+      "bytes": 2351,
+      "sha256": "18ee06bdeb4e083114d7b617983b459e970aaccbc8f41dcf6a270e1d9aaf6404"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/VERIFICATION-AND-READINESS.html",
+      "bytes": 6543,
+      "sha256": "e363a31fbe829e7bca9628aabc931950027b6101d0e2f687f40be108c80f8840"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/VERIFICATION-AND-READINESS.md",
+      "bytes": 4069,
+      "sha256": "5da9141ba720a25505a07d42ac1a0a7dd6ca7f3f3f03b1820762dd4eae5b1688"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/assets/officecraft-pages-hero.png",
+      "bytes": 2275416,
+      "sha256": "b44394e9fc1327a3b5a50b4b5e84d708cc1209a1509ff04b4389902ed3fa9e91"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/assets/officecraft-readme-hero.png",
+      "bytes": 795371,
+      "sha256": "f2e94a33e56fce3ee9ea0dc6bb27175121cf02731d77d36895efbe8e7e5847b7"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/assets/officecraft-social-card.jpg",
+      "bytes": 98355,
+      "sha256": "33b697dfa538f9823f5477dcb7f838b57fc5a5427f1f04446d62762d8ada5d86"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/index.html",
+      "bytes": 20113,
+      "sha256": "d0dc451d7a0b902efcaae316324d60861f295c1c2450fc5b331e303354ee7178"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/docs/style.css",
+      "bytes": 17255,
+      "sha256": "85f39e4eea36095369c64d6fe8f67afd9460c8de7d2f81b8ce2ff9c789b3bd70"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/requirements-docs.txt",
+      "bytes": 22,
+      "sha256": "27ee4653d8710528900cd033b71eb5816ce4e040169c85a97bebc7e4bb4c8ee8"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/scripts/build_pages.py",
+      "bytes": 3634,
+      "sha256": "3dd4a8470dfb1999560d91c306c793607c52fba1508b89d6591bc6f0d8d7024f"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/tests/test_customer_release.py",
+      "bytes": 2117,
+      "sha256": "11fac7df4d1ed5cdbda07b2f2ce4fb3345d8ef90326ac0a7e4a109fb8e97295e"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/tools/archive_paths.py",
+      "bytes": 5528,
+      "sha256": "38f42e2dec5b86b5f1f0926cf2c9718e70ec4864430e1c50ca280bb72f045ab7"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/tools/build_customer_release.py",
+      "bytes": 5427,
+      "sha256": "22ea9d09a5b8621614638c60e17b2e3caebddcb5a0c89ea3d9655482808e223c"
+    },
+    {
+      "path": "source/owen-burnett-officecraft-v0.2.0/tools/verify_customer_release.py",
+      "bytes": 2408,
+      "sha256": "9b3a9e2cc39bd2c421eeee949ee8c77a45bfcd171bf1b4bd9b2744e449b7c710"
+    },
+    {
+      "path": "tools/archive_paths.py",
+      "bytes": 5528,
+      "sha256": "38f42e2dec5b86b5f1f0926cf2c9718e70ec4864430e1c50ca280bb72f045ab7"
+    },
+    {
+      "path": "tools/verify_customer_release.py",
+      "bytes": 2408,
+      "sha256": "9b3a9e2cc39bd2c421eeee949ee8c77a45bfcd171bf1b4bd9b2744e449b7c710"
+    }
+  ]
+}

@@ -8,7 +8,7 @@
 
 Owen Burnett Officecraft turns workplace material into coherent documents, presentations, spreadsheets, PDFs, and coordinated deliverable families. It combines a production operator, an independent reviewer, and a resumable Officefile that keeps sources, facts, derivatives, checks, and authority distinct.
 
-**[Explore the product site](https://stunspot.github.io/owen-burnett-officecraft/)** | **[Download v0.1.1](https://github.com/Stunspot/owen-burnett-officecraft/releases/tag/v0.1.1)** | **[Run a first job](docs/FIRST-JOB.md)**
+**[Explore the product site](https://stunspot.github.io/owen-burnett-officecraft/)** | **[Release downloads](https://github.com/Stunspot/owen-burnett-officecraft/releases)** | **[Run a first job](docs/FIRST-JOB.md)**
 
 Officecraft is for operators, analysts, executive assistants, consultants, project leads, researchers, and teams that need finished office work without letting a memo, deck, workbook, and PDF become four competing versions of the truth.
 
@@ -25,6 +25,10 @@ Officecraft:
 - separates produced, structurally checked, visually inspected, native-verified, reviewed, approved, and externally delivered states;
 - challenges the finished handoff through the separately installable Officecraft Reviewer.
 
+## Continue a project without losing its basis
+
+Version 0.2 records the actual source, ledger and artifact revisions used by each output. A changed input invalidates affected production and review claims; unrelated work can remain current. Current reviews combine their conditions for the exact artifact and intended use. One passing review cannot cancel another current open condition or rejecting verdict; approval remains a separate accountable decision. Older Officefiles use a copy-first migration that preserves their outputs and historical reviews. Start with [Migration and review](docs/MIGRATION-AND-REVIEW.md).
+
 ## What it cannot do by itself
 
 The release contains no office application, renderer, model provider, connected account, cloud store, automatic updater, telemetry service, or external-delivery service. It cannot guarantee host discovery, template fidelity, formula recalculation, visual quality, accessibility, metadata removal, source truth, privacy in the surrounding host, approval, or delivery.
@@ -35,12 +39,12 @@ Read [Trust, privacy, network behavior, and limits](docs/TRUST-PRIVACY-AND-LIMIT
 
 ## Install both matched skills
 
-The repository and release contain two separate skills:
+Repository source contains the two directly installable Codex folders. The extracted complete release also contains generated Claude archives at its package root (the folder containing `release-manifest.json`):
 
 - `codex/owen-burnett-officecraft/` - production operator;
 - `codex/officecraft-reviewer/` - independent reviewer;
-- `claude/owen-burnett-officecraft-v0.1.1.zip` - Claude operator archive;
-- `claude/officecraft-reviewer-v0.1.1.zip` - Claude reviewer archive.
+- `claude/owen-burnett-officecraft-v0.2.0.zip` - Claude operator archive;
+- `claude/officecraft-reviewer-v0.2.0.zip` - Claude reviewer archive.
 
 Use [Install in Codex](docs/INSTALL-CODEX.md) or [Install in Claude](docs/INSTALL-CLAUDE.md). Keep the operator and reviewer on the same version, start a fresh host task, verify discovery, invoke the operator explicitly, and use a small low-risk request before consequential work.
 
@@ -92,15 +96,9 @@ When compatible file tooling is absent, the honest result is a source-ready prod
 
 ## Evidence status
 
-Observed in the retained v0.1.1 release evidence:
+The current builder has observed 22 native regression checks, including source-change detection, condition-scoped approval and preserved migration. The fictional workshop example includes two actual DOCX/PDF versions, exported through Word 16, rendered with Poppler and visually self-reviewed. Their extracted text matches. These are bounded source and artifact observations; independent release disposition and any actual model trials have their own evidence records.
 
-- all 16 Officefile unit tests passed;
-- both skills passed deterministic Codex and Claude package validation;
-- the operator's 14-case and reviewer's 6-case evaluation suites passed structural validation;
-- 17 customer Markdown files passed structural accessibility lint;
-- three bounded operator and three bounded reviewer context-only smoke cases were each judged DEMONSTRATED once.
-
-Not established: fresh-host Codex or Claude installation, discovery, or invocation; native Office automation; formula recalculation; cloud connection; broad reliability; representative-user success; formal accessibility conformance; external delivery.
+The older 0.1.1 release retains its 16 native tests and six context-only smoke observations. Neither those historical observations nor structurally valid behavioral specifications establish current-host discovery, representative-user success, formula recalculation, broad reliability, formal accessibility conformance or external delivery. See [Verification and readiness](docs/VERIFICATION-AND-READINESS.md).
 
 ## Support, license, and custody
 

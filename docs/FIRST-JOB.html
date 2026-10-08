@@ -17,7 +17,7 @@
 <ol>
 <li>Officecraft identifies the audience, purpose, requested artifact, source authority, editability, and external-delivery boundary.</li>
 <li>It asks only a focused question when a missing answer would change a material choice. Otherwise, it states a bounded assumption and begins.</li>
-<li>It chooses a file-production route that is actually available in the current host, or it prepares a production packet if that route is absent.</li>
+<li>It chooses a file-production route that is actually available in the current host, or it prepares a production specification if file creation itself is absent. If only rendering is unavailable, it still produces the editable file and states that visual inspection remains unperformed.</li>
 <li>It records what file was created or specified, which source is editable, what was checked, and what remains untested.</li>
 <li>You review the result and decide whether to approve or deliver it.</li>
 </ol>
@@ -28,4 +28,6 @@
 <p>For a decision-sensitive or multi-artifact job, ask for the independent <code>officecraft-reviewer</code> to review the supplied Officefile, artifacts, and evidence. Its verdict is evidence about readiness, not your final approval and not permission to send anything externally.</p>
 <h2>If the result is wrong</h2>
 <p>Correct the earliest authoritative source or the controlled fact ledger, then regenerate affected derivatives. Do not hand-edit a stale PDF, deck, or workbook into a competing version of the truth. See <a href="OFFICEFILE-AND-RESUME.html">Officefile and resume</a> and <a href="TROUBLESHOOTING.html">Troubleshooting and recovery</a>.</p>
+<h2>Return with one correction</h2>
+<p>For a continuing job, supply the changed source and ask Officecraft to preserve the original, update the governing value and regenerate only affected outputs. The old review should become stale for those outputs. A new scoped review follows the actual correction; an unrelated change should leave unaffected work alone. Compare the included <code>workshop-return</code> example or follow <a href="MIGRATION-AND-REVIEW.html">Migration and review</a>.</p>
 </main><footer><p><strong>Owen Burnett Officecraft</strong> · Collaborative Dynamics · Free dual-host occupational Augment.</p><p><a href="index.html">Product site</a> · <a href="SUPPORT.html">Support</a> · <a href="https://github.com/Stunspot/owen-burnett-officecraft">GitHub</a> · <a href="https://github.com/Stunspot/owen-burnett-officecraft/blob/main/LICENSE.md">MIT License</a></p></footer></body></html>

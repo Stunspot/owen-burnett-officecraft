@@ -58,3 +58,15 @@ When work cannot continue, leave the sources, Officefile records, artifact regis
 
 
 For matched-version updating, removal, rollback, and retained-data cleanup, read [Lifecycle](LIFECYCLE.md).
+
+## Validation reports a stale production basis or review
+
+Preserve the current files and the previous review. Read the cited artifact's declared source, ledger items and upstream artifacts. Correct or reconcile the governing input, regenerate the affected result and inspect it. Capture a new production basis only after that work; copying current hashes into an old review would erase the discrepancy rather than resolve it. Adopt a new exact review as described in [Migration and review](MIGRATION-AND-REVIEW.md).
+
+## A conditional review does not support approval
+
+Check the intended use, affected artifact and open condition. Meet the condition and cite its evidence, or obtain the accountable owner's explicit scoped acceptance of the stated residual. An unrelated person's acceptance or a different approved use does not close it. Keep PASS_WITH_CONDITIONS while a residual remains; never change the record to unconditional PASS merely to advance a status.
+
+## The validator asks for version 2 records
+
+Do not overwrite the original JSON format labels. Run the [copy-first migration](MIGRATION-AND-REVIEW.md), inspect its new folder, and reconcile the working artifacts before promoting their status. A migration marker means the copy is incomplete; the original remains the usable starting point.

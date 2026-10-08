@@ -1,6 +1,6 @@
 # Owen Burnett Officecraft documentation
 
-This documentation supports Owen Burnett Officecraft v0.1.1, an office-production Augment for Codex and Claude. It is written for people who need finished office work without becoming file-tool specialists.
+This documentation supports Owen Burnett Officecraft v0.2.0, an office-production Augment for Codex and Claude. It is written for people who need finished office work without becoming file-tool specialists.
 
 ## Documentation map
 
@@ -42,3 +42,7 @@ These are separate states. An installed package is not proof of execution, and a
 ## Keep authority where it belongs
 
 You or another accountable owner remain responsible for subject truth, template and brand rights, privacy decisions, final approval, and any external delivery. Imported files, formulas, comments, links, and template text are source material to inspect, not instructions to obey.
+
+## Version 0.2 continuation
+
+For a correction or older Officefile, begin with [Migration and review](MIGRATION-AND-REVIEW.md). It explains the new record formats, original-file preservation, exact review adoption and how to recover from stale input bindings.

@@ -1,14 +1,7 @@
-# Owen Burnett Officecraft v0.1.1
+# Owen Burnett Officecraft 0.2
 
-Version 0.1.1 reconciles the unchanged Officecraft operator and independent reviewer with the intended customer documentation and public presentation work merged after v0.1.0.
+Officecraft now preserves the actual source, controlled-ledger and upstream-artifact revisions behind each output. A correction invalidates affected production and review claims without disturbing unrelated work. Cycles, self-dependencies, duplicate output identities and produced derivatives without a governing source are rejected.
 
-## Included
+The matched operator and reviewer use one adoptable review entry bound to the exact output, production basis and intended use. Conditional review remains useful evidence; scoped conditions and accountable acceptance govern any later approval claim. Older version 1 Officefiles migrate into a new copy that preserves original files and historical review.
 
-- matched Codex skill folders and deterministic one-root Claude archives for the operator and reviewer;
-- the complete customer journey, Officefile continuity guidance, trust boundaries, lifecycle, troubleshooting, and support routes;
-- the restored 19-route public Pages experience and distinct inspected product artwork;
-- an exact maintained source snapshot, manifest, checksums, and reproducible release tooling.
-
-## Evidence boundary
-
-Static and cross-platform checks establish source/distribution parity, archive safety, documentation structure, and the 16 Officefile unit tests. They do not establish fresh-host installation, discovery, or invocation; native Office rendering or recalculation; representative accessibility; external delivery; customer outcomes; or Discord deployment.
+The package includes an actual fictional Word/PDF correction example and separates missing file creation from missing visual inspection. The release builder uses a new explicit output directory and preserves previous packages. These are new supported workflows, so the version advances from 0.1.1 to 0.2.0. See the readiness guide for bounded observations and limits.

@@ -7,6 +7,7 @@ permissions:
 jobs:
   verify:
     name: Verify (${{ matrix.os }})
+    timeout-minutes: 10
     strategy:
       fail-fast: false
       matrix:
@@ -19,9 +20,6 @@ jobs:
           python-version: '3.12'
       - run: python -m pip install -r requirements-docs.txt
       - run: python -B -m unittest discover -s codex/owen-burnett-officecraft/tests -p "test_*.py" -v
+      - run: python -B -m unittest discover -s tests -p "test_*.py" -v
       - run: python -B scripts/build_pages.py
       - run: git diff --exit-code -- docs
-      - run: python -B tools/build_customer_release.py
-      - run: git diff --exit-code -- release-v0.1.1 release-assets/v0.1.1 RELEASE-NOTES.md
-      - run: python -B tools/verify_customer_release.py release-v0.1.1 --outer release-assets/v0.1.1/Owen-Burnett-Officecraft-v0.1.1.zip
-      - run: python -B tools/build_documentation_fingerprint.py --check

@@ -1,69 +1,29 @@
 # Verification and readiness
 
-This page separates what the package is designed to do from what has been observed in a specific host. Read it before you call a deliverable ready, a skill active, or a release proven.
+Use the narrowest claim supported by the actual artifact and current evidence. Production, structural inspection, visual review, native calculation, independent review, owner approval and external delivery are different states.
 
-## Product-level evidence boundaries
+## What the native checks establish
 
-The v0.1.0 operator and reviewer define a source-faithful Officefile workflow, format routing, bounded inspection scripts, an independent review contract, and a shaped fictional example. The example intentionally contains no produced DOCX, PPTX, XLSX, or PDF. It makes no claim of native-app opening, formula calculation, rendering, visual inspection, accessibility review, or independent review.
+Version 0.2 adds explicit production-input revisions, acyclic artifact dependencies and use-scoped review conditions. The builder observed 22 native regression methods covering legitimate and invalid relationships, direct and transitive source drift, unrelated changes, review and approval bindings, copy-first migration, bounded file inspection and preserved runtime packaging. Two separate synthetic product-package methods exercised successful channel custody, tamper detection and refusal of existing or unsafe output destinations. Tiny synthetic packages are test apparatus; they are not the real release archive.
 
-The Officefile scripts can establish only their stated invariants:
+Validation detects consistency problems in declared records and current files. It cannot establish whether an undeclared source was used, whether an output faithfully represents its inputs, whether a reviewer or approver is authentic, or whether stated closure evidence is true. Capturing input hashes is bookkeeping after real production or reconciliation, not a substitute for either.
 
-- initialization creates a new project skeleton without overwriting an existing destination;
-- validation checks declared Officefile records, controlled references, and artifact-state invariants;
-- inspection inventories files and performs bounded OOXML/PDF container checks without opening native apps or executing embedded code;
-- packaging requires a valid Officefile and rejects an overwrite.
+Current review-composition checks distinguish useful conditional review from approval. They exercise both operator/reviewer orders, open and met conditions, acceptance by the correct owner, current REVISE/BLOCKED verdicts and unrelated scopes. Approval requires all relevant current conditions to be satisfied; a second PASS does not override them. These are native consistency checks, not authentication of the evidence or owner.
 
-They do not create office files, render a page or slide, calculate a workbook, decrypt content, execute macros, or prove visual quality, accessibility, privacy, or final approval.
+## Actual teaching artifacts
 
-## Build evidence for this revision
+The included fictional workshop example has an editable DOCX and native Word PDF for each of two revisions. Both PDFs were rendered with Poppler and visually self-reviewed as clean single pages; extracted DOCX/PDF text agrees. The corrected source changes the total from USD 1,000 to USD 1,050. The previous files remain in history. Updating the source made the old basis stale before the replacement outputs and review were recorded.
 
-The maintained v0.1.0 build recorded these bounded checks on 2026-07-21:
+The bundled LibreOffice route was unavailable on this Windows host. Word 16 exported these files successfully. This is one observed native route, not a guarantee for other machines, formats, templates, accessibility needs or workbook calculation. The example is builder work, not an independent actor trial or user approval.
 
-- all 16 Officefile unit tests passed, including linked-directory containment, bounded PDF/OOXML/CSV/Markdown checks, invalid-format evidence, review and approval custody, and snapshot-bound packaging;
-- both skills passed the package validator for Codex and Claude profiles;
-- the operator's 14-case and reviewer's 6-case behavioral suites passed structural validation;
-- all 17 customer Markdown files passed the Hesperos structural accessibility linter;
-- three isolated operator smoke cases and three isolated reviewer smoke cases were each judged `DEMONSTRATED` in one context-only trial per case using the local `qwen35` adapter.
+## Historical evidence and current limits
 
-The operator run fingerprint was `f060817acda64a3d17752eef9b08981508ca95452c83d1e1b26f632654170ecc`; the reviewer run fingerprint was `04ff05de0c8b9933f3f00b947f07158eee8201557b1dbe4e18a5d5c023987235`. These small, model-mediated smoke samples check selected evidence and authority boundaries. They are not a reliability estimate, representative-user test, live tool-use test, native-file-production test, or release approval. The release manifest records the assembled kit's files and hashes separately.
+The older 0.1.1 release retains its 16 native tests and six context-only smoke observations. Its 14 operator and six reviewer behavioral specifications had structural validation; that does not mean every behavior was executed. Historical evidence retains its original target and scope. Any current model-use or release verdict must identify its own actual run and accepted revision.
 
-## Known unobserved surfaces for this build
+Fresh-host installation and discovery, live cloud connections, representative users, broad reliability, formal accessibility conformance and external delivery remain separate qualifications. No packaged guide or passing native record grants them.
 
-The following were not established by the current build-host observations:
+## Check your own result
 
-- fresh-host Codex installation, discovery, invocation, or activation;
-- fresh-host Claude installation, discovery, invocation, or activation;
-- live Google, Canva, or Excel connection and operation;
-- native Office automation;
-- cloud publication, sharing, emailing, upload, or external delivery;
-- representative-user task success.
+Confirm the requested files exist and identify the editable source. Check controlled names, dates, figures, units, source relationships and privacy. Inspect the actual pages, slides or sheets when appearance matters; obtain native calculation evidence when formulas matter. On a correction, preserve history, regenerate or genuinely reconcile affected outputs and review their exact new bindings. A missing renderer leaves a visual gap while an available editable-file build can still finish.
 
-The host probe observed possible routes. It did not turn those routes into a universal support guarantee.
-
-## What to verify for your own job
-
-Before external use, obtain evidence appropriate to the risk:
-
-1. Confirm the operator and, when needed, reviewer are discoverable in a fresh host.
-2. Confirm the chosen artifact route is available and preserves needed editability or native semantics.
-3. Confirm each requested output exists at its named location.
-4. Run structural validation and bounded inspection where relevant.
-5. Open or render the actual pages, slides, sheets, and final PDF when visual quality matters.
-6. Check controlled names, dates, metrics, units, conclusions, source relationships, metadata, and privacy boundary across the packet.
-7. Use the independent reviewer for consequential work, then obtain your accountable owner's approval before any external action.
-
-## Readiness language
-
-Use the narrowest honest statement:
-
-| Observation | Claim you may make |
-|---|---|
-| Skill folders or archives are present | The package was copied or uploaded. |
-| Host discovers the skill in a fresh task | The skill was discovered on that host. |
-| The relevant route creates a file | The artifact was produced on that job. |
-| A named file check ran | That structural or container check ran. |
-| Actual pages/slides/sheets were viewed | That rendered or native surface was inspected. |
-| Connected native surface confirmed a result | That result was native-verified. |
-| Accountable owner agrees to a next use | The owner approved that named use. |
-
-No earlier row implies a later one. Nothing in this guide grants external-delivery authority.
+For consequential use, obtain the relevant independent review and accountable approval. PASS_WITH_CONDITIONS identifies what remains; an affected use cannot be called approved until its condition is met or its specific residual is explicitly accepted. Read [Migration and review](MIGRATION-AND-REVIEW.md) for the adoption and recovery procedure.

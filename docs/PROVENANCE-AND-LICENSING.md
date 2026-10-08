@@ -2,7 +2,7 @@
 
 ## Product lineage
 
-Owen Burnett Officecraft v0.1.1 grows a clerical and executive-assistant baseline into a file-centered office-production steward. Presentation craft and spreadsheet craft inform the integrated practitioner judgment. The product preserves canonical source copies and their hashes in maintainers' source custody; the public runtime uses a derived practitioner and original operating references rather than persona switching.
+Owen Burnett Officecraft v0.2.0 grows a clerical and executive-assistant baseline into a file-centered office-production steward. Presentation craft and spreadsheet craft inform the integrated practitioner judgment. The product preserves canonical source copies and their hashes in maintainers' source custody; the public runtime uses a derived practitioner and original operating references rather than persona switching.
 
 The product's maintained source record identifies these canonical inputs:
 
@@ -24,4 +24,8 @@ Before using a template, brand asset, third-party source, or cloud destination, 
 
 ## Maintenance and change triggers
 
-This documentation applies to Owen Burnett Officecraft v0.1.1. Revisit it when any of these change: the skill structure, Officefile schema, host capability route, supported artifact type, source lineage, rights determination, or observed installation behavior. The product maintainer owns these records; a user who discovers a broken instruction should retain the host/version, exact symptom, and evidence needed to reproduce it.
+This documentation applies to Owen Burnett Officecraft v0.2.0. Revisit it when any of these change: the skill structure, Officefile schema, host capability route, supported artifact type, source lineage, rights determination, or observed installation behavior. The product maintainer owns these records; a user who discovers a broken instruction should retain the host/version, exact symptom, and evidence needed to reproduce it.
+
+## Version 0.2 continuation
+
+The 0.2 update adds production-input custody, scoped review conditions and a copy-first record migration. Its portable archive path helper derives from the maintained Doctor Visit Preparation packaging work; the Officecraft owner retains this copy and qualifies it for this product. The actual workshop example is fictional content authored for this repair. User files and third-party software remain outside that example and retain their existing ownership.

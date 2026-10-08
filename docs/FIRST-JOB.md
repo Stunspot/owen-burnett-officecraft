@@ -18,7 +18,7 @@ Include a deadline, template or brand guidance, and accessibility needs when the
 
 1. Officecraft identifies the audience, purpose, requested artifact, source authority, editability, and external-delivery boundary.
 2. It asks only a focused question when a missing answer would change a material choice. Otherwise, it states a bounded assumption and begins.
-3. It chooses a file-production route that is actually available in the current host, or it prepares a production packet if that route is absent.
+3. It chooses a file-production route that is actually available in the current host, or it prepares a production specification if file creation itself is absent. If only rendering is unavailable, it still produces the editable file and states that visual inspection remains unperformed.
 4. It records what file was created or specified, which source is editable, what was checked, and what remains untested.
 5. You review the result and decide whether to approve or deliver it.
 
@@ -35,3 +35,7 @@ For a decision-sensitive or multi-artifact job, ask for the independent `officec
 ## If the result is wrong
 
 Correct the earliest authoritative source or the controlled fact ledger, then regenerate affected derivatives. Do not hand-edit a stale PDF, deck, or workbook into a competing version of the truth. See [Officefile and resume](OFFICEFILE-AND-RESUME.md) and [Troubleshooting and recovery](TROUBLESHOOTING.md).
+
+## Return with one correction
+
+For a continuing job, supply the changed source and ask Officecraft to preserve the original, update the governing value and regenerate only affected outputs. The old review should become stale for those outputs. A new scoped review follows the actual correction; an unrelated change should leave unaffected work alone. Compare the included `workshop-return` example or follow [Migration and review](MIGRATION-AND-REVIEW.md).

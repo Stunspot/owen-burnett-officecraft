@@ -1,0 +1,33 @@
+{
+  "product": "Owen Burnett Officecraft",
+  "version": "0.2.0",
+  "candidate": "officecraft-0.2-r4",
+  "source_verdict": "READY_WITH_RESIDUAL_RISK",
+  "independent_technical_review": "REVIEW_PASS_WITH_CONDITIONS",
+  "independent_documentation_review": "REVIEW_PASS_WITH_CONDITIONS",
+  "delivery_condition": "Real outer and both nested Claude archives extracted with native PowerShell; package verifier and exact source/runtime parity passed.",
+  "checks": {
+    "native_methods": 22,
+    "synthetic_package_methods": 2,
+    "actual_model_prompts": 6,
+    "documentation_sources": 21,
+    "runtime_files": 90,
+    "preserved_return_files": 13
+  },
+  "review_composition": "The four original failing-cycle contrast specimens now distinguish useful conditional review, resolved approval and unsupported approval. Same-scope current conditions and rejecting verdicts accumulate.",
+  "evidence_limits": [
+    "Six prompts observed once, not a reliability estimate or the original 20 specification cases.",
+    "No installed-host discovery, every office format, workbook recalculation, formal accessibility or authenticated approval qualification.",
+    "Byte custody does not establish source authenticity or content correctness."
+  ],
+  "prior_candidates": {
+    "R1": "NOT_READY: customer entry/topology and workflow defects",
+    "R2": "NOT_READY: shelf Extra installation contract",
+    "R3": "NOT_READY: passing review bypassed another current open condition"
+  },
+  "archive": {
+    "path": "release-assets/v0.2.0/Owen-Burnett-Officecraft-v0.2.0.zip",
+    "sha256": "6f85a6c346646a2ba2ffcc2b567c3ae58eb79dff31147dbe44105dba10a6316e"
+  },
+  "private_evidence": "Original execution and independent review records retained in owner project custody; not included in this public summary."
+}

@@ -22,7 +22,7 @@ Officecraft governs the job. The active host creates, edits, renders, exports, o
 | Workbook calculation | An active compatible workbook surface. | Formula and data-lineage audit, with recalculation pending. |
 | Branded deck | An authorized template or connected design surface. | Slide map and visual specification pending native build. |
 
-## Current build-host observations
+## Historical 0.1.1 build-host observations
 
 The build host was observed to expose dedicated document, presentation, spreadsheet, PDF, live workbook-control, Google Workspace, and branded-presentation capability packages. It also had local desktop Office registrations and local document/PDF libraries available for possible routing.
 
@@ -37,3 +37,9 @@ Some hosts provide bundled OpenAI office skills. Officecraft may call an applica
 Keep working on the part that remains possible: settle the brief, source custody, content ledger, artifact specification, and quality plan. State the missing route, affected artifact, assurance lost, current status, and exact re-entry condition. Do not call a fallback file-produced, visually inspected, recalculated, imported, or natively verified unless that event occurred.
 
 For recovery steps, see [Troubleshooting and recovery](TROUBLESHOOTING.md).
+
+## The 0.2 correction example
+
+The fictional workshop DOCX files were created with bundled python-docx and exported to PDF through Word 16. Poppler rendered the exported pages, and both revisions received actual visual self-review. The bundled LibreOffice route was unavailable. This observation applies to those files on that host; it does not establish arbitrary Word automation, native workbook calculation, other templates or fresh-host discovery.
+
+When creation is available but rendering is absent, deliver the editable artifact with its exact visual inspection gap. When file creation itself is absent, deliver a complete production specification. Do not treat the two situations as the same fallback.
