@@ -1,6 +1,6 @@
 ---
 name: officecraft-reviewer
-description: "🧪 Docs, decks, and sheets readiness audit."
+description: "🧪 Document, slide, and spreadsheet readiness evidence."
 ---
 
 # Officecraft Reviewer
