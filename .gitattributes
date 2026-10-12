@@ -26,3 +26,9 @@
 # Release-custody evidence retains its exact captured bytes.
 RELEASE-MANIFEST.json -text
 verification/release-archive-custody.json -text
+
+# Preserve sealed current release payload bytes.
+/release-v0.2.1/** -text
+/rc/v021/** -text
+/delivery-v0.2.1/** -text
+/release-assets/v0.2.1/** -text

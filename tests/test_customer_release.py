@@ -9,7 +9,7 @@ from verify_customer_release import verify
 
 def fixture(root):
     root.mkdir()
-    for n in builder.ROOT_FILES:(root/n).write_text('0.2.0\n'if n=='VERSION'else'# Synthetic fixture\n',encoding='utf-8')
+    for n in builder.ROOT_FILES:(root/n).write_text('0.2.1\n'if n=='VERSION'else'# Synthetic fixture\n',encoding='utf-8')
     for n in builder.SOURCE_DIRS:(root/n).mkdir()
     for skill in builder.SKILLS:
         d=root/'codex'/skill;d.mkdir();(d/'SKILL.md').write_text('# Synthetic '+skill+'\n',encoding='utf-8')
@@ -22,7 +22,7 @@ class ReleaseTests(unittest.TestCase):
             root=Path(temp)/'source';fixture(root);out=root/'candidate';builder.build(out,root)
             self.assertTrue(verify(out/'package')['valid'])
             archive=next(out.glob('*.zip'))
-            with zipfile.ZipFile(archive)as z:self.assertIn('Owen-Burnett-Officecraft-v0.2.0/codex/officecraft-reviewer/SKILL.md',z.namelist())
+            with zipfile.ZipFile(archive)as z:self.assertIn('Owen-Burnett-Officecraft-v0.2.1/codex/officecraft-reviewer/SKILL.md',z.namelist())
             (out/'package/codex/officecraft-reviewer/SKILL.md').write_text('tamper',encoding='utf-8')
             with self.assertRaisesRegex(ValueError,'bytes differ'):verify(out/'package')
 

@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "archive": "Owen-Burnett-Officecraft-v0.2.1.zip",
+  "sha256": "da96644ed6cd934a38ecc9766641ece690bc079ffe85827f5bf57b9e75a04e50",
+  "runtime_files": 90,
+  "verification": {
+    "valid": true,
+    "files": 252,
+    "skills": [
+      "owen-burnett-officecraft",
+      "officecraft-reviewer"
+    ],
+    "boundary": "Exact static package bytes and runtime/source parity; not native office app, content, host activation or approval proof."
+  }
+}

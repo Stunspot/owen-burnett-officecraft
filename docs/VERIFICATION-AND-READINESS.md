@@ -27,3 +27,7 @@ Fresh-host installation and discovery, live cloud connections, representative us
 Confirm the requested files exist and identify the editable source. Check controlled names, dates, figures, units, source relationships and privacy. Inspect the actual pages, slides or sheets when appearance matters; obtain native calculation evidence when formulas matter. On a correction, preserve history, regenerate or genuinely reconcile affected outputs and review their exact new bindings. A missing renderer leaves a visual gap while an available editable-file build can still finish.
 
 For consequential use, obtain the relevant independent review and accountable approval. PASS_WITH_CONDITIONS identifies what remains; an affected use cannot be called approved until its condition is met or its specific residual is explicitly accepted. Read [Migration and review](MIGRATION-AND-REVIEW.md) for the adoption and recovery procedure.
+
+## Release identity 0.2.1
+
+The accepted 0.2.0 native controls and actual independently reviewed Word/PDF job remain evidence at their original scope. Version 0.2.1 changes current package identity, archive references and evaluation package-version metadata. All performance-bearing code and practitioner craft remain unchanged. From the extracted package root, run `python tools/verify_customer_release.py --root .` to check current static custody and matched channels. This does not repeat the original behavioral or office-format qualification.

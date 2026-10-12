@@ -43,8 +43,8 @@ Repository source contains the two directly installable Codex folders. The extra
 
 - `codex/owen-burnett-officecraft/` - production operator;
 - `codex/officecraft-reviewer/` - independent reviewer;
-- `claude/owen-burnett-officecraft-v0.2.0.zip` - Claude operator archive;
-- `claude/officecraft-reviewer-v0.2.0.zip` - Claude reviewer archive.
+- `claude/owen-burnett-officecraft-v0.2.1.zip` - Claude operator archive;
+- `claude/officecraft-reviewer-v0.2.1.zip` - Claude reviewer archive.
 
 Use [Install in Codex](docs/INSTALL-CODEX.md) or [Install in Claude](docs/INSTALL-CLAUDE.md). Keep the operator and reviewer on the same version, start a fresh host task, verify discovery, invoke the operator explicitly, and use a small low-risk request before consequential work.
 

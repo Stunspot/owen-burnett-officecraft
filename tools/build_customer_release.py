@@ -22,7 +22,7 @@ def build(output, root=ROOT):
     if os.path.lexists(output):raise ValueError('Output already exists; use a new candidate directory')
     if not output.is_relative_to(root) or output==root or any(output.is_relative_to(root/n)for n in SOURCE_DIRS):raise ValueError('Output must be a new repository directory outside maintained source trees')
     version=(root/'VERSION').read_text(encoding='utf-8-sig').strip()
-    if version!='0.2.0':raise ValueError('Review release identity before changing version')
+    if version!='0.2.1':raise ValueError('Review release identity before changing version')
     source=[]
     for n in ROOT_FILES:
         p=assert_chain(root/n);source.append((n,p.read_bytes()))
