@@ -11,7 +11,7 @@
     "officecraft-reviewer": {
       "file_count": 9,
       "claude_zip": "claude/officecraft-reviewer-v0.2.0.zip",
-      "claude_sha256": "e1235849ae764e94ee100762b3493bb0d2a81543a129bdebb2ced7381d285a61"
+      "claude_sha256": "d6c62a107d2a23e916ef17359eb59d06180d817066307f30b69d7657f82a280b"
     }
   },
   "source": {
@@ -27,7 +27,7 @@
     {
       "path": "SHA256SUMS.txt",
       "bytes": 12630,
-      "sha256": "fb5a0d804a219a3a3f52af76c90f29595871d29da1180c60db1c70a08e2b790a"
+      "sha256": "1bd47cac90d69d1511bb3eafd607e7919878bf15108da0fc4d710821e0448ef0"
     },
     {
       "path": "START-HERE.md",
@@ -36,8 +36,8 @@
     },
     {
       "path": "claude/officecraft-reviewer-v0.2.0.zip",
-      "bytes": 26941,
-      "sha256": "e1235849ae764e94ee100762b3493bb0d2a81543a129bdebb2ced7381d285a61"
+      "bytes": 26965,
+      "sha256": "d6c62a107d2a23e916ef17359eb59d06180d817066307f30b69d7657f82a280b"
     },
     {
       "path": "claude/owen-burnett-officecraft-v0.2.0.zip",
@@ -46,13 +46,13 @@
     },
     {
       "path": "codex/officecraft-reviewer/SKILL.md",
-      "bytes": 3845,
-      "sha256": "ffefb96348bb212e9a9e4be62875e7e824f5591fd95477a8b5ce29675d9710e6"
+      "bytes": 3857,
+      "sha256": "daacf6d4915537865ec5cab0879d414a04b4696bc208c6ef922ad59d78276fed"
     },
     {
       "path": "codex/officecraft-reviewer/agents/openai.yaml",
-      "bytes": 370,
-      "sha256": "a303493a0318726860e3d8393ca27a515e6c78c6ae37d76c508a33c1cf3ed9e2"
+      "bytes": 382,
+      "sha256": "ae6903c827f0ac76902cbe36b36fd5b6afaebf4fbe5cd3b27e53ca0d88ffbbca"
     },
     {
       "path": "codex/officecraft-reviewer/assets/review-record.template.json",
@@ -571,13 +571,13 @@
     },
     {
       "path": "source/owen-burnett-officecraft-v0.2.0/codex/officecraft-reviewer/SKILL.md",
-      "bytes": 3845,
-      "sha256": "ffefb96348bb212e9a9e4be62875e7e824f5591fd95477a8b5ce29675d9710e6"
+      "bytes": 3857,
+      "sha256": "daacf6d4915537865ec5cab0879d414a04b4696bc208c6ef922ad59d78276fed"
     },
     {
       "path": "source/owen-burnett-officecraft-v0.2.0/codex/officecraft-reviewer/agents/openai.yaml",
-      "bytes": 370,
-      "sha256": "a303493a0318726860e3d8393ca27a515e6c78c6ae37d76c508a33c1cf3ed9e2"
+      "bytes": 382,
+      "sha256": "ae6903c827f0ac76902cbe36b36fd5b6afaebf4fbe5cd3b27e53ca0d88ffbbca"
     },
     {
       "path": "source/owen-burnett-officecraft-v0.2.0/codex/officecraft-reviewer/assets/review-record.template.json",

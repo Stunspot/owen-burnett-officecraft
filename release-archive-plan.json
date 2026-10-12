@@ -40,5 +40,6 @@
       "archive_name": "Claude-Officecraft-Reviewer-v0.1.1.zip",
       "top_level": "officecraft-reviewer"
     }
-  ]
+  ],
+  "record_scope": "Historical 0.1.1 archive plan; retained as that release history. RELEASE-MANIFEST.json selects the current accepted packet. The current 0.2.0 builder is tools/build_customer_release.py."
 }
